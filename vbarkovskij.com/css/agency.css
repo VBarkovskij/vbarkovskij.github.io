@@ -207,12 +207,12 @@ fieldset[disabled] .btn-xl.active {
 .navbar-custom .navbar-nav > .active > a {
   background-color: transparent;
   border-radius: 0;
-  color: #fa328c;
+  color: #ff0070;
 }
 .navbar-custom .navbar-nav > .active > a:hover,
 .navbar-custom .navbar-nav > .active > a:focus {
   background-color: transparent;
-  color: #fa328c;
+  color: #ff0070;
 }
 .navbar-custom .logo-wrapper {
   align-items: center;
