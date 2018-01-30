@@ -101,7 +101,8 @@ h1, h2, h3, h4, h5, h6 {
         border-color: @theme-primary;
         .heading-font;
         color: white;
-        font-size: 12px;
+		font-size: 12px;
+		margin-left: auto;
         &:hover,
         &:focus {
             background-color: @theme-primary;
@@ -132,7 +133,23 @@ h1, h2, h3, h4, h5, h6 {
     .navbar-nav>.active>a:focus {
 		background-color: transparent;
         color: @pink;
-    }
+	}
+
+	.logo-wrapper {
+		align-items: center;
+		display: flex;
+		height: 50px;
+
+		.logo-link {
+			height: auto;
+			margin-left: 15px;
+			padding: 0;
+
+			@media(min-width:992px) {
+				margin-left: 0;
+			}
+		}
+	}
 }
 
 @media(min-width:768px) {
@@ -480,7 +497,7 @@ section {
     }
 }
 
-@media(min-width:1200px) {
+@media(min-width:992px) {
     .timeline {
         > li {
             min-height: 170px;

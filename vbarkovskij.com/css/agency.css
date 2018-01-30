@@ -170,6 +170,7 @@ fieldset[disabled] .btn-xl.active {
   text-transform: uppercase;
   color: white;
   font-size: 12px;
+  margin-left: auto;
 }
 .navbar-custom .navbar-toggle:hover,
 .navbar-custom .navbar-toggle:focus {
@@ -197,6 +198,21 @@ fieldset[disabled] .btn-xl.active {
 .navbar-custom .navbar-nav > .active > a:focus {
   background-color: transparent;
   color: #fa328c;
+}
+.navbar-custom .logo-wrapper {
+  align-items: center;
+  display: flex;
+  height: 50px;
+}
+.navbar-custom .logo-wrapper .logo-link {
+  height: auto;
+  margin-left: 15px;
+  padding: 0;
+}
+@media (min-width: 992px) {
+  .navbar-custom .logo-wrapper .logo-link {
+    margin-left: 0;
+  }
 }
 @media (min-width: 768px) {
   .navbar-custom {
@@ -512,7 +528,7 @@ section h3.section-subheading {
     padding: 0 20px 20px;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   .timeline > li {
     min-height: 170px;
   }
