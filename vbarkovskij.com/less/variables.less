@@ -13,3 +13,16 @@
 @gray-lighter:     lighten(@gray-base, 93.5%); // #eee
 @white: #fff;
 @pink: #fa328c;
+@black: @gray-base;
+
+@smartphone-breakpoint: 576px;
+@tablet-breakpoint: 768px;
+@desktop-breakpoint: 992px;
+
+@smartphone-and-bigger: 	~"(min-width:@{smartphone-breakpoint})";
+@tablet-and-bigger: 		~"(min-width:@{tablet-breakpoint})";
+@desktop-and-bigger: 		~"(min-width:@{desktop-breakpoint})";
+
+@smartphone-and-smaller: 	~"(max-width:@{smartphone-breakpoint})";
+@tablet-and-smaller: 		~"(max-width:@{tablet-breakpoint})";
+@desktop-and-smaller: 		~"(max-width:@{desktop-breakpoint})";

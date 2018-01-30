@@ -111,17 +111,34 @@ h1, h2, h3, h4, h5, h6 {
     .nav {
         li {
             a {
-                .heading-font;
-                font-weight: 400;
-                letter-spacing: 1px;
-                color: @gray-darker;
+				color: @black;
+				font: 18px Poppins;
+				font-weight: 500;
+				letter-spacing: normal;
+				padding-bottom: 10px;
+				padding-top: 10px;
+
+				@media @tablet-and-smaller {
+					padding-top: 13px;
+					padding-bottom: 12px;
+				}
                 &:hover {
 					.nav-link-text {
 						border-bottom: solid 1px @gray-darker;
 					}
 					outline: none;
 				}
-            }
+			}
+			
+			@media @tablet-and-smaller {
+				&:last-child {
+					margin-bottom: 45px;
+	
+					a {
+						padding-bottom: 0;
+					}
+				}
+			}
         }
     }
     .navbar-nav>.active>a {
@@ -145,14 +162,14 @@ h1, h2, h3, h4, h5, h6 {
 			margin-left: 15px;
 			padding: 0;
 
-			@media(min-width:992px) {
+			@media @desktop-and-bigger {
 				margin-left: 0;
 			}
 		}
 	}
 }
 
-@media(min-width:768px) {
+@media @tablet-and-bigger {
     .navbar-custom {
         padding: 25px 0;
         -webkit-transition: padding 0.3s;
@@ -208,7 +225,7 @@ header {
     }
 }
 
-@media(min-width:768px) {
+@media @tablet-and-bigger {
     header {
         .intro-text {
             padding-top: 300px;
@@ -250,7 +267,7 @@ section {
     }
 }
 
-@media(min-width:768px) {
+@media @tablet-and-bigger {
     section {
         padding: 150px 0;
     }
@@ -328,7 +345,7 @@ section {
     }
 }
 
-@media(min-width:767px) {
+@media @tablet-and-bigger {
     #portfolio {
         .portfolio-item {
             margin: 0 0 30px;
@@ -439,7 +456,7 @@ section {
     }
 }
 
-@media(min-width:768px) {
+@media @tablet-and-bigger {
     .timeline {
         &:before {
             left: 50%;
@@ -473,7 +490,7 @@ section {
     }
 }
 
-@media(min-width:992px) {
+@media @desktop-and-bigger {
     .timeline {
         > li {
             min-height: 150px;
@@ -497,7 +514,7 @@ section {
     }
 }
 
-@media(min-width:992px) {
+@media @desktop-and-bigger {
     .timeline {
         > li {
             min-height: 170px;
