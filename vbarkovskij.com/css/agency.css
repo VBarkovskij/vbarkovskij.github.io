@@ -148,7 +148,7 @@ fieldset[disabled] .btn-xl.active {
 }
 .navbar-custom {
   background-color: #fff;
-  border-color: transparent;
+  border: none;
 }
 .navbar-custom .navbar-brand {
   color: #fed136;
@@ -163,18 +163,24 @@ fieldset[disabled] .btn-xl.active {
 .navbar-custom .navbar-collapse {
   border-color: rgba(255, 255, 255, 0.02);
 }
-.navbar-custom .navbar-toggle {
-  background-color: #fed136;
-  border-color: #fed136;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
-  color: white;
-  font-size: 12px;
-  margin-left: auto;
+.navbar-custom .navbar-toggle .menu-icon {
+  margin-right: 7px;
 }
+.navbar-custom .navbar-toggle[aria-expanded=true] .menu-icon:before {
+  content: "\f00d";
+}
+.navbar-custom .navbar-toggle:not([aria-expanded=true]) .menu-icon:before {
+  content: "\f0c9";
+}
+.navbar-custom .navbar-toggle,
 .navbar-custom .navbar-toggle:hover,
 .navbar-custom .navbar-toggle:focus {
-  background-color: #fed136;
+  background-color: transparent;
+  border: none;
+  color: #000;
+  font: 18px Poppins;
+  font-weight: 500;
+  margin-left: auto;
 }
 .navbar-custom .nav li a {
   color: #000;
@@ -219,6 +225,11 @@ fieldset[disabled] .btn-xl.active {
   display: flex;
   height: 50px;
 }
+@media (max-width:576px) {
+  .navbar-custom .logo-wrapper {
+    height: 60px;
+  }
+}
 .navbar-custom .logo-wrapper .logo-link {
   height: auto;
   margin-left: 15px;
@@ -235,7 +246,6 @@ fieldset[disabled] .btn-xl.active {
     -webkit-transition: padding 0.3s;
     -moz-transition: padding 0.3s;
     transition: padding 0.3s;
-    border: none;
   }
   .navbar-custom .navbar-brand {
     font-size: 2em;

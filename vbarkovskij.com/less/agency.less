@@ -82,7 +82,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .navbar-custom {
     background-color: @white;
-    border-color: transparent;
+    border: none;
     .navbar-brand {
         color: @theme-primary;
         .script-font;
@@ -95,18 +95,32 @@ h1, h2, h3, h4, h5, h6 {
     }
     .navbar-collapse {
         border-color: fade(white, 2%);
-    }
-    .navbar-toggle {
-        background-color: @theme-primary;
-        border-color: @theme-primary;
-        .heading-font;
-        color: white;
-		font-size: 12px;
+	}
+
+	.navbar-toggle {
+
+		.menu-icon {
+			margin-right: 7px;
+		}
+
+		&[aria-expanded=true] .menu-icon:before {
+			content: "\f00d";
+		}
+
+		&:not([aria-expanded=true]) .menu-icon:before {
+			content: "\f0c9";
+		}
+	}
+
+	.navbar-toggle, 
+	.navbar-toggle:hover, 
+	.navbar-toggle:focus {
+		background-color: transparent;
+		border: none;
+		color: @black;
+		font: 18px Poppins;
+		font-weight: 500;
 		margin-left: auto;
-        &:hover,
-        &:focus {
-            background-color: @theme-primary;
-        }
     }
     .nav {
         li {
@@ -157,6 +171,10 @@ h1, h2, h3, h4, h5, h6 {
 		display: flex;
 		height: 50px;
 
+		@media @smartphone-and-smaller {
+			height: 60px;
+		}
+
 		.logo-link {
 			height: auto;
 			margin-left: 15px;
@@ -175,7 +193,6 @@ h1, h2, h3, h4, h5, h6 {
         -webkit-transition: padding 0.3s;
         -moz-transition: padding 0.3s;
         transition: padding 0.3s;
-        border: none;
         .navbar-brand {
             font-size: 2em;
             -webkit-transition: all 0.3s;
