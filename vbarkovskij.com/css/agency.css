@@ -7,11 +7,32 @@ body {
   overflow-x: hidden;
   font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-@media (max-width:576px) {
+@media (max-width:768px) {
   .container {
     padding-left: 10%;
     padding-right: 10%;
   }
+}
+.btn.button {
+  background-color: #ff0070;
+  border: none;
+  border-radius: 0;
+  font: 18px Poppins;
+  font-weight: 500;
+  line-height: 70px;
+  padding: 0 35px;
+  text-transform: none;
+}
+@media (max-width:768px) {
+  .btn.button {
+    font-size: 14px;
+    line-height: 50px;
+    padding: 0 25px;
+  }
+}
+.btn.button:hover,
+.btn.button:focus {
+  background-color: #ff30a0;
 }
 .text-muted {
   color: #777777;
@@ -313,6 +334,9 @@ header .primary-text .secondary-text {
     text-align: left;
     width: 50%;
   }
+}
+header .about-me-button {
+  margin-top: 30px;
 }
 section {
   padding: 100px 0;

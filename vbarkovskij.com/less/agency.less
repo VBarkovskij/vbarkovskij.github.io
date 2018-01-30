@@ -10,10 +10,35 @@ body {
 
 .container {
 
-	@media @smartphone-and-smaller {
+	@media @tablet-and-smaller {
 		@side-padding: 10%;
+
 		padding-left: @side-padding;
 		padding-right: @side-padding;
+	}
+}
+
+.btn.button {
+	@color: @pink;
+
+	background-color: @color;
+	border: none;
+	border-radius: 0;
+	font: 18px Poppins;
+	font-weight: 500;
+	line-height: 70px;
+	padding: 0 35px;
+	text-transform: none;
+
+	@media @tablet-and-smaller {
+		font-size: 14px;
+		line-height: 50px;
+		padding: 0 25px;
+	}
+
+	&:hover,
+	&:focus {
+		background-color: @color + #303030; 
 	}
 }
 
@@ -264,6 +289,10 @@ header {
 				width: 50%;
 			}
 		}
+	}
+
+	.about-me-button {
+		margin-top: 30px;
 	}
 }
 
