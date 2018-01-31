@@ -293,7 +293,6 @@ fieldset[disabled] .btn-xl.active {
 header {
   font-family: Poppins;
   margin-top: 250px;
-  margin-bottom: 200px;
 }
 @media (max-width:768px) {
   header {
@@ -337,6 +336,29 @@ header .primary-text .secondary-text {
 }
 header .about-me-button {
   margin-top: 30px;
+}
+header .arrow-about-wrapper {
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 142px;
+}
+@media (max-width:768px) {
+  header .arrow-about-wrapper {
+    margin-top: 123px;
+  }
+}
+@media (max-width:576px) {
+  header .arrow-about-wrapper {
+    margin-top: 80px;
+  }
+}
+header .arrow-about-wrapper .arrow-about {
+  color: #000;
+  font-size: 36px;
+}
+.about-section {
+  padding: 0;
+  padding-top: 50px;
 }
 section {
   padding: 100px 0;
