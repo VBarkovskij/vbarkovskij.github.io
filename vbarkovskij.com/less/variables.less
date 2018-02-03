@@ -18,6 +18,7 @@
 @smartphone-breakpoint: 576px;
 @tablet-breakpoint: 768px;
 @desktop-breakpoint: 992px;
+@desktop-wide-breakpoint: 1919px;
 
 @smartphone-and-bigger: 	~"(min-width:@{smartphone-breakpoint})";
 @tablet-and-bigger: 		~"(min-width:@{tablet-breakpoint})";
@@ -29,4 +30,5 @@
 
 @smartphone:				~"(max-width: @{tablet-breakpoint})";
 @tablet:					~"(min-width: @{tablet-breakpoint}) and (max-width: @{desktop-breakpoint})";
-@desktop:					~"(min-width: @{desktop-breakpoint})";
+@desktop:					~"(min-width: @{desktop-breakpoint}) and (max-width: @{desktop-wide-breakpoint})";
+@desktop-wide:              ~"(min-width: @{desktop-wide-breakpoint})";

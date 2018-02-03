@@ -238,17 +238,29 @@ header {
 		font-size: 72px;
 		font-weight: 800;
 
-		@media @desktop-and-bigger {
-			padding-right: 10%;
-		}
+        @media @desktop-and-bigger {
+            padding-right: 10%;
+        }
 
-		@media @tablet-and-smaller {
+        @media @desktop-wide {
+            font-size: 100px;
+            line-height: 140px;
+        }
+
+        @media @desktop {
+            font-size: 72px;
+            line-height: 98px;
+        }
+
+		@media @tablet {
 			font-size: 48px;
+            line-height: 68px;
 		}
 
-		@media @smartphone-and-smaller {
-			font-size: 28px;
-		}
+        @media @smartphone {
+            font-size: 28px;
+            line-height: 38px;
+        }
 
 		.dynamic-phrase {
 			border-bottom: solid 3px @black;
@@ -296,8 +308,12 @@ header {
 	background: url('../img/about/background.jpg') no-repeat center center fixed;
 	background-size: cover;
 
+    @media @desktop-wide {
+        padding: 112px;
+    }
+
 	@media @desktop {
-        padding: 112px 0;
+        padding: 100px 0;
 	}
 
 	@media @tablet {
@@ -334,7 +350,6 @@ header {
 }
 
 // Global Section Styles
-
 section {
 
     h1 {
@@ -343,13 +358,22 @@ section {
 		font-weight: 800;
 
 		background: url('../img/logos/headline-logo-dark.png') no-repeat right center;
-		background-size: 15% auto;
+		background-size: auto 60%;
+
+        @media @desktop-wide {
+            @height: 80px;
+
+            height: @height;
+            font-size: 64px;
+            line-height: @height;
+            padding-right: 80px;
+        }
 
 		@media @desktop {
-			@height: 80px;
+			@height: 68px;
 
 			height: @height;
-			font-size: 64px;
+			font-size: 48px;
 			line-height: @height;
 			padding-right: 80px;
 		}
@@ -388,6 +412,10 @@ section {
 .portfolio-section {
     font-family: Poppins;
 
+    @media @desktop-wide {
+        margin-top: 178px;
+    }
+
     @media @desktop {
         margin-top: 150px;
     }
@@ -406,6 +434,10 @@ section {
 
         li {
             display: inline-block;
+
+            @media @desktop-wide {
+                margin-right: 30px;
+            }
 
             @media @desktop {
                 margin-right: 28px;
