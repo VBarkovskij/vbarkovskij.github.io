@@ -475,6 +475,26 @@ section h1.light-headline {
   list-style-type: none;
   padding: 0;
 }
+@media (min-width: 1919px) {
+  .portfolio-section .portfolio-categories {
+    margin-bottom: 10px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1919px) {
+  .portfolio-section .portfolio-categories {
+    margin-bottom: 30px;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .portfolio-section .portfolio-categories {
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .portfolio-section .portfolio-categories {
+    margin-bottom: 20px;
+  }
+}
 .portfolio-section .portfolio-categories li {
   display: inline-block;
 }
