@@ -1,0 +1,44 @@
+.about-section {
+    background: url('../img/about/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+
+    @media @desktop-wide {
+        padding: 112px;
+    }
+
+    @media @desktop {
+        padding: 100px 0;
+    }
+
+    @media @tablet {
+        padding: 100px 0;
+    }
+
+    @media @smartphone {
+        padding: 80px 0;
+    }
+
+    h1 {
+        margin-bottom: 20px;
+
+        @media @desktop-and-bigger {
+            margin-bottom: 34px;
+        }
+    }
+
+    p {
+        color: @white;
+        font-family: Poppins;
+
+        @media @smartphone {
+            font-size: 14px;
+            line-height: 20px;
+        }
+
+        @media @tablet-and-bigger {
+            font-size: 18px;
+            line-height: 28px;
+        }
+
+    }
+}

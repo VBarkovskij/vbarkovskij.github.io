@@ -156,6 +156,58 @@ fieldset[disabled] .btn-xl.active {
   color: #fed136;
   background-color: white;
 }
+.btn:focus,
+.btn:active,
+.btn.active,
+.btn:active:focus {
+  outline: none;
+}
+section h1 {
+  display: inline-block;
+  font-family: Poppins;
+  font-weight: 800;
+  background: url('../img/logos/headline-logo-dark.png') no-repeat right center;
+  background-size: auto 60%;
+  margin-top: 0;
+  margin-bottom: 15px;
+  text-transform: none;
+}
+@media (min-width: 1919px) {
+  section h1 {
+    height: 80px;
+    font-size: 64px;
+    line-height: 80px;
+    padding-right: 80px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1919px) {
+  section h1 {
+    height: 68px;
+    font-size: 48px;
+    line-height: 68px;
+    padding-right: 80px;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  section h1 {
+    height: 54px;
+    font-size: 38px;
+    line-height: 54px;
+    padding-right: 50px;
+  }
+}
+@media (max-width: 768px) {
+  section h1 {
+    height: 33px;
+    font-size: 28px;
+    line-height: 33px;
+    padding-right: 37.95px;
+  }
+}
+section h1.light-headline {
+  background-image: url('../img/logos/headline-logo-light.png');
+  color: #fff;
+}
 .navbar-custom {
   background-color: #fff;
   border: none;
@@ -402,52 +454,6 @@ header .arrow-about-wrapper .arrow-about {
     line-height: 28px;
   }
 }
-section h1 {
-  display: inline-block;
-  font-family: Poppins;
-  font-weight: 800;
-  background: url('../img/logos/headline-logo-dark.png') no-repeat right center;
-  background-size: auto 60%;
-  margin-top: 0;
-  margin-bottom: 15px;
-  text-transform: none;
-}
-@media (min-width: 1919px) {
-  section h1 {
-    height: 80px;
-    font-size: 64px;
-    line-height: 80px;
-    padding-right: 80px;
-  }
-}
-@media (min-width: 992px) and (max-width: 1919px) {
-  section h1 {
-    height: 68px;
-    font-size: 48px;
-    line-height: 68px;
-    padding-right: 80px;
-  }
-}
-@media (min-width: 768px) and (max-width: 992px) {
-  section h1 {
-    height: 54px;
-    font-size: 38px;
-    line-height: 54px;
-    padding-right: 50px;
-  }
-}
-@media (max-width: 768px) {
-  section h1 {
-    height: 33px;
-    font-size: 28px;
-    line-height: 33px;
-    padding-right: 37.95px;
-  }
-}
-section h1.light-headline {
-  background-image: url('../img/logos/headline-logo-light.png');
-  color: #fff;
-}
 .portfolio-section {
   font-family: Poppins;
 }
@@ -621,7 +627,6 @@ section h1.light-headline {
   margin: 0;
 }
 .portfolio-section .portfolio-item .portfolio-caption p {
-  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-style: italic;
   font-size: 16px;
   margin: 0;
@@ -629,10 +634,79 @@ section h1.light-headline {
 .portfolio-section * {
   z-index: 2;
 }
-@media (min-width:768px) {
-  #portfolio .portfolio-item {
-    margin: 0 0 30px;
-  }
+.portfolio-modal .modal-dialog {
+  margin: 0;
+  height: 100%;
+  width: auto;
+}
+.portfolio-modal .modal-content {
+  border-radius: 0;
+  background-clip: border-box;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: none;
+  min-height: 100%;
+  padding: 100px 0;
+  text-align: center;
+}
+.portfolio-modal .modal-content h2 {
+  margin-bottom: 15px;
+  font-size: 3em;
+}
+.portfolio-modal .modal-content p {
+  margin-bottom: 30px;
+}
+.portfolio-modal .modal-content p.item-intro {
+  margin: 20px 0 30px;
+  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: italic;
+  font-size: 16px;
+}
+.portfolio-modal .modal-content ul.list-inline {
+  margin-bottom: 30px;
+  margin-top: 0;
+}
+.portfolio-modal .modal-content img {
+  margin-bottom: 30px;
+}
+.portfolio-modal .close-modal {
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  background-color: transparent;
+  top: 25px;
+  right: 25px;
+  cursor: pointer;
+}
+.portfolio-modal .close-modal:hover {
+  opacity: 0.3;
+}
+.portfolio-modal .close-modal .lr {
+  height: 75px;
+  width: 1px;
+  margin-left: 35px;
+  background-color: #222222;
+  transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  /* IE 9 */
+  -webkit-transform: rotate(45deg);
+  /* Safari and Chrome */
+  z-index: 1051;
+}
+.portfolio-modal .close-modal .lr .rl {
+  height: 75px;
+  width: 1px;
+  background-color: #222222;
+  transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  /* IE 9 */
+  -webkit-transform: rotate(90deg);
+  /* Safari and Chrome */
+  z-index: 1052;
+}
+.portfolio-modal .modal-backdrop {
+  opacity: 0;
+  display: none;
 }
 .timeline {
   list-style: none;
@@ -913,99 +987,4 @@ ul.social-buttons li a:hover,
 ul.social-buttons li a:focus,
 ul.social-buttons li a:active {
   background-color: #fed136;
-}
-.btn:focus,
-.btn:active,
-.btn.active,
-.btn:active:focus {
-  outline: none;
-}
-.portfolio-modal .modal-dialog {
-  margin: 0;
-  height: 100%;
-  width: auto;
-}
-.portfolio-modal .modal-content {
-  border-radius: 0;
-  background-clip: border-box;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  border: none;
-  min-height: 100%;
-  padding: 100px 0;
-  text-align: center;
-}
-.portfolio-modal .modal-content h2 {
-  margin-bottom: 15px;
-  font-size: 3em;
-}
-.portfolio-modal .modal-content p {
-  margin-bottom: 30px;
-}
-.portfolio-modal .modal-content p.item-intro {
-  margin: 20px 0 30px;
-  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-style: italic;
-  font-size: 16px;
-}
-.portfolio-modal .modal-content ul.list-inline {
-  margin-bottom: 30px;
-  margin-top: 0;
-}
-.portfolio-modal .modal-content img {
-  margin-bottom: 30px;
-}
-.portfolio-modal .close-modal {
-  position: absolute;
-  width: 75px;
-  height: 75px;
-  background-color: transparent;
-  top: 25px;
-  right: 25px;
-  cursor: pointer;
-}
-.portfolio-modal .close-modal:hover {
-  opacity: 0.3;
-}
-.portfolio-modal .close-modal .lr {
-  height: 75px;
-  width: 1px;
-  margin-left: 35px;
-  background-color: #222222;
-  transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  /* IE 9 */
-  -webkit-transform: rotate(45deg);
-  /* Safari and Chrome */
-  z-index: 1051;
-}
-.portfolio-modal .close-modal .lr .rl {
-  height: 75px;
-  width: 1px;
-  background-color: #222222;
-  transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  /* IE 9 */
-  -webkit-transform: rotate(90deg);
-  /* Safari and Chrome */
-  z-index: 1052;
-}
-.portfolio-modal .modal-backdrop {
-  opacity: 0;
-  display: none;
-}
-::-moz-selection {
-  text-shadow: none;
-}
-::selection {
-  text-shadow: none;
-}
-img::selection {
-  background: transparent;
-}
-img::-moz-selection {
-  background: transparent;
-}
-body {
-  webkit-tap-highlight-color: #fed136;
 }

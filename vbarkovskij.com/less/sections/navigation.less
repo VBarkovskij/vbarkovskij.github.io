@@ -1,0 +1,135 @@
+.navbar-custom {
+    background-color: @white;
+    border: none;
+
+    .navbar-brand {
+        color: @theme-primary;
+        .script-font;
+        &:hover,
+        &:focus,
+        &:active,
+        &.active {
+            color: darken(@theme-primary, 10%);
+        }
+    }
+
+    .navbar-collapse {
+        border-color: fade(white, 2%);
+    }
+
+    .navbar-toggle {
+        .menu-icon {
+            margin-right: 7px;
+        }
+
+        &[aria-expanded=true] .menu-icon:before {
+            content: "\f00d";
+        }
+
+        &:not([aria-expanded=true]) .menu-icon:before {
+            content: "\f0c9";
+        }
+    }
+
+    .navbar-toggle,
+    .navbar-toggle:hover,
+    .navbar-toggle:focus {
+        background-color: transparent;
+        border: none;
+        color: @black;
+        font: 18px Poppins;
+        font-weight: 500;
+        margin-left: auto;
+    }
+
+    .nav {
+        li {
+            a {
+                color: @black;
+                font: 18px Poppins;
+                font-weight: 500;
+                letter-spacing: normal;
+                padding-bottom: 10px;
+                padding-top: 10px;
+
+                @media @tablet-and-smaller {
+                    padding-top: 13px;
+                    padding-bottom: 12px;
+                }
+                &:hover {
+                    .nav-link-text {
+                        border-bottom: solid 1px @gray-darker;
+                    }
+                    outline: none;
+                }
+            }
+
+            @media @tablet-and-smaller {
+                &:last-child {
+                    margin-bottom: 45px;
+
+                    a {
+                        padding-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .navbar-nav>.active>a {
+        background-color: transparent;
+        border-radius: 0;
+        color: @pink;
+    }
+
+    .navbar-nav>.active>a:hover,
+    .navbar-nav>.active>a:focus {
+        background-color: transparent;
+        color: @pink;
+    }
+
+    .logo-wrapper {
+        align-items: center;
+        display: flex;
+        height: 50px;
+
+        @media @smartphone-and-smaller {
+            height: 60px;
+        }
+
+        .logo-link {
+            height: auto;
+            margin-left: 15px;
+            padding: 0;
+
+            @media @desktop-and-bigger {
+                margin-left: 0;
+            }
+        }
+    }
+
+    @media @tablet-and-bigger {
+        padding: 25px 0;
+        -webkit-transition: padding 0.3s;
+        -moz-transition: padding 0.3s;
+        transition: padding 0.3s;
+
+        .navbar-brand {
+            font-size: 2em;
+            -webkit-transition: all 0.3s;
+            -moz-transition: all 0.3s;
+            transition: all 0.3s;
+        }
+    }
+
+    &.affix {
+        @media(min-width:768px) {
+            background-color: @white;
+            padding: 10px 0;
+
+            .navbar-brand {
+                font-size: 1.5em;
+            }
+        }
+    }
+}

@@ -1,0 +1,148 @@
+body {
+    overflow-x: hidden;
+    .body-font;
+}
+
+.container {
+
+    @media @tablet-and-smaller {
+        @side-padding: 10%;
+
+        padding-left: @side-padding;
+        padding-right: @side-padding;
+    }
+}
+
+.btn.button {
+    @color: @pink;
+
+    background-color: @color;
+    border: none;
+    border-radius: 0;
+    font: 18px Poppins;
+    font-weight: 500;
+    line-height: 70px;
+    padding: 0 35px;
+    text-transform: none;
+
+    @media @tablet-and-smaller {
+        font-size: 14px;
+        line-height: 50px;
+        padding: 0 25px;
+    }
+
+    &:hover,
+    &:focus {
+        background-color: @color + #303030;
+    }
+}
+
+p {
+    font-size: 14px;
+    line-height: 1.75;
+}
+
+p.large {
+    font-size: 16px;
+}
+
+a,
+a:hover,
+a:focus,
+a:active,
+a.active {
+    color: @black;
+    outline: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    .heading-font;
+    font-weight: 700;
+}
+
+.img-centered {
+    margin: 0 auto;
+}
+
+.bg-darkest-gray {
+    background-color: @gray-darker;
+}
+
+.btn-primary {
+    .button-variant(white; @theme-primary; @theme-primary);
+    .heading-font;
+    font-weight: 700;
+}
+
+.btn-xl {
+    .button-variant(white; @theme-primary; @theme-primary);
+    .heading-font;
+    font-weight: 700;
+    border-radius: 3px;
+    font-size: 18px;
+    padding: 20px 40px;
+}
+
+.btn:focus,
+.btn:active,
+.btn.active,
+.btn:active:focus {
+    outline: none;
+}
+
+section {
+
+    h1 {
+        display: inline-block;
+        font-family: Poppins;
+        font-weight: 800;
+
+        background: url('../img/logos/headline-logo-dark.png') no-repeat right center;
+        background-size: auto 60%;
+
+        @media @desktop-wide {
+            @height: 80px;
+
+            height: @height;
+            font-size: 64px;
+            line-height: @height;
+            padding-right: 80px;
+        }
+
+        @media @desktop {
+            @height: 68px;
+
+            height: @height;
+            font-size: 48px;
+            line-height: @height;
+            padding-right: 80px;
+        }
+
+        @media @tablet {
+            @height: 54px;
+
+            height: @height;
+            font-size: 38px;
+            line-height: @height;
+            padding-right: 50px;
+        }
+
+        @media @smartphone {
+            @height: 33px;
+
+            height: @height;
+            font-size: 28px;
+            line-height: @height;
+            padding-right: @height * 1.15;
+        }
+
+        margin-top: 0;
+        margin-bottom: 15px;
+        text-transform: none;
+
+        &.light-headline {
+            background-image: url('../img/logos/headline-logo-light.png');
+            color: @white;
+        }
+    }
+}
