@@ -542,6 +542,33 @@ section h1.light-headline {
 .portfolio-section .portfolio-categories li a.active {
   color: #ff0070;
 }
+.portfolio-section .portfolio-description {
+  margin-top: 20px;
+}
+@media (min-width: 1919px) {
+  .portfolio-section .portfolio-description {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1919px) {
+  .portfolio-section .portfolio-description {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .portfolio-section .portfolio-description {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+@media (max-width: 768px) {
+  .portfolio-section .portfolio-description {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
 .portfolio-section .portfolio-item {
   margin: 0 0 15px;
   right: 0;
