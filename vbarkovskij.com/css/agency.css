@@ -333,7 +333,7 @@ header .about-me-button {
 }
 header .arrow-about-wrapper {
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 60px;
   margin-top: 142px;
 }
 @media (max-width:768px) {
@@ -353,21 +353,44 @@ header .arrow-about-wrapper .arrow-about {
 .about-section {
   background: url('../img/about/background.jpg') no-repeat center center fixed;
   background-size: cover;
-  height: 503px;
 }
 @media (min-width: 992px) {
   .about-section {
-    padding-top: 112px;
+    padding: 112px 0;
   }
 }
 @media (min-width: 768px) and (max-width: 992px) {
   .about-section {
-    padding-top: 100px;
+    padding: 100px 0;
   }
 }
 @media (max-width: 768px) {
   .about-section {
-    padding-top: 80px;
+    padding: 80px 0;
+  }
+}
+.about-section h1 {
+  margin-bottom: 20px;
+}
+@media (min-width:992px) {
+  .about-section h1 {
+    margin-bottom: 34px;
+  }
+}
+.about-section p {
+  color: #fff;
+  font-family: Poppins;
+}
+@media (max-width: 768px) {
+  .about-section p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+@media (min-width:768px) {
+  .about-section p {
+    font-size: 18px;
+    line-height: 28px;
   }
 }
 section h1 {
