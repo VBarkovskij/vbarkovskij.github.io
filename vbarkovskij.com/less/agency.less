@@ -42,14 +42,6 @@ body {
 	}
 }
 
-.text-muted {
-    color: @gray-light;
-}
-
-.text-primary {
-    color: @theme-primary;
-}
-
 p {
     font-size: 14px;
     line-height: 1.75;
@@ -315,41 +307,75 @@ header {
 }
 
 .about-section {
-	padding: 0;
-	padding-top: 50px;
+	background: url('../img/about/background.jpg') no-repeat center center fixed;
+	background-size: cover;
+	height: 503px;
+
+	@media @desktop {
+		padding-top: 112px;
+	}
+
+	@media @tablet {
+		padding-top: 100px;
+	}
+
+	@media @smartphone {
+		padding-top: 80px;
+	}
 }
 
 // Global Section Styles
 
 section {
-    padding: 100px 0;
-    h2.section-heading {
-        font-size: 40px;
-        margin-top: 0;
-        margin-bottom: 15px;
-    }
-    h3.section-subheading {
-        font-size: 16px;
-        .serif-font;
-        text-transform: none;
-        font-style: italic;
-        font-weight: 400;
-        margin-bottom: 75px;
-    }
-}
+ 
+    h1 {
+		display: inline-block;
+		font-family: Poppins;
+		font-weight: 800;
 
-@media @tablet-and-bigger {
-    section {
-        padding: 150px 0;
-    }
+		background: url('../img/logos/headline-logo-dark.png') no-repeat right center;
+		background-size: 15% auto;
+
+		@media @desktop {
+			@height: 80px;
+
+			height: @height;
+			font-size: 64px;
+			line-height: @height;
+			padding-right: 80px;
+		}
+
+		@media @tablet {
+			@height: 54px;
+
+			height: @height;
+			font-size: 38px;
+			line-height: @height;
+			padding-right: 50px;
+		}
+
+		@media @smartphone {
+			@height: 33px;
+
+			height: @height;
+			font-size: 28px;
+			line-height: @height;
+			padding-right: @height * 1.15;
+		}
+
+        margin-top: 0;
+		margin-bottom: 15px;
+		text-transform: none;
+		
+		&.light-headline {
+			background-image: url('../img/logos/headline-logo-light.png');
+			color: @white;
+		}
+	}
 }
 
 // Services Section
 
-.service-heading {
-    margin: 15px 0;
-    text-transform: none;
-}
 
 // Portfolio Section
 

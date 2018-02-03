@@ -26,3 +26,7 @@
 @smartphone-and-smaller: 	~"(max-width:@{smartphone-breakpoint})";
 @tablet-and-smaller: 		~"(max-width:@{tablet-breakpoint})";
 @desktop-and-smaller: 		~"(max-width:@{desktop-breakpoint})";
+
+@smartphone:				~"(max-width: @{tablet-breakpoint})";
+@tablet:					~"(min-width: @{tablet-breakpoint}) and (max-width: @{desktop-breakpoint})";
+@desktop:					~"(min-width: @{desktop-breakpoint})";
