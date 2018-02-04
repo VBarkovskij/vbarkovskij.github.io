@@ -220,6 +220,23 @@
     }
 
     .portfolio-previews {
+        @preview-item-grid-negative-margin: -80px;
+
+        @media @desktop-wide {
+            margin-top: -@preview-item-grid-negative-margin + 10px;
+        }
+
+        @media @desktop {
+            margin-top: -@preview-item-grid-negative-margin + 10px;
+        }
+
+        @media @tablet {
+            margin-top: -@preview-item-grid-negative-margin + 20px;
+        }
+
+        @media @smartphone {
+            margin-top: 50px;
+        }
 
         .row {
 
@@ -233,8 +250,10 @@
 
             .portfolio-preview-wrapper {
                 display: inline-block;
+                margin-bottom: 100px;
 
                 @media @smartphone {
+                    margin-bottom: 40px;
                     width: 100%;
                 }
             }
@@ -256,12 +275,13 @@
                 }
             }
 
-            &:nth-child(odd) .portfolio-preview-col:nth-child(odd) .portfolio-preview {
-                margin-top: 80px;
+            &:nth-child(odd) .portfolio-preview-col:nth-child(even) .portfolio-preview,
+            &:nth-child(even) .portfolio-preview-col:nth-child(odd) .portfolio-preview {
+                margin-top: @preview-item-grid-negative-margin - 60px;
             }
 
-            &:nth-child(even) .portfolio-preview-col:nth-child(even) .portfolio-preview {
-                margin-top: 80px;
+            &:first-child .portfolio-preview-col:nth-child(even) .portfolio-preview {
+                margin-top: @preview-item-grid-negative-margin;
             }
 
             &:nth-child(odd) .portfolio-preview:nth-child(1) img {

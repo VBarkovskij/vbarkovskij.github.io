@@ -677,6 +677,26 @@ header .arrow-about-wrapper .arrow-about {
 .portfolio-section .portfolio-buttons .portfolio-button:hover .social-network {
   text-decoration: underline;
 }
+@media (min-width: 1919px) {
+  .portfolio-section .portfolio-previews {
+    margin-top: 90px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1919px) {
+  .portfolio-section .portfolio-previews {
+    margin-top: 90px;
+  }
+}
+@media (min-width: 767px) and (max-width: 992px) {
+  .portfolio-section .portfolio-previews {
+    margin-top: 100px;
+  }
+}
+@media (max-width: 767px) {
+  .portfolio-section .portfolio-previews {
+    margin-top: 50px;
+  }
+}
 .portfolio-section .portfolio-previews .row .portfolio-preview-col:nth-child(2) {
   text-align: right;
 }
@@ -685,9 +705,11 @@ header .arrow-about-wrapper .arrow-about {
 }
 .portfolio-section .portfolio-previews .row .portfolio-preview-wrapper {
   display: inline-block;
+  margin-bottom: 100px;
 }
 @media (max-width: 767px) {
   .portfolio-section .portfolio-previews .row .portfolio-preview-wrapper {
+    margin-bottom: 40px;
     width: 100%;
   }
 }
@@ -708,11 +730,12 @@ header .arrow-about-wrapper .arrow-about {
     width: 100%;
   }
 }
-.portfolio-section .portfolio-previews .row:nth-child(odd) .portfolio-preview-col:nth-child(odd) .portfolio-preview {
-  margin-top: 80px;
+.portfolio-section .portfolio-previews .row:nth-child(odd) .portfolio-preview-col:nth-child(even) .portfolio-preview,
+.portfolio-section .portfolio-previews .row:nth-child(even) .portfolio-preview-col:nth-child(odd) .portfolio-preview {
+  margin-top: -140px;
 }
-.portfolio-section .portfolio-previews .row:nth-child(even) .portfolio-preview-col:nth-child(even) .portfolio-preview {
-  margin-top: 80px;
+.portfolio-section .portfolio-previews .row:first-child .portfolio-preview-col:nth-child(even) .portfolio-preview {
+  margin-top: -80px;
 }
 .portfolio-section .portfolio-previews .row:nth-child(odd) .portfolio-preview:nth-child(1) img {
   width: 100%;
