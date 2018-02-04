@@ -225,6 +225,18 @@
 
             .portfolio-preview-col:nth-child(2) {
                 text-align: right;
+
+                .portfolio-preview-wrapper {
+                    text-align: left;
+                }
+            }
+
+            .portfolio-preview-wrapper {
+                display: inline-block;
+
+                @media @smartphone {
+                    width: 100%;
+                }
             }
 
             .portfolio-preview {
@@ -232,6 +244,7 @@
 
                 @media @smartphone {
                     margin-top: 0 !important;
+                    width: 100%;
                 }
 
                 img {
@@ -265,6 +278,26 @@
 
             &:nth-child(even) .portfolio-preview:nth-child(1) img {
                 width: 90%;
+            }
+
+            .portfolio-primary-headline {
+                color: @pink;
+
+                @media @desktop-wide {
+                    margin-top: 30px;
+                }
+
+                @media @desktop {
+                    margin-top: 30px;
+                }
+
+                @media @tablet {
+                    margin-top: 30px;
+                }
+
+                @media @smartphone {
+                    margin-top: 20px;
+                }
             }
         }
 
