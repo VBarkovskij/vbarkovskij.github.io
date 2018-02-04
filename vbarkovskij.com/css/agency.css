@@ -755,6 +755,11 @@ header .arrow-about-wrapper .arrow-about {
   margin-top: 10px;
   text-transform: none;
 }
+.portfolio-section .portfolio-previews .row .portfolio-preview-description {
+  font-size: 14px;
+  line-height: 20px;
+  margin-top: 15px;
+}
 .portfolio-section .portfolio-previews .portfolio-preview {
   background: no-repeat center;
   background-size: cover;
