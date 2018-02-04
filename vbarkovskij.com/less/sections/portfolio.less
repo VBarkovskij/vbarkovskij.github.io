@@ -219,6 +219,61 @@
         }
     }
 
+    .portfolio-previews {
+
+        .row {
+
+            .portfolio-preview-col:nth-child(2) {
+                text-align: right;
+            }
+
+            .portfolio-preview {
+                display: inline-block;
+
+                @media @smartphone {
+                    margin-top: 0 !important;
+                }
+
+                img {
+                    visibility: hidden;
+
+                    @media @smartphone {
+                        width: 100%;
+                    }
+                }
+            }
+
+            &:nth-child(odd) .portfolio-preview-col:nth-child(odd) .portfolio-preview {
+                margin-top: 80px;
+            }
+
+            &:nth-child(even) .portfolio-preview-col:nth-child(even) .portfolio-preview {
+                margin-top: 80px;
+            }
+
+            &:nth-child(odd) .portfolio-preview:nth-child(1) img {
+                width: 100%;
+            }
+
+            &:nth-child(odd) .portfolio-preview:nth-child(2) img {
+                width: 90%;
+            }
+
+            &:nth-child(even) .portfolio-preview:nth-child(2) img {
+                width: 100%;
+            }
+
+            &:nth-child(even) .portfolio-preview:nth-child(1) img {
+                width: 90%;
+            }
+        }
+
+        .portfolio-preview {
+            background: no-repeat center;
+            background-size: cover;
+        }
+    }
+
     .portfolio-item {
         margin: 0 0 15px;
         right: 0;
@@ -289,7 +344,7 @@
 }
 
 .portfolio-modal {
-    .modal-dialog{
+    .modal-dialog {
         margin: 0;
         height: 100%;
         width: auto;
@@ -332,9 +387,9 @@
     }
     .close-modal {
         position: absolute;
-        width:75px;
-        height:75px;
-        background-color:transparent;
+        width: 75px;
+        height: 75px;
+        background-color: transparent;
         top: 25px;
         right: 25px;
         cursor: pointer;
@@ -344,27 +399,27 @@
         }
 
         .lr {
-            height:75px;
-            width:1px;
-            margin-left:35px;
-            background-color:@gray-darker;
+            height: 75px;
+            width: 1px;
+            margin-left: 35px;
+            background-color: @gray-darker;
             transform: rotate(45deg);
             -ms-transform: rotate(45deg);
             /* IE 9 */
             -webkit-transform: rotate(45deg);
             /* Safari and Chrome */
-            z-index:1051;
+            z-index: 1051;
 
             .rl {
-                height:75px;
-                width:1px;
-                background-color:@gray-darker;
+                height: 75px;
+                width: 1px;
+                background-color: @gray-darker;
                 transform: rotate(90deg);
                 -ms-transform: rotate(90deg);
                 /* IE 9 */
                 -webkit-transform: rotate(90deg);
                 /* Safari and Chrome */
-                z-index:1052;
+                z-index: 1052;
             }
         }
     }

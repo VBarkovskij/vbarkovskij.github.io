@@ -7,7 +7,7 @@ body {
   overflow-x: hidden;
   font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-@media (max-width:768px) {
+@media (max-width:767px) {
   .container {
     padding-left: 10%;
     padding-right: 10%;
@@ -23,7 +23,7 @@ body {
   padding: 0 35px;
   text-transform: none;
 }
-@media (max-width:768px) {
+@media (max-width:767px) {
   .btn.button {
     font-size: 14px;
     line-height: 50px;
@@ -188,7 +188,7 @@ section h1 {
     padding-right: 80px;
   }
 }
-@media (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 767px) and (max-width: 992px) {
   section h1 {
     height: 54px;
     font-size: 38px;
@@ -196,7 +196,7 @@ section h1 {
     padding-right: 50px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   section h1 {
     height: 33px;
     font-size: 28px;
@@ -252,7 +252,7 @@ section h1.light-headline {
   padding-bottom: 10px;
   padding-top: 10px;
 }
-@media (max-width:768px) {
+@media (max-width:767px) {
   .navbar-custom .nav li a {
     padding-top: 13px;
     padding-bottom: 12px;
@@ -264,7 +264,7 @@ section h1.light-headline {
 .navbar-custom .nav li a:hover .nav-link-text {
   border-bottom: solid 1px #222222;
 }
-@media (max-width:768px) {
+@media (max-width:767px) {
   .navbar-custom .nav li:last-child {
     margin-bottom: 45px;
   }
@@ -302,7 +302,7 @@ section h1.light-headline {
     margin-left: 0;
   }
 }
-@media (min-width:768px) {
+@media (min-width:767px) {
   .navbar-custom {
     padding: 25px 0;
     -webkit-transition: padding 0.3s;
@@ -329,7 +329,7 @@ header {
   font-family: Poppins;
   margin-top: 250px;
 }
-@media (max-width:768px) {
+@media (max-width:767px) {
   header {
     margin-top: 118px;
   }
@@ -355,13 +355,13 @@ header .primary-text {
     line-height: 98px;
   }
 }
-@media (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 767px) and (max-width: 992px) {
   header .primary-text {
     font-size: 48px;
     line-height: 68px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   header .primary-text {
     font-size: 28px;
     line-height: 38px;
@@ -392,7 +392,7 @@ header .arrow-about-wrapper {
   margin-bottom: 60px;
   margin-top: 142px;
 }
-@media (max-width:768px) {
+@media (max-width:767px) {
   header .arrow-about-wrapper {
     margin-top: 123px;
   }
@@ -420,12 +420,12 @@ header .arrow-about-wrapper .arrow-about {
     padding: 100px 0;
   }
 }
-@media (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 767px) and (max-width: 992px) {
   .about-section {
     padding: 100px 0;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .about-section {
     padding: 80px 0;
   }
@@ -442,13 +442,13 @@ header .arrow-about-wrapper .arrow-about {
   color: #fff;
   font-family: Poppins;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .about-section p {
     font-size: 14px;
     line-height: 20px;
   }
 }
-@media (min-width:768px) {
+@media (min-width:767px) {
   .about-section p {
     font-size: 18px;
     line-height: 28px;
@@ -467,12 +467,12 @@ header .arrow-about-wrapper .arrow-about {
     margin-top: 150px;
   }
 }
-@media (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 767px) and (max-width: 992px) {
   .portfolio-section {
     margin-top: 100px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .portfolio-section {
     margin-top: 50px;
   }
@@ -491,12 +491,12 @@ header .arrow-about-wrapper .arrow-about {
     margin-bottom: 30px;
   }
 }
-@media (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 767px) and (max-width: 992px) {
   .portfolio-section .portfolio-categories {
     margin-bottom: 40px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .portfolio-section .portfolio-categories {
     margin-bottom: 20px;
   }
@@ -514,12 +514,12 @@ header .arrow-about-wrapper .arrow-about {
     margin-right: 28px;
   }
 }
-@media (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 767px) and (max-width: 992px) {
   .portfolio-section .portfolio-categories li {
     margin-right: 28px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .portfolio-section .portfolio-categories li {
     margin-right: 19px;
   }
@@ -533,13 +533,13 @@ header .arrow-about-wrapper .arrow-about {
     line-height: 28px;
   }
 }
-@media (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 767px) and (max-width: 992px) {
   .portfolio-section .portfolio-categories li a {
     font-size: 18px;
     line-height: 28px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .portfolio-section .portfolio-categories li a {
     font-size: 14px;
     line-height: 20px;
@@ -563,13 +563,13 @@ header .arrow-about-wrapper .arrow-about {
     line-height: 28px;
   }
 }
-@media (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 767px) and (max-width: 992px) {
   .portfolio-section .portfolio-description {
     font-size: 18px;
     line-height: 28px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .portfolio-section .portfolio-description {
     font-size: 14px;
     line-height: 20px;
@@ -585,12 +585,12 @@ header .arrow-about-wrapper .arrow-about {
     margin-top: 30px;
   }
 }
-@media (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 767px) and (max-width: 992px) {
   .portfolio-section .portfolio-buttons {
     margin-top: 30px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .portfolio-section .portfolio-buttons {
     margin-top: 20px;
   }
@@ -616,7 +616,7 @@ header .arrow-about-wrapper .arrow-about {
     padding: 19px;
   }
 }
-@media (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 767px) and (max-width: 992px) {
   .portfolio-section .portfolio-buttons .portfolio-button {
     font-size: 12px;
     margin-bottom: 20px;
@@ -624,7 +624,7 @@ header .arrow-about-wrapper .arrow-about {
     padding: 15px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .portfolio-section .portfolio-buttons .portfolio-button {
     font-size: 12px;
     margin-bottom: 20px;
@@ -661,12 +661,12 @@ header .arrow-about-wrapper .arrow-about {
     margin-left: 20px;
   }
 }
-@media (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 767px) and (max-width: 992px) {
   .portfolio-section .portfolio-buttons .portfolio-button .portfolio-button-text {
     margin-left: 15px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .portfolio-section .portfolio-buttons .portfolio-button .portfolio-button-text {
     margin-left: 15px;
   }
@@ -676,6 +676,47 @@ header .arrow-about-wrapper .arrow-about {
 }
 .portfolio-section .portfolio-buttons .portfolio-button:hover .social-network {
   text-decoration: underline;
+}
+.portfolio-section .portfolio-previews .row .portfolio-preview-col:nth-child(2) {
+  text-align: right;
+}
+.portfolio-section .portfolio-previews .row .portfolio-preview {
+  display: inline-block;
+}
+@media (max-width: 767px) {
+  .portfolio-section .portfolio-previews .row .portfolio-preview {
+    margin-top: 0 !important;
+  }
+}
+.portfolio-section .portfolio-previews .row .portfolio-preview img {
+  visibility: hidden;
+}
+@media (max-width: 767px) {
+  .portfolio-section .portfolio-previews .row .portfolio-preview img {
+    width: 100%;
+  }
+}
+.portfolio-section .portfolio-previews .row:nth-child(odd) .portfolio-preview-col:nth-child(odd) .portfolio-preview {
+  margin-top: 80px;
+}
+.portfolio-section .portfolio-previews .row:nth-child(even) .portfolio-preview-col:nth-child(even) .portfolio-preview {
+  margin-top: 80px;
+}
+.portfolio-section .portfolio-previews .row:nth-child(odd) .portfolio-preview:nth-child(1) img {
+  width: 100%;
+}
+.portfolio-section .portfolio-previews .row:nth-child(odd) .portfolio-preview:nth-child(2) img {
+  width: 90%;
+}
+.portfolio-section .portfolio-previews .row:nth-child(even) .portfolio-preview:nth-child(2) img {
+  width: 100%;
+}
+.portfolio-section .portfolio-previews .row:nth-child(even) .portfolio-preview:nth-child(1) img {
+  width: 90%;
+}
+.portfolio-section .portfolio-previews .portfolio-preview {
+  background: no-repeat center;
+  background-size: cover;
 }
 .portfolio-section .portfolio-item {
   margin: 0 0 15px;
@@ -906,7 +947,7 @@ header .arrow-about-wrapper .arrow-about {
 .timeline .timeline-body > ul {
   margin-bottom: 0;
 }
-@media (min-width:768px) {
+@media (min-width:767px) {
   .timeline:before {
     left: 50%;
   }
