@@ -410,6 +410,9 @@
 }
 
 .portfolio-modal {
+
+	font-family: Poppins;
+
     .modal-dialog {
         margin: 0;
         height: 100%;
@@ -423,16 +426,57 @@
         box-shadow: none;
         border: none;
         min-height: 100%;
-        padding: 100px 0;
-        text-align: center;
+		padding: 100px 0;
+
+		h1, h2 {
+			text-transform: none;
+		}
+		
+		h1 {
+			@media @desktop-wide {
+				font-size: 100px;
+			}
+
+			@media @desktop {
+				font-size: 60px;
+			}
+
+			@media @tablet {
+				font-size: 45px;
+			}
+
+			@media @smartphone {
+				font-size: 30px;
+			}
+		}
 
         h2 {
-            margin-bottom: 15px;
-            font-size: 3em;
+		
+			@media @desktop-wide {
+				font-size: 60px;
+				margin-top: 150px;
+			}
+
+			@media @desktop {
+				font-size: 40px;
+				margin-top: 110px;
+			}
+
+			@media @tablet {
+				font-size: 30px;
+				margin-top: 90px;
+			}
+
+			@media @smartphone {
+				font-size: 20px;
+				margin-top: 70px;
+			}
         }
 
         p {
-            margin-bottom: 30px;
+			font-size: 18px;
+			margin-bottom: 30px;
+			margin-top: 20px;
         }
 
         p.item-intro {
@@ -447,25 +491,99 @@
             margin-top: 0;
         }
 
-        img {
-            margin-bottom: 30px;
-        }
+        .portfolio-modal-photo {
+
+			background-size: cover;
+			background-position: center;
+
+			img {
+				width: 100%;
+				visibility: hidden;
+			}
+		}
+
+		.btn {
+			background-color: @pink;
+			border: none;
+			border-radius: 0;
+			padding: 15px 45px;
+			text-transform: none;
+		}
+
+		.popup-close-button {
+			
+			@media @desktop-wide {
+				margin: 80px 0;
+			}
+
+			@media @desktop {
+				margin: 70px 0;
+			}
+
+			@media @tablet {
+				margin: 60px 0;
+			}
+
+			@media @smartphone {
+				margin: 50px 0;
+			}
+
+		}
+
     }
     .close-modal {
         position: absolute;
-        width: 75px;
-        height: 75px;
         background-color: transparent;
         top: 25px;
         right: 25px;
-        cursor: pointer;
+		cursor: pointer;
+
+		@desktop-wide-size: 75px;
+		@desktop-size: 65px;
+		@tablet-size: 55px;
+		@smartphone-size: 45px;
+		
+		@media @desktop-wide {
+			width: @desktop-wide-size;
+			height: @desktop-wide-size;
+		}
+
+		@media @desktop {
+			width: @desktop;
+			height: @desktop;
+		}
+
+		@media @tablet {
+			width: @tablet-size;
+			height: @tablet-size;
+		}
+
+		@media @smartphone {
+			width: @smartphone-size;
+			height: @smartphone-size;
+		}
 
         &:hover {
             opacity: 0.3;
         }
 
         .lr {
-            height: 75px;
+			@media @desktop-wide {
+				height: @desktop-wide-size;
+			}
+
+			@media @desktop {
+				height: @desktop-size;
+			}
+
+			@media @tablet {
+				height: @tablet-size;
+			}
+
+			@media @smartphone {
+				height: @smartphone-size;
+			}
+   
             width: 1px;
             margin-left: 35px;
             background-color: @gray-darker;
@@ -477,7 +595,22 @@
             z-index: 1051;
 
             .rl {
-                height: 75px;
+                @media @desktop-wide {
+					height: @desktop-wide-size;
+				}
+	
+				@media @desktop {
+					height: @desktop-size;
+				}
+	
+				@media @tablet {
+					height: @tablet-size;
+				}
+	
+				@media @smartphone {
+					height: @smartphone-size;
+				}
+
                 width: 1px;
                 background-color: @gray-darker;
                 transform: rotate(90deg);
