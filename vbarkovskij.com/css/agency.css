@@ -1237,6 +1237,67 @@ header .arrow-about-wrapper .arrow-about {
     height: 53px;
   }
 }
+.expertise-section {
+  font-family: Poppins;
+}
+@media (min-width: 1919px) {
+  .expertise-section {
+    margin-top: 200px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1919px) {
+  .expertise-section {
+    margin-top: 150px;
+  }
+}
+@media (min-width: 767px) and (max-width: 992px) {
+  .expertise-section {
+    margin-top: 100px;
+  }
+}
+@media (max-width: 767px) {
+  .expertise-section {
+    margin-top: 60px;
+  }
+}
+.expertise-section .expertise-items {
+  padding: 0;
+  list-style-type: none;
+}
+.expertise-section .expertise-items li {
+  display: inline-block;
+  border: solid 1px #ddd;
+  padding: 15px;
+}
+.expertise-section .expertise-items li:hover {
+  color: #ff0070;
+  text-decoration: underline;
+  cursor: pointer;
+}
+@media (min-width: 1919px) {
+  .expertise-section .expertise-items li {
+    font-size: 24px;
+    margin: 0 30px 30px 0;
+  }
+}
+@media (min-width: 992px) and (max-width: 1919px) {
+  .expertise-section .expertise-items li {
+    font-size: 24px;
+    margin: 0 30px 30px 0;
+  }
+}
+@media (min-width: 767px) and (max-width: 992px) {
+  .expertise-section .expertise-items li {
+    font-size: 14px;
+    margin: 0 20px 20px 0;
+  }
+}
+@media (max-width: 767px) {
+  .expertise-section .expertise-items li {
+    font-size: 12px;
+    margin: 0 20px 20px 0;
+  }
+}
 .timeline {
   list-style: none;
   padding: 0;
