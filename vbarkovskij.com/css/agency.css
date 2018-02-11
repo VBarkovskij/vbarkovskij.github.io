@@ -1060,6 +1060,183 @@ header .arrow-about-wrapper .arrow-about {
   opacity: 0;
   display: none;
 }
+.reference-section {
+  display: block;
+  font-family: Poppins;
+}
+@media (min-width: 1919px) {
+  .reference-section {
+    font-size: 18px;
+    margin-top: 100px;
+  }
+  .reference-section p {
+    font-size: 18px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1919px) {
+  .reference-section {
+    font-size: 18px;
+    margin-top: 80px;
+  }
+  .reference-section p {
+    font-size: 18px;
+  }
+}
+@media (min-width: 767px) and (max-width: 992px) {
+  .reference-section {
+    font-size: 18px;
+    margin-top: 60px;
+  }
+  .reference-section p {
+    font-size: 18px;
+  }
+}
+@media (max-width: 767px) {
+  .reference-section {
+    font-size: 14px;
+    margin-top: 40px;
+  }
+  .reference-section p {
+    font-size: 14px;
+  }
+}
+.reference-section .reference-items {
+  list-style-type: none;
+  padding: 0;
+}
+@media (min-width: 1919px) {
+  .reference-section .reference-items {
+    text-align: right;
+  }
+}
+@media (min-width: 992px) and (max-width: 1919px) {
+  .reference-section .reference-items {
+    text-align: right;
+  }
+}
+@media (min-width: 767px) and (max-width: 992px) {
+  .reference-section .reference-items {
+    text-align: left;
+  }
+}
+@media (max-width: 767px) {
+  .reference-section .reference-items {
+    text-align: left;
+  }
+}
+.reference-section .reference-items li {
+  display: inline-block;
+  text-align: center;
+}
+@media (min-width: 1919px) {
+  .reference-section .reference-items li {
+    margin-left: 40px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1919px) {
+  .reference-section .reference-items li {
+    margin-left: 40px;
+  }
+}
+@media (min-width: 767px) and (max-width: 992px) {
+  .reference-section .reference-items li {
+    margin-top: 15px;
+    margin-right: 40px;
+  }
+}
+@media (max-width: 767px) {
+  .reference-section .reference-items li {
+    margin-top: 15px;
+    margin-right: 40px;
+  }
+}
+.reference-section .reference-items li .reference-item-count {
+  color: #ff0070;
+  font-weight: 600;
+}
+@media (min-width: 1919px) {
+  .reference-section .reference-items li .reference-item-count {
+    font-size: 38px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1919px) {
+  .reference-section .reference-items li .reference-item-count {
+    font-size: 38px;
+  }
+}
+@media (min-width: 767px) and (max-width: 992px) {
+  .reference-section .reference-items li .reference-item-count {
+    font-size: 32px;
+  }
+}
+@media (max-width: 767px) {
+  .reference-section .reference-items li .reference-item-count {
+    font-size: 28px;
+  }
+}
+.reference-section .reference-icons {
+  list-style-type: none;
+  padding: 0;
+}
+@media (min-width: 1919px) {
+  .reference-section .reference-icons {
+    margin-top: 100px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1919px) {
+  .reference-section .reference-icons {
+    margin-top: 80px;
+  }
+}
+@media (min-width: 767px) and (max-width: 992px) {
+  .reference-section .reference-icons {
+    margin-top: 60px;
+  }
+}
+@media (max-width: 767px) {
+  .reference-section .reference-icons {
+    margin-top: 40px;
+  }
+}
+.reference-section .reference-icons li {
+  display: inline-block;
+  margin-right: 7px;
+  padding: 5px;
+}
+.reference-section .reference-icons li .icon {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: solid 1px #ddd;
+  filter: grayscale(100%);
+}
+.reference-section .reference-icons li .icon:hover {
+  filter: none;
+}
+@media (min-width: 1919px) {
+  .reference-section .reference-icons li .icon {
+    width: 165px;
+    height: 155px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1919px) {
+  .reference-section .reference-icons li .icon {
+    width: 131px;
+    height: 123px;
+  }
+}
+@media (min-width: 767px) and (max-width: 992px) {
+  .reference-section .reference-icons li .icon {
+    width: 80px;
+    height: 75px;
+  }
+}
+@media (max-width: 767px) {
+  .reference-section .reference-icons li .icon {
+    width: 57px;
+    height: 53px;
+  }
+}
 .timeline {
   list-style: none;
   padding: 0;
@@ -1226,22 +1403,6 @@ header .arrow-about-wrapper .arrow-about {
   .timeline > li.timeline-inverted > .timeline-panel {
     padding: 0 100px 20px 20px;
   }
-}
-.team-member {
-  text-align: center;
-  margin-bottom: 50px;
-}
-.team-member img {
-  margin: 0 auto;
-  border: 7px solid white;
-}
-.team-member h4 {
-  margin-top: 25px;
-  margin-bottom: 0;
-  text-transform: none;
-}
-.team-member p {
-  margin-top: 0;
 }
 aside.clients img {
   margin: 50px auto;
