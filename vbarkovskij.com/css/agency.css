@@ -1298,6 +1298,122 @@ header .arrow-about-wrapper .arrow-about {
     margin: 0 20px 20px 0;
   }
 }
+.contact-section {
+  background-image: url('../img/contact/contact-bg.jpg');
+  background-size: cover;
+  background-position: center;
+}
+@media (min-width: 1919px) {
+  .contact-section {
+    margin-top: 150px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1919px) {
+  .contact-section {
+    margin-top: 120px;
+  }
+}
+@media (min-width: 767px) and (max-width: 992px) {
+  .contact-section {
+    margin-top: 80px;
+  }
+}
+@media (max-width: 767px) {
+  .contact-section {
+    margin-top: 60px;
+  }
+}
+.contact-section .contact-section-content {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 100px 0;
+  color: #fff;
+  font-family: Poppins;
+}
+@media (min-width: 1919px) {
+  .contact-section .contact-section-content .primary-text {
+    font-size: 48px;
+    line-height: 68px;
+    margin-top: 50px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1919px) {
+  .contact-section .contact-section-content .primary-text {
+    font-size: 48px;
+    line-height: 68px;
+    margin-top: 50px;
+  }
+}
+@media (min-width: 767px) and (max-width: 992px) {
+  .contact-section .contact-section-content .primary-text {
+    font-size: 38px;
+    line-height: 54px;
+    margin-top: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .contact-section .contact-section-content .primary-text {
+    font-size: 24px;
+    line-height: 38px;
+    margin-top: 20px;
+  }
+}
+@media (min-width: 1919px) {
+  .contact-section .contact-section-content .secondary-text {
+    font-size: 28px;
+    line-height: 33px;
+    margin-top: 20px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1919px) {
+  .contact-section .contact-section-content .secondary-text {
+    font-size: 28px;
+    line-height: 33px;
+    margin-top: 20px;
+  }
+}
+@media (min-width: 767px) and (max-width: 992px) {
+  .contact-section .contact-section-content .secondary-text {
+    font-size: 18px;
+    line-height: 28px;
+    margin-top: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .contact-section .contact-section-content .secondary-text {
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 20px;
+  }
+}
+.contact-section .message {
+  background-color: #ff0070;
+  padding: 15px;
+  border: none;
+  border-radius: 0;
+  text-transform: none;
+}
+.contact-section .social-buttons {
+  display: inline-block;
+  margin-left: 60px;
+}
+@media (max-width: 767px) {
+  .contact-section .social-buttons {
+    margin-left: 0;
+    margin-top: 14px;
+    display: block;
+  }
+}
+.contact-section .social-buttons li {
+  text-align: center;
+}
+.contact-section .social-buttons li a:hover,
+.contact-section .social-buttons li a:active,
+.contact-section .social-buttons li a:focus {
+  background-color: #ff0070;
+}
+.contact-section .contacts {
+  margin-top: 60px;
+}
 .timeline {
   list-style: none;
   padding: 0;
@@ -1468,64 +1584,20 @@ header .arrow-about-wrapper .arrow-about {
 aside.clients img {
   margin: 50px auto;
 }
-section#contact {
-  background-color: #222222;
-  background-image: url('../img/map-image.png');
-  background-position: center;
-  background-repeat: no-repeat;
-}
-section#contact .section-heading {
-  color: white;
-}
-section#contact .form-group {
-  margin-bottom: 25px;
-}
-section#contact .form-group input,
-section#contact .form-group textarea {
-  padding: 20px;
-}
-section#contact .form-group input.form-control {
-  height: auto;
-}
-section#contact .form-group textarea.form-control {
-  height: 236px;
-}
-section#contact .form-control:focus {
-  border-color: #fed136;
-  box-shadow: none;
-}
-section#contact ::-webkit-input-placeholder {
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: #eeeeee;
-}
-section#contact :-moz-placeholder {
-  /* Firefox 18- */
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: #eeeeee;
-}
-section#contact ::-moz-placeholder {
-  /* Firefox 19+ */
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: #eeeeee;
-}
-section#contact :-ms-input-placeholder {
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: #eeeeee;
-}
-section#contact .text-danger {
-  color: #e74c3c;
-}
 footer {
+  background-color: #222;
+  color: #fff;
   padding: 25px 0;
-  text-align: center;
+}
+@media (min-width: 767px) and (max-width: 992px) {
+  footer {
+    text-align: center;
+  }
+}
+@media (max-width: 767px) {
+  footer {
+    text-align: center;
+  }
 }
 footer span.copyright {
   line-height: 40px;

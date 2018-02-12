@@ -1,0 +1,119 @@
+.contact-section {
+
+	@media @desktop-wide {
+		margin-top: 150px;
+	}
+
+	@media @desktop {
+		margin-top: 120px;
+	}
+
+	@media @tablet {
+		margin-top: 80px;
+	}
+
+	@media @smartphone {
+		margin-top: 60px;
+	}
+
+	background-image: url('../img/contact/contact-bg.jpg');
+
+	background-size: cover;
+	background-position: center;
+
+	.contact-section-content {
+		background-color: rgba(0, 0, 0, .5);
+		padding: 100px 0;
+	
+		color: @white;
+		font-family: Poppins;
+	
+		.primary-text {
+
+
+			@media @desktop-wide {
+				font-size: 48px;
+				line-height: 68px;
+				margin-top: 50px;
+			}
+
+			@media @desktop {
+				font-size: 48px;
+				line-height: 68px;
+				margin-top: 50px;
+			}
+
+			@media @tablet {
+				font-size: 38px;
+				line-height: 54px;
+				margin-top: 20px;
+			}
+
+			@media @smartphone {
+				font-size: 24px;
+				line-height: 38px;
+				margin-top: 20px;
+			}
+		}
+	
+		.secondary-text {
+
+			@media @desktop-wide {
+				font-size: 28px;
+				line-height: 33px;
+				margin-top: 20px;
+			}
+
+			@media @desktop {
+				font-size: 28px;
+				line-height: 33px;
+				margin-top: 20px;
+			}
+
+			@media @tablet {
+				font-size: 18px;
+				line-height: 28px;
+				margin-top: 20px;
+			}
+
+			@media @smartphone {
+				font-size: 14px;
+				line-height: 20px;
+				margin-top: 20px;
+			}
+		}
+	}
+
+	.message {
+		background-color: @pink;
+		padding: 15px;
+		border: none;
+		border-radius: 0;
+		text-transform: none;
+	}
+
+	.social-buttons {
+		display: inline-block;
+		margin-left: 60px;
+
+		@media @smartphone {
+			margin-left: 0;
+			margin-top: 14px;
+			display: block;
+		}
+
+		li { 
+			text-align: center;
+
+			a:hover,
+			a:active,
+			a:focus {
+				background-color: @pink;
+			}
+		}
+	}
+
+	.contacts {
+		margin-top: 60px;
+	}
+}

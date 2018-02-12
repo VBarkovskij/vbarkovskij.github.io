@@ -8,6 +8,7 @@
 @import "sections/portfolio";
 @import "sections/reference";
 @import "sections/expertise";
+@import "sections/contact";
 
 .timeline {
     list-style: none;
@@ -198,63 +199,22 @@ aside.clients {
     }
 }
 
-// Contact Section
-
-section#contact {
-    background-color: @gray-darker;
-    background-image: url('../img/map-image.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    .section-heading {
-        color: white;
-    }
-    .form-group {
-        margin-bottom: 25px;
-        input,
-        textarea {
-            padding: 20px;
-        }
-        input.form-control {
-            height: auto;
-        }
-        textarea.form-control {
-            height: 236px;
-        }
-    }
-    .form-control:focus {
-        border-color: @theme-primary;
-        box-shadow: none;
-    }
-    ::-webkit-input-placeholder {
-       .heading-font;
-       font-weight: 700;
-       color: @gray-lighter;
-    }
-    :-moz-placeholder { /* Firefox 18- */
-       .heading-font;
-       font-weight: 700;
-       color: @gray-lighter;
-    }
-    ::-moz-placeholder {  /* Firefox 19+ */
-       .heading-font;
-       font-weight: 700;
-       color: @gray-lighter;
-    }
-    :-ms-input-placeholder {
-       .heading-font;
-       font-weight: 700;
-       color: @gray-lighter;
-    }
-    .text-danger {
-        color: @theme-danger;
-    }
-}
-
 // Footer
 
 footer {
-    padding: 25px 0;
-    text-align: center;
+	background-color: #222;
+	color: @white;
+
+	padding: 25px 0;
+	
+	@media @tablet {
+		text-align: center;
+	}
+
+	@media @smartphone {
+		text-align: center;
+	}
+
     span.copyright {
         line-height: 40px;
         .heading-font;
