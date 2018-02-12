@@ -21,6 +21,38 @@
 		display: none;
 	}
 
+	.hiddable {
+		display: none;
+	}
+
+	.hiddable.shown {
+		display: block;
+	}
+
+	.expand-more {
+		padding: 15px 25px;
+		background-color: @pink;
+		border: none;
+		border-radius: 0;
+		text-transform: none;
+
+		@media @desktop-wide {
+			margin-bottom: 100px;
+		}
+
+		@media @desktop {
+			margin-bottom: 80px;
+		}
+
+		@media @tablet {
+			margin-bottom: 60px;
+		}
+
+		@media @smartphone {
+			margin-bottom: 40px;
+		}
+	}
+
     .portfolio-categories {
         list-style-type: none;
         padding: 0;

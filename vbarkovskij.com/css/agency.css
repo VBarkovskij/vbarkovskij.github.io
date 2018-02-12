@@ -480,6 +480,39 @@ header .arrow-about-wrapper .arrow-about {
 .portfolio-section .hidden-title {
   display: none;
 }
+.portfolio-section .hiddable {
+  display: none;
+}
+.portfolio-section .hiddable.shown {
+  display: block;
+}
+.portfolio-section .expand-more {
+  padding: 15px 25px;
+  background-color: #ff0070;
+  border: none;
+  border-radius: 0;
+  text-transform: none;
+}
+@media (min-width: 1919px) {
+  .portfolio-section .expand-more {
+    margin-bottom: 100px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1919px) {
+  .portfolio-section .expand-more {
+    margin-bottom: 80px;
+  }
+}
+@media (min-width: 767px) and (max-width: 992px) {
+  .portfolio-section .expand-more {
+    margin-bottom: 60px;
+  }
+}
+@media (max-width: 767px) {
+  .portfolio-section .expand-more {
+    margin-bottom: 40px;
+  }
+}
 .portfolio-section .portfolio-categories {
   list-style-type: none;
   padding: 0;

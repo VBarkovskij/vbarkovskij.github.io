@@ -29,11 +29,23 @@
             top: 100
         }
 	})
+
+	var expandButton = $('.expand-more');
+
+	expandButton.click(function(e) {
+		var parent = $(e.target).parent();
+		var hiddable = parent.find('.hiddable:not(.shown)').first();
+
+		if (hiddable.length > 0) {
+			hiddable.addClass('shown');
+		}
+
+		hiddable = parent.find('.hiddable:not(.shown)').first();
+		console.log(hiddable);
+
+		if (hiddable.length === 0) {
+			$(e.target).css('display', 'none')
+		}
+	});
 	
-	var designTab = $('#design-tab');
-	var photographyTab = $('#photography-tab');
-
-	var designTitle = $('#design-title');
-	var photographyTitle = $('#photography-title');
-
 })(jQuery); // End of use strict
