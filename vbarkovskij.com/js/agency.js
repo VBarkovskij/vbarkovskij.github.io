@@ -28,6 +28,12 @@
         offset: {
             top: 100
         }
-    })
+	})
+	
+	var designTab = $('#design-tab');
+	var photographyTab = $('#photography-tab');
+
+	var designTitle = $('#design-title');
+	var photographyTitle = $('#photography-title');
 
 })(jQuery); // End of use strict

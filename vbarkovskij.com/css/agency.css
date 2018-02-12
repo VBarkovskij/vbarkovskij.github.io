@@ -477,6 +477,9 @@ header .arrow-about-wrapper .arrow-about {
     margin-top: 50px;
   }
 }
+.portfolio-section .hidden-title {
+  display: none;
+}
 .portfolio-section .portfolio-categories {
   list-style-type: none;
   padding: 0;
@@ -527,6 +530,12 @@ header .arrow-about-wrapper .arrow-about {
 .portfolio-section .portfolio-categories li:last-child {
   margin-right: 0;
 }
+@media (min-width: 1919px) {
+  .portfolio-section .portfolio-categories li a {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
 @media (min-width: 992px) and (max-width: 1919px) {
   .portfolio-section .portfolio-categories li a {
     font-size: 18px;
@@ -545,7 +554,7 @@ header .arrow-about-wrapper .arrow-about {
     line-height: 20px;
   }
 }
-.portfolio-section .portfolio-categories li a.active {
+.portfolio-section .portfolio-categories li.active a {
   color: #ff0070;
 }
 .portfolio-section .portfolio-description {

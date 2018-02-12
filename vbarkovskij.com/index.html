@@ -136,113 +136,133 @@
                 </div>
             </div>
         </div>
-    </section>
+	</section>
 
     <!-- Portfolio Grid Section -->
     <section id="portfolio" class="portfolio-section">
         <div class="container">
             <div class="row">
                 <div class="col-xs-12">
-                    <ul class="portfolio-categories">
-                        <li><a href="#">Digital design</a></li>
-                        <li><a href="#" class="active">Photography</a></li>
+                    <ul class="portfolio-categories" id="myTab" role="tablist">
+                        <li class="nav-item"><a id="design-tab" href="#design" aria-controls="design" class="nav-link" data-toggle="tab" aria-selected="false">Digital design</a></li>
+                        <li class="nav-item active"><a id="photography-tab" href="#photography" aria-controls="photography" class="nav-link" data-toggle="tab" aria-selected="true">Photography</a></li>
                     </ul>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12 col-md-6">
-                    <h1>Photography</h1>
-                    <p class="portfolio-description">
-                        Photography takes an important part in my creative process and helps me to keep a curious mind
-                        and informed eye.
-                    </p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12">
-                    <div class="portfolio-buttons">
+			</div>
+			
+			<div class="tab-content" id="myTabContent">
+				<!-- DESIGN -->
+				<div class="tab-pane fade" id="design" role="tabpanel" aria-labelledby="design-tab">
 
-                        <a href="https://www.instagram.com/vbarkovskij/" target="_blank" class="portfolio-button">
-                            <div class="portfolio-button-icon instagram"></div>
-                            <div class="portfolio-button-text">
-                                <div class="social-network">Instagram</div>
-                                <div>Daily shots</div>
-                            </div>
-                        </a>
+						<div class="row">
+							<div class="col-xs-12 col-md-6">
+								<h1>Design</h1>
+								<p class="portfolio-description">
+									Here will come some description about your design :P
+								</p>
+							</div>
+						</div>
+				</div>
+		
+				<!-- PHOTOGRAPHY -->
+				<div class="tab-pane fade active in" id="photography" role="tabpanel" aria-labelledby="photography-tab">
+					<div class="row">
+						<div class="col-xs-12 col-md-6">
+							<h1>Photography</h1>
+							<p class="portfolio-description">
+								Photography takes an important part in my creative process and helps me to keep a curious mind
+								and informed eye.
+							</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12">
+							<div class="portfolio-buttons">
+		
+								<a href="https://www.instagram.com/vbarkovskij/" target="_blank" class="portfolio-button">
+									<div class="portfolio-button-icon instagram"></div>
+									<div class="portfolio-button-text">
+										<div class="social-network">Instagram</div>
+										<div>Daily shots</div>
+									</div>
+								</a>
+		
+								<a href="https://www.flickr.com/people/125713136@N07/" target="_blank" class="portfolio-button">
+									<div class="portfolio-button-icon flickr"></div>
+									<div class="portfolio-button-text">
+										<div class="social-network">Flickr</div>
+										<div>Travel & Places</div>
+									</div>
+								</a>
+		
+							</div>
+						</div>
+					</div>
+					<div class="portfolio-previews" id="portfolio-previews">
 
-                        <a href="https://www.flickr.com/people/125713136@N07/" target="_blank" class="portfolio-button">
-                            <div class="portfolio-button-icon flickr"></div>
-                            <div class="portfolio-button-text">
-                                <div class="social-network">Flickr</div>
-                                <div>Travel & Places</div>
-                            </div>
-                        </a>
-
-                    </div>
-                </div>
-            </div>
-
-            <div class="portfolio-previews" id="portfolio-previews">
-
-                <div class="row">
-                    <div class="col-xs-12 col-sm-6 portfolio-preview-col">
-                        <div class="portfolio-preview-wrapper">
-                            <a href="#portfolioModal1" data-toggle="modal"
-                               class="portfolio-preview" style="background-image: url('./img/portfolio/553x312.png');">
-                                <img src="./img/portfolio/553x312.png">
-                            </a>
-                            <div class="portfolio-primary-headline">// Austria</div>
-                            <h2>Mail storage goes Magenta</h2>
-                            <p class="portfolio-preview-description">
-                                How we use open source software to expand storage capacities
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 portfolio-preview-col">
-                        <div class="portfolio-preview-wrapper">
-                            <a href="#portfolioModal1" data-toggle="modal" class="portfolio-preview"
-                               style="background-image: url('./img/portfolio/457x565.png');">
-                                <img src="./img/portfolio/457x565.png">
-                            </a>
-                            <div class="portfolio-primary-headline">// Czech Republic</div>
-                            <h2>Mail storage goes Magenta</h2>
-                            <p class="portfolio-preview-description">
-                                How we use open source software to expand storage capacities
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-xs-12 col-sm-6 portfolio-preview-col">
-                        <div class="portfolio-preview-wrapper">
-                            <a href="#portfolioModal1" data-toggle="modal" class="portfolio-preview"
-                               style="background-image: url('./img/portfolio/457x565.png');">
-                                <img src="./img/portfolio/457x565.png">
-                            </a>
-                            <div class="portfolio-primary-headline">// Latvia</div>
-                            <h2>Mail storage goes Magenta</h2>
-                            <p class="portfolio-preview-description">
-                                How we use open source software to expand storage capacities
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 portfolio-preview-col">
-                        <div class="portfolio-preview-wrapper">
-                            <a href="#portfolioModal1" data-toggle="modal" class="portfolio-preview"
-                               style="background-image: url('./img/portfolio/553x312.png');">
-                                <img src="./img/portfolio/553x312.png">
-                            </a>
-                            <div class="portfolio-primary-headline">// Niderlands</div>
-                            <h2>Mail storage goes Magenta</h2>
-                            <p class="portfolio-preview-description">
-                                How we use open source software to expand storage capacities
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
+						<div class="row">
+							<div class="col-xs-12 col-sm-6 portfolio-preview-col">
+								<div class="portfolio-preview-wrapper">
+									<a href="#portfolioModal1" data-toggle="modal"
+										class="portfolio-preview" style="background-image: url('./img/portfolio/553x312.png');">
+										<img src="./img/portfolio/553x312.png">
+									</a>
+									<div class="portfolio-primary-headline">// Austria</div>
+									<h2>Mail storage goes Magenta</h2>
+									<p class="portfolio-preview-description">
+										How we use open source software to expand storage capacities
+									</p>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-6 portfolio-preview-col">
+								<div class="portfolio-preview-wrapper">
+									<a href="#portfolioModal1" data-toggle="modal" class="portfolio-preview"
+										style="background-image: url('./img/portfolio/457x565.png');">
+										<img src="./img/portfolio/457x565.png">
+									</a>
+									<div class="portfolio-primary-headline">// Czech Republic</div>
+									<h2>Mail storage goes Magenta</h2>
+									<p class="portfolio-preview-description">
+										How we use open source software to expand storage capacities
+									</p>
+								</div>
+							</div>
+						</div>
+		
+						<div class="row">
+							<div class="col-xs-12 col-sm-6 portfolio-preview-col">
+								<div class="portfolio-preview-wrapper">
+									<a href="#portfolioModal1" data-toggle="modal" class="portfolio-preview"
+										style="background-image: url('./img/portfolio/457x565.png');">
+										<img src="./img/portfolio/457x565.png">
+									</a>
+									<div class="portfolio-primary-headline">// Latvia</div>
+									<h2>Mail storage goes Magenta</h2>
+									<p class="portfolio-preview-description">
+										How we use open source software to expand storage capacities
+									</p>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-6 portfolio-preview-col">
+								<div class="portfolio-preview-wrapper">
+									<a href="#portfolioModal1" data-toggle="modal" class="portfolio-preview"
+										style="background-image: url('./img/portfolio/553x312.png');">
+										<img src="./img/portfolio/553x312.png">
+									</a>
+									<div class="portfolio-primary-headline">// Niderlands</div>
+									<h2>Mail storage goes Magenta</h2>
+									<p class="portfolio-preview-description">
+										How we use open source software to expand storage capacities
+									</p>
+								</div>
+							</div>
+						</div>
+		
+					</div>
+					</div>
+				</div>
+			</div>
+            
         </div>
     </section>
 
@@ -570,7 +590,8 @@
                 </div>
             </div>
         </div>
-    </div>
+	</div>
+
 
     <!-- jQuery -->
     <script src="vendor/jquery/jquery.min.js"></script>

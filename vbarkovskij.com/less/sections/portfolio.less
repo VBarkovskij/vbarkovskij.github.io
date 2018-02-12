@@ -15,7 +15,11 @@
 
     @media @smartphone {
         margin-top: 50px;
-    }
+	}
+	
+	.hidden-title {
+		display: none;
+	}
 
     .portfolio-categories {
         list-style-type: none;
@@ -61,6 +65,11 @@
             }
 
             a {
+				@media @desktop-wide {
+                    font-size: 18px;
+                    line-height: 28px;
+				}
+				
                 @media @desktop {
                     font-size: 18px;
                     line-height: 28px;
@@ -75,11 +84,11 @@
                     font-size: 14px;
                     line-height: 20px;
                 }
-
-                &.active {
-                    color: @pink
-                }
-            }
+			}
+			
+			&.active a {
+				color: @pink;
+			}
         }
     }
 
