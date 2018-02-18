@@ -326,45 +326,50 @@ section h1.light-headline {
   }
 }
 header {
+  box-sizing: border-box;
   font-family: Poppins;
-  margin-top: 250px;
+  height: 100vh;
 }
-@media (max-width:767px) {
-  header {
-    margin-top: 118px;
-  }
+header .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+header .container:before,
+header .container:after {
+  display: none;
 }
 header .primary-text {
   font-size: 72px;
   font-weight: 800;
 }
-@media (min-width:992px) {
-  header .primary-text {
-    padding-right: 10%;
-  }
-}
 @media (min-width: 1919px) {
   header .primary-text {
     font-size: 100px;
     line-height: 140px;
+    margin-top: 10%;
   }
 }
 @media (min-width: 992px) and (max-width: 1919px) {
   header .primary-text {
     font-size: 72px;
     line-height: 98px;
+    margin-top: 15%;
   }
 }
 @media (min-width: 767px) and (max-width: 992px) {
   header .primary-text {
     font-size: 48px;
     line-height: 68px;
+    margin-top: 40%;
   }
 }
 @media (max-width: 767px) {
   header .primary-text {
     font-size: 28px;
     line-height: 38px;
+    margin-top: 55%;
   }
 }
 header .primary-text .dynamic-phrase {
@@ -389,18 +394,6 @@ header .about-me-button {
 }
 header .arrow-about-wrapper {
   text-align: center;
-  margin-bottom: 60px;
-  margin-top: 142px;
-}
-@media (max-width:767px) {
-  header .arrow-about-wrapper {
-    margin-top: 123px;
-  }
-}
-@media (max-width:576px) {
-  header .arrow-about-wrapper {
-    margin-top: 80px;
-  }
 }
 header .arrow-about-wrapper .arrow-about {
   color: #000;

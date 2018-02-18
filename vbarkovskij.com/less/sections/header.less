@@ -1,37 +1,46 @@
 header {
+    box-sizing: border-box;
     font-family: Poppins;
-    margin-top: 250px;
+    height: 100vh;
 
-    @media @tablet-and-smaller {
-        margin-top: 118px;
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+
+        &:before,
+        &:after {
+            display: none;
+        }
     }
 
     .primary-text {
         font-size: 72px;
         font-weight: 800;
 
-        @media @desktop-and-bigger {
-            padding-right: 10%;
-        }
-
         @media @desktop-wide {
             font-size: 100px;
             line-height: 140px;
+            margin-top: 10%;
         }
 
         @media @desktop {
             font-size: 72px;
             line-height: 98px;
+            margin-top: 15%;
         }
 
         @media @tablet {
             font-size: 48px;
             line-height: 68px;
+            margin-top: 40%;
         }
 
         @media @smartphone {
             font-size: 28px;
             line-height: 38px;
+            margin-top: 55%;
         }
 
         .dynamic-phrase {
@@ -59,16 +68,6 @@ header {
 
     .arrow-about-wrapper {
         text-align: center;
-        margin-bottom: 60px;
-        margin-top: 142px;
-
-        @media @tablet-and-smaller {
-            margin-top: 123px;
-        }
-
-        @media @smartphone-and-smaller {
-            margin-top: 80px;
-        }
 
         .arrow-about {
             color: @black;
