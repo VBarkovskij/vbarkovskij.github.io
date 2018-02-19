@@ -77,5 +77,16 @@
 	$('.dropdown-close').click(function() {
 	   $(this).parent().parent().removeClass('open');
     });
+
+    var options = {
+        strings: ['Digital', 'Physical'],
+        typeSpeed: 150,
+        loop: true,
+        showCursor: false,
+        backSpeed: 50,
+        backDelay: 1500
+    };
+
+    var typed = new Typed(".dynamic-phrase", options);
 	
 })(jQuery); // End of use strict
