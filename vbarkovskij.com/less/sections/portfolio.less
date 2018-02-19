@@ -297,10 +297,25 @@
                     margin-bottom: 40px;
                     width: 100%;
                 }
+
+                &:hover {
+
+                    .portfolio-preview {
+                        transform: scale(1.075);
+                        transition: transform .2s;
+                    }
+
+                    h2 {
+                        color: @pink;
+                    }
+                }
+
             }
 
             .portfolio-preview {
                 display: inline-block;
+
+                transition: transform .2s;
 
                 @media @smartphone {
                     margin-top: 0 !important;

@@ -748,8 +748,16 @@ header .arrow-about-wrapper .arrow-about {
     width: 100%;
   }
 }
+.portfolio-section .portfolio-previews .row .portfolio-preview-wrapper:hover .portfolio-preview {
+  transform: scale(1.075);
+  transition: transform .2s;
+}
+.portfolio-section .portfolio-previews .row .portfolio-preview-wrapper:hover h2 {
+  color: #ff0070;
+}
 .portfolio-section .portfolio-previews .row .portfolio-preview {
   display: inline-block;
+  transition: transform .2s;
 }
 @media (max-width: 767px) {
   .portfolio-section .portfolio-previews .row .portfolio-preview {
