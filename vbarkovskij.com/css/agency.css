@@ -889,6 +889,17 @@ header .arrow-about-wrapper .arrow-about {
 .portfolio-section * {
   z-index: 2;
 }
+.portfolio-section .tab-pane.fade {
+  transition: opacity .5s;
+}
+.portfolio-section .tab-pane .portfolio-preview-wrapper {
+  transform: scale(0.25);
+  transition: transform .2s;
+}
+.portfolio-section .tab-pane.fade.in .portfolio-preview-wrapper {
+  transform: scale(1);
+  transition: transform .2s;
+}
 .portfolio-modal {
   font-family: Poppins;
 }
