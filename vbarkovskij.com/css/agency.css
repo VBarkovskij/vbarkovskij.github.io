@@ -587,6 +587,7 @@ header .arrow-about-wrapper .arrow-about {
 }
 .portfolio-section .portfolio-categories li.active a {
   color: #ff0070;
+  text-decoration: underline;
 }
 .portfolio-section .portfolio-description {
   margin-top: 20px;
