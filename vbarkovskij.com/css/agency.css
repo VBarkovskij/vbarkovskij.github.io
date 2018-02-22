@@ -1089,6 +1089,11 @@ header .arrow-about-wrapper .arrow-about {
     text-align: left;
   }
 }
+@media (max-width: 1200px) {
+  .reference-section .reference-items {
+    text-align: left !important;
+  }
+}
 .reference-section .reference-items li {
   display: inline-block;
   text-align: center;
@@ -1112,6 +1117,12 @@ header .arrow-about-wrapper .arrow-about {
 @media (max-width: 767px) {
   .reference-section .reference-items li {
     margin-top: 15px;
+    margin-right: 40px;
+  }
+}
+@media (max-width: 1200px) {
+  .reference-section .reference-items li {
+    margin-left: 0 !important;
     margin-right: 40px;
   }
 }

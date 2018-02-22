@@ -1,166 +1,175 @@
- .reference-section {
-	display: block;
-	font-family: Poppins;
+.reference-section {
+    display: block;
+    font-family: Poppins;
 
-	@media @desktop-wide {
-		font-size: 18px;
-		margin-top: 100px;
+    @media @desktop-wide {
+        font-size: 18px;
+        margin-top: 100px;
 
-		p { 
-			font-size: 18px;
-		}
-	}
+        p {
+            font-size: 18px;
+        }
+    }
 
-	@media @desktop {
-		font-size: 18px;
-		margin-top: 80px;
+    @media @desktop {
+        font-size: 18px;
+        margin-top: 80px;
 
-		p {
-			font-size: 18px;
-		}
-	}
+        p {
+            font-size: 18px;
+        }
+    }
 
-	@media @tablet {
-		font-size: 18px;
-		margin-top: 60px;
+    @media @tablet {
+        font-size: 18px;
+        margin-top: 60px;
 
-		p {
-			font-size: 18px;
-		}
-	}
+        p {
+            font-size: 18px;
+        }
+    }
 
-	@media @smartphone {
-		font-size: 14px;
-		margin-top: 40px;	
+    @media @smartphone {
+        font-size: 14px;
+        margin-top: 40px;
 
-		p {
-			font-size: 14px;
-		}
-	}
+        p {
+            font-size: 14px;
+        }
+    }
 
-	.reference-items {
-		list-style-type: none;
-		padding: 0;
+    .reference-items {
+        list-style-type: none;
+        padding: 0;
 
-		@media @desktop-wide {
-			text-align: right;
-		}
+        @media @desktop-wide {
+            text-align: right;
+        }
 
-		@media @desktop {
-			text-align: right;
-		}
+        @media @desktop {
+            text-align: right;
+        }
 
-		@media @tablet {
-			text-align: left;
-		}
+        @media @tablet {
+            text-align: left;
+        }
 
-		@media @smartphone {
-			text-align: left;
-		}
+        @media @smartphone {
+            text-align: left;
+        }
 
-		li {
-			display: inline-block;
-			text-align: center;
+        @media (max-width: 1200px) {
+            text-align: left !important;
+        }
 
-			@media @desktop-wide {
-				margin-left: 40px;
-			}
+        li {
+            display: inline-block;
+            text-align: center;
 
-			@media @desktop {
-				margin-left: 40px;
-			}
+            @media @desktop-wide {
+                margin-left: 40px;
+            }
 
-			@media @tablet {
-				margin-top: 15px;
-				margin-right: 40px;
-			}
+            @media @desktop {
+                margin-left: 40px;
+            }
 
-			@media @smartphone {
-				margin-top: 15px;
-				margin-right: 40px;
-			}
+            @media @tablet {
+                margin-top: 15px;
+                margin-right: 40px;
+            }
 
-			.reference-item-count {
-				color: @pink;
-				font-weight: 600;
+            @media @smartphone {
+                margin-top: 15px;
+                margin-right: 40px;
+            }
 
-				@media @desktop-wide {
-					font-size: 38px;
-				}
+            @media (max-width: 1200px) {
+                margin-left: 0 !important;
+                margin-right: 40px;
+            }
 
-				@media @desktop {
-					font-size: 38px;
-				}
+            .reference-item-count {
+                color: @pink;
+                font-weight: 600;
 
-				@media @tablet {
-					font-size: 32px;
-				}
+                @media @desktop-wide {
+                    font-size: 38px;
+                }
 
-				@media @smartphone {
-					font-size: 28px;
-				}
-			}
-		}
-	}
+                @media @desktop {
+                    font-size: 38px;
+                }
 
-	.reference-icons {
-		list-style-type: none;
-		padding: 0;
+                @media @tablet {
+                    font-size: 32px;
+                }
 
-		@media @desktop-wide {
-			margin-top: 100px;
-		}
+                @media @smartphone {
+                    font-size: 28px;
+                }
+            }
+        }
+    }
 
-		@media @desktop {
-			margin-top: 80px;
-		}
+    .reference-icons {
+        list-style-type: none;
+        padding: 0;
 
-		@media @tablet {
-			margin-top: 60px;
-		}
+        @media @desktop-wide {
+            margin-top: 100px;
+        }
 
-		@media @smartphone {
-			margin-top: 40px;
-		}
+        @media @desktop {
+            margin-top: 80px;
+        }
 
-		li {
-			display: inline-block;
-			margin-right: 7px;
-			padding: 5px;
+        @media @tablet {
+            margin-top: 60px;
+        }
 
-			.icon {
+        @media @smartphone {
+            margin-top: 40px;
+        }
 
-				background-size: contain;
-				background-position: center;
-				background-repeat: no-repeat;
-				border: solid 1px #ddd;
+        li {
+            display: inline-block;
+            margin-right: 7px;
+            padding: 5px;
 
-				filter: grayscale(100%);
+            .icon {
 
-				&:hover {
-					filter: none;
-				}
-				
-				@media @desktop-wide {
-					width: 165px;
-					height: 155px;
-				}
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+                border: solid 1px #ddd;
 
-				@media @desktop {
-					width: 131px;
-					height: 123px;
-				}
+                filter: grayscale(100%);
 
-				@media @tablet {
-					width: 80px;
-					height: 75px;
-				}
+                &:hover {
+                    filter: none;
+                }
 
-				@media @smartphone {
-					width: 57px;
-					height: 53px;
-				}
-			}
-		}
-	}
- }
+                @media @desktop-wide {
+                    width: 165px;
+                    height: 155px;
+                }
+
+                @media @desktop {
+                    width: 131px;
+                    height: 123px;
+                }
+
+                @media @tablet {
+                    width: 80px;
+                    height: 75px;
+                }
+
+                @media @smartphone {
+                    width: 57px;
+                    height: 53px;
+                }
+            }
+        }
+    }
+}
