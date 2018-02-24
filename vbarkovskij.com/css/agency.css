@@ -325,6 +325,10 @@ section h1.light-headline {
     font-size: 1.5em;
   }
 }
+.logo-link img {
+  width: 25px;
+  height: 25px;
+}
 header {
   box-sizing: border-box;
   font-family: Poppins;
