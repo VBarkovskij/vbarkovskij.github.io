@@ -716,6 +716,9 @@ header .arrow-about-wrapper .arrow-about {
   font-weight: 800;
 }
 .portfolio-section .portfolio-buttons .portfolio-button:hover .social-network {
+  color: #ff0070;
+}
+.portfolio-section .portfolio-buttons .portfolio-button:hover .social-network {
   text-decoration: underline;
 }
 @media (min-width: 1919px) {
