@@ -166,8 +166,8 @@ section h1 {
   display: inline-block;
   font-family: Poppins;
   font-weight: 800;
-  background: url('../img/logos/headline-logo-dark.png') no-repeat right center;
-  background-size: auto 60%;
+  background: url('../img/svg/logo_black.svg') no-repeat right center;
+  background-size: auto 45%;
   margin-top: 0;
   margin-bottom: 15px;
   text-transform: none;
@@ -205,7 +205,7 @@ section h1 {
   }
 }
 section h1.light-headline {
-  background-image: url('../img/logos/headline-logo-light.png');
+  background-image: url('../img/svg/logo_white.svg');
   color: #fff;
 }
 .navbar-custom {
@@ -404,9 +404,9 @@ header .about-me-button {
 header .arrow-about-wrapper {
   text-align: center;
 }
-header .arrow-about-wrapper .arrow-about {
-  color: #000;
-  font-size: 36px;
+header .arrow-about-wrapper .arrow-about img {
+  width: 50px;
+  margin-bottom: 20px;
 }
 .about-section {
   background: url('../img/about/background.jpg') no-repeat center center fixed;
