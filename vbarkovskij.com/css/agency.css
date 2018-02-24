@@ -1072,6 +1072,9 @@ header .arrow-about-wrapper .arrow-about img {
     font-size: 14px;
   }
 }
+.reference-section h1 {
+  margin-bottom: 30px;
+}
 .reference-section .reference-items {
   list-style-type: none;
   padding: 0;
