@@ -1421,14 +1421,14 @@ header .arrow-about-wrapper .arrow-about img {
   .contact-section .contact-section-content .primary-text {
     font-size: 48px;
     line-height: 68px;
-    margin-top: 50px;
+    margin-top: 30px;
   }
 }
 @media (min-width: 992px) and (max-width: 1919px) {
   .contact-section .contact-section-content .primary-text {
     font-size: 48px;
     line-height: 68px;
-    margin-top: 50px;
+    margin-top: 30px;
   }
 }
 @media (min-width: 767px) and (max-width: 992px) {
