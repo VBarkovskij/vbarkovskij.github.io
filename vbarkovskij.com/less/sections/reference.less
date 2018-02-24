@@ -134,8 +134,13 @@
 
         li {
             display: inline-block;
-            margin-right: 7px;
-            padding: 5px;
+            margin-bottom: 25px;
+            text-align: center;
+            width: 16%;
+
+            @media @smartphone {
+                width: 24.1%;
+            }
 
             .icon {
 
@@ -143,6 +148,7 @@
                 background-position: center;
                 background-repeat: no-repeat;
                 border: solid 1px #ddd;
+                display: inline-block;
 
                 filter: grayscale(100%);
 

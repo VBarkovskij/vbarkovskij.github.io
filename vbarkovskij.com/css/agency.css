@@ -1176,14 +1176,21 @@ header .arrow-about-wrapper .arrow-about {
 }
 .reference-section .reference-icons li {
   display: inline-block;
-  margin-right: 7px;
-  padding: 5px;
+  margin-bottom: 25px;
+  text-align: center;
+  width: 16%;
+}
+@media (max-width: 767px) {
+  .reference-section .reference-icons li {
+    width: 24.1%;
+  }
 }
 .reference-section .reference-icons li .icon {
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   border: solid 1px #ddd;
+  display: inline-block;
   filter: grayscale(100%);
 }
 .reference-section .reference-icons li .icon:hover {
