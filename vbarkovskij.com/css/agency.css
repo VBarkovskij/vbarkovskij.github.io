@@ -1263,7 +1263,7 @@ header .arrow-about-wrapper .arrow-about img {
 .expertise-section .expertise-items li {
   display: inline-block;
   border: solid 1px #ddd;
-  padding: 15px;
+  padding: 12px 16px;
 }
 .expertise-section .expertise-items li:hover {
   color: #ff0070;
@@ -1272,13 +1272,13 @@ header .arrow-about-wrapper .arrow-about img {
 }
 @media (min-width: 1919px) {
   .expertise-section .expertise-items li {
-    font-size: 24px;
+    font-size: 18px;
     margin: 0 30px 30px 0;
   }
 }
 @media (min-width: 992px) and (max-width: 1919px) {
   .expertise-section .expertise-items li {
-    font-size: 24px;
+    font-size: 18px;
     margin: 0 30px 30px 0;
   }
 }
