@@ -1253,6 +1253,9 @@ header .arrow-about-wrapper .arrow-about img {
     margin-top: 60px;
   }
 }
+.expertise-section .section-title {
+  margin-bottom: 60px;
+}
 .expertise-section .expertise-items {
   padding: 0;
   list-style-type: none;
