@@ -688,10 +688,10 @@ header .arrow-about-wrapper .arrow-about img {
   width: 27px;
 }
 .portfolio-section .portfolio-buttons .portfolio-button .portfolio-button-icon.instagram {
-  background-image: url("../img/portfolio/social/instagram.png");
+  background-image: url("../img/svg/ic_instagram.svg");
 }
 .portfolio-section .portfolio-buttons .portfolio-button .portfolio-button-icon.flickr {
-  background-image: url("../img/portfolio/social/flickr.png");
+  background-image: url("../img/svg/ic_flickr.svg");
 }
 .portfolio-section .portfolio-buttons .portfolio-button .portfolio-button-text {
   display: inline-block;
