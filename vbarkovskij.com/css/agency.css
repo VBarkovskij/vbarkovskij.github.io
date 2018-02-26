@@ -679,7 +679,7 @@ header .arrow-about-wrapper .arrow-about img {
     font-size: 12px;
     margin-bottom: 20px;
     margin-right: 0;
-    padding: 12px;
+    padding: 4px;
   }
 }
 .portfolio-section .portfolio-buttons .portfolio-button:last-child {
@@ -718,7 +718,7 @@ header .arrow-about-wrapper .arrow-about img {
 }
 @media (max-width: 767px) {
   .portfolio-section .portfolio-buttons .portfolio-button .portfolio-button-text {
-    margin-left: 15px;
+    margin-left: 5px;
   }
 }
 .portfolio-section .portfolio-buttons .portfolio-button .portfolio-button-text .social-network {
