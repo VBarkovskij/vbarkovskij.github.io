@@ -404,6 +404,8 @@ header .primary-text .secondary-text {
   font-weight: 500;
   line-height: 18px;
   text-align: right;
+  margin-right: 30%;
+  margin-top: 20px;
 }
 @media (max-width: 767px) {
   header .primary-text .secondary-text {
