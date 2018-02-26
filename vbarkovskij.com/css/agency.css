@@ -1294,15 +1294,8 @@ header .arrow-about-wrapper .arrow-about img {
     margin: 0 20px 20px 0;
   }
 }
-@media (min-width: 767px) and (max-width: 992px) {
-  .expertise-section .expertise-dropdown {
-    position: static !important;
-  }
-}
-@media (max-width: 767px) {
-  .expertise-section .expertise-dropdown {
-    position: static !important;
-  }
+.expertise-section .expertise-dropdown {
+  position: static !important;
 }
 .expertise-section .dropdown-menu {
   border-radius: 0;
@@ -1313,11 +1306,18 @@ header .arrow-about-wrapper .arrow-about img {
 }
 @media (min-width: 1919px) {
   .expertise-section .dropdown-menu {
+    top: 30%;
+    transform: translateX(-50%);
+    left: 50%;
     width: 750px;
   }
 }
 @media (min-width: 992px) and (max-width: 1919px) {
   .expertise-section .dropdown-menu {
+    top: 30%;
+    margin-left: 700px;
+    transform: translateX(-50%);
+    left: 50%;
     width: 700px;
   }
 }

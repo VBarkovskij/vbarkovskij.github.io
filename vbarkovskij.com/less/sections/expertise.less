@@ -59,12 +59,7 @@
     }
 
     .expertise-dropdown {
-        @media @tablet {
-            position: static !important;
-        }
-        @media @smartphone {
-            position: static !important;
-        }
+        position: static !important;
     }
 
     .dropdown-menu {
@@ -75,10 +70,17 @@
         box-sizing: border-box;
 
         @media @desktop-wide {
+            top: 30%;
+            transform: translateX(-50%);
+            left: 50%;
             width: 750px;
         }
 
         @media @desktop {
+            top: 30%;
+            margin-left: 700px;
+            transform: translateX(-50%);
+            left: 50%;
             width: 700px;
         }
 

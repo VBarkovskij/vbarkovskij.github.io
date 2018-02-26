@@ -53,23 +53,6 @@
         $('.expertise-dropdown').removeClass('open');
         $(this).addClass('open');
 
-        $(this).find('.dropdown-menu').css('marginLeft', 0);
-
-	    function getRightPosition(element) {
-	        return element.offset().left + element.outerWidth();
-        }
-
-        var expertiseSection = $('.expertise-section');
-        var expertiseSectionRightPosition = getRightPosition(expertiseSection);
-
-        var dropdownMenu = $(this).find('.dropdown-menu');
-        var dropdownMenuRightPosition = getRightPosition(dropdownMenu);
-
-        if (dropdownMenuRightPosition > expertiseSectionRightPosition) {
-            var diff = dropdownMenuRightPosition - expertiseSectionRightPosition;
-            dropdownMenu.css('marginLeft', -diff + 'px');
-        }
-
     }).find('.dropdown-menu').click(function() {
         return false;
     });
