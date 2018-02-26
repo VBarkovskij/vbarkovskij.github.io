@@ -1287,13 +1287,13 @@ header .arrow-about-wrapper .arrow-about img {
     margin: 0 30px 30px 0;
   }
 }
-@media (min-width: 767px) and (max-width: 992px) {
+@media (min-width: 659px) and (max-width: 992px) {
   .expertise-section .expertise-items li {
     font-size: 14px;
     margin: 0 20px 20px 0;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 659px) {
   .expertise-section .expertise-items li {
     font-size: 12px;
     margin: 0 20px 20px 0;
