@@ -1126,13 +1126,13 @@ header .arrow-about-wrapper .arrow-about img {
 @media (min-width: 767px) and (max-width: 992px) {
   .reference-section .reference-items li {
     margin-top: 15px;
-    margin-right: 40px;
+    margin-right: 30px !important;
   }
 }
 @media (max-width: 767px) {
   .reference-section .reference-items li {
     margin-top: 15px;
-    margin-right: 40px;
+    margin-right: 30px !important;
   }
 }
 @media (max-width: 1200px) {
