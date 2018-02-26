@@ -71,5 +71,9 @@
     };
 
     var typed = new Typed(".dynamic-phrase", options);
+
+    $('.navbar-toggle').click(function() {
+        $('.menu-overlay').toggleClass('hidden');
+    });
 	
 })(jQuery); // End of use strict
