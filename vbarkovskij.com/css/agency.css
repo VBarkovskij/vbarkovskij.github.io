@@ -208,6 +208,11 @@ section h1.light-headline {
   background-image: url('../img/svg/logo_white.svg');
   color: #fff;
 }
+@media (min-width: 660px) {
+  .col-sm-6-fixed {
+    width: 50%;
+  }
+}
 .navbar-custom {
   background-color: #fff;
   border: none;
@@ -735,12 +740,12 @@ header .arrow-about-wrapper .arrow-about img {
     margin-top: 90px;
   }
 }
-@media (min-width: 767px) and (max-width: 992px) {
+@media (min-width: 659px) and (max-width: 992px) {
   .portfolio-section .portfolio-previews {
     margin-top: 100px;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 659px) {
   .portfolio-section .portfolio-previews {
     margin-top: 50px;
   }
@@ -755,7 +760,7 @@ header .arrow-about-wrapper .arrow-about img {
   display: inline-block;
   margin-bottom: 100px;
 }
-@media (max-width: 767px) {
+@media (max-width: 659px) {
   .portfolio-section .portfolio-previews .row .portfolio-preview-wrapper {
     margin-bottom: 40px;
     width: 100%;
@@ -772,7 +777,7 @@ header .arrow-about-wrapper .arrow-about img {
   display: inline-block;
   transition: transform .2s;
 }
-@media (max-width: 767px) {
+@media (max-width: 659px) {
   .portfolio-section .portfolio-previews .row .portfolio-preview {
     margin-top: 0 !important;
     width: 100%;

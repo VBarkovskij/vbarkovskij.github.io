@@ -268,19 +268,19 @@
     .portfolio-previews {
         @preview-item-grid-negative-margin: -80px;
 
-        @media @desktop-wide {
+        @media @desktop-wide-fixed {
             margin-top: -@preview-item-grid-negative-margin + 10px;
         }
 
-        @media @desktop {
+        @media @desktop-fixed {
             margin-top: -@preview-item-grid-negative-margin + 10px;
         }
 
-        @media @tablet {
+        @media @tablet-fixed {
             margin-top: -@preview-item-grid-negative-margin + 20px;
         }
 
-        @media @smartphone {
+        @media @smartphone-fixed {
             margin-top: 50px;
         }
 
@@ -298,7 +298,7 @@
                 display: inline-block;
                 margin-bottom: 100px;
 
-                @media @smartphone {
+                @media @smartphone-fixed {
                     margin-bottom: 40px;
                     width: 100%;
                 }
@@ -322,7 +322,7 @@
 
                 transition: transform .2s;
 
-                @media @smartphone {
+                @media @smartphone-fixed {
                     margin-top: 0 !important;
                     width: 100%;
                 }
