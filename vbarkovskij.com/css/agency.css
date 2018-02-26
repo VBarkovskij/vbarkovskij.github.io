@@ -678,8 +678,8 @@ header .arrow-about-wrapper .arrow-about img {
   .portfolio-section .portfolio-buttons .portfolio-button {
     font-size: 12px;
     margin-bottom: 20px;
-    margin-right: 20px;
-    padding: 16px;
+    margin-right: 0;
+    padding: 12px;
   }
 }
 .portfolio-section .portfolio-buttons .portfolio-button:last-child {
