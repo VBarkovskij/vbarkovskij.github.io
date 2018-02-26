@@ -22,12 +22,12 @@
             margin-right: 7px;
         }
 
-        &[aria-expanded=true] .menu-icon:before {
-            content: "\f00d";
+        &[aria-expanded=true] .menu-icon {
+            background: url('../img/svg/ic_menu_close.svg') no-repeat;
         }
 
-        &:not([aria-expanded=true]) .menu-icon:before {
-            content: "\f0c9";
+        &:not([aria-expanded=true]) .menu-icon  {
+            background: url('../img/svg/ic_menu.svg') no-repeat;
         }
     }
 
