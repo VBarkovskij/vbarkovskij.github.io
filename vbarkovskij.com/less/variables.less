@@ -20,10 +20,16 @@
 @tablet-breakpoint: 767px;
 @desktop-breakpoint: 992px;
 @desktop-wide-breakpoint: 1919px;
+@smartphone-fixed-breakpoint: 320px;
+@tablet-fixed-breakpoint: 659px;
+@desktop-fixed-breakpoint: 992px;
+@desktop-wide-fixed-breakpoint: 1919px;
 
 @smartphone-and-bigger: 	~"(min-width:@{smartphone-breakpoint})";
 @tablet-and-bigger: 		~"(min-width:@{tablet-breakpoint})";
 @desktop-and-bigger: 		~"(min-width:@{desktop-breakpoint})";
+@desktop-and-bigger-fixed: 	~"(min-width:@{desktop-fixed-breakpoint})";
+@tablet-and-bigger-fixed: 	~"(min-width:@{tablet-fixed-breakpoint})";
 
 @smartphone-and-smaller: 	~"(max-width:@{smartphone-breakpoint})";
 @tablet-and-smaller: 		~"(max-width:@{tablet-breakpoint})";
@@ -33,3 +39,8 @@
 @tablet:					~"(min-width: @{tablet-breakpoint}) and (max-width: @{desktop-breakpoint})";
 @desktop:					~"(min-width: @{desktop-breakpoint}) and (max-width: @{desktop-wide-breakpoint})";
 @desktop-wide:              ~"(min-width: @{desktop-wide-breakpoint})";
+
+@smartphone-fixed:				~"(max-width: @{tablet-fixed-breakpoint})";
+@tablet-fixed:					~"(min-width: @{tablet-fixed-breakpoint}) and (max-width: @{desktop-fixed-breakpoint})";
+@desktop-fixed:					~"(min-width: @{desktop-fixed-breakpoint}) and (max-width: @{desktop-wide-fixed-breakpoint})";
+@desktop-wide-fixed:            ~"(min-width: @{desktop-wide-fixed-breakpoint})";
