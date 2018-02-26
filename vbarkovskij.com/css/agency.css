@@ -1489,7 +1489,7 @@ header .arrow-about-wrapper .arrow-about img {
   display: inline-block;
   margin-left: 60px;
 }
-@media (max-width: 767px) {
+@media (max-width: 659px) {
   .contact-section .social-buttons {
     margin-left: 0;
     margin-top: 14px;
