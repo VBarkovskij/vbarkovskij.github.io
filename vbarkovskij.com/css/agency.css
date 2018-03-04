@@ -1341,6 +1341,7 @@ header .arrow-about-wrapper .arrow-about img {
   display: inline-block;
   border: solid 1px #ddd;
   padding: 12px 16px;
+  margin: 0 30px 30px 0;
 }
 .expertise-section .expertise-items li:hover {
   color: #ff0070;
@@ -1350,25 +1351,21 @@ header .arrow-about-wrapper .arrow-about img {
 @media (min-width: 1919px) {
   .expertise-section .expertise-items li {
     font-size: 18px;
-    margin: 0 30px 30px 0;
   }
 }
 @media (min-width: 992px) and (max-width: 1919px) {
   .expertise-section .expertise-items li {
     font-size: 18px;
-    margin: 0 30px 30px 0;
   }
 }
 @media (min-width: 659px) and (max-width: 992px) {
   .expertise-section .expertise-items li {
     font-size: 14px;
-    margin: 0 20px 20px 0;
   }
 }
 @media (max-width: 659px) {
   .expertise-section .expertise-items li {
     font-size: 12px;
-    margin: 0 20px 20px 0;
   }
 }
 .expertise-section .expertise-dropdown {
