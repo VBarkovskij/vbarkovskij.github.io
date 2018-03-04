@@ -1160,6 +1160,11 @@ header .arrow-about-wrapper .arrow-about img {
     text-align: right;
   }
 }
+@media (max-width: 1999px) {
+  .reference-section .reference-items {
+    margin-top: 30px;
+  }
+}
 @media (min-width: 767px) and (max-width: 992px) {
   .reference-section .reference-items {
     text-align: left;
