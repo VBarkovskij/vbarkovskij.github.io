@@ -97,8 +97,32 @@ section {
         font-family: Poppins;
         font-weight: 800;
 
-        background: url('../img/svg/logo_black.svg') no-repeat right center;
-        background-size: auto 45%;
+        background-size: auto 30%;
+
+        &:after {
+            content: "";
+            display: inline-block;
+            background: url('../img/svg/logo_black.svg') no-repeat right center;
+            margin: 0;
+        }
+
+        &.rotate-45:after {
+            transform: rotate(45deg);
+        }
+
+        &.rotate-135:after {
+            transform: rotate(135deg);
+        }
+
+        &.rotate-225:after {
+            transform: rotate(225deg);
+            background-position: 10% center !important;
+        }
+
+        &.rotate-315:after {
+            transform: rotate(315deg);
+            background-position: 10% center !important;
+        }
 
         @media @desktop-wide {
             @height: 80px;
@@ -106,7 +130,13 @@ section {
             height: @height;
             font-size: 64px;
             line-height: @height;
-            padding-right: 80px;
+
+            &:after {
+                width: @height;
+                height: @height;
+                background-size: auto 30%;
+                margin-left: @height / 2;
+            }
         }
 
         @media @desktop {
@@ -115,7 +145,13 @@ section {
             height: @height;
             font-size: 48px;
             line-height: @height;
-            padding-right: 80px;
+
+            &:after {
+                width: @height;
+                height: @height;
+                background-size: auto 40%;
+                margin-left: @height / 2;
+            }
         }
 
         @media @tablet {
@@ -124,7 +160,13 @@ section {
             height: @height;
             font-size: 38px;
             line-height: @height;
-            padding-right: 50px;
+
+            &:after {
+                width: @height;
+                height: @height;
+                background-size: auto 30%;
+                margin-left: @height / 2;
+            }
         }
 
         @media @smartphone {
@@ -133,7 +175,13 @@ section {
             height: @height;
             font-size: 28px;
             line-height: @height;
-            padding-right: @height * 1.15;
+
+            &:after {
+                width: @height;
+                height: @height;
+                background-size: auto 45%;
+                margin-left: @height / 2;
+            }
         }
 
         margin-top: 0;
@@ -141,8 +189,11 @@ section {
         text-transform: none;
 
         &.light-headline {
-            background-image: url('../img/svg/logo_white.svg');
             color: @white;
+
+            &:after {
+                background-image: url('../img/svg/logo_white.svg');
+            }
         }
     }
 }

@@ -166,18 +166,42 @@ section h1 {
   display: inline-block;
   font-family: Poppins;
   font-weight: 800;
-  background: url('../img/svg/logo_black.svg') no-repeat right center;
-  background-size: auto 45%;
+  background-size: auto 30%;
   margin-top: 0;
   margin-bottom: 15px;
   text-transform: none;
+}
+section h1:after {
+  content: "";
+  display: inline-block;
+  background: url('../img/svg/logo_black.svg') no-repeat right center;
+  margin: 0;
+}
+section h1.rotate-45:after {
+  transform: rotate(45deg);
+}
+section h1.rotate-135:after {
+  transform: rotate(135deg);
+}
+section h1.rotate-225:after {
+  transform: rotate(225deg);
+  background-position: 10% center !important;
+}
+section h1.rotate-315:after {
+  transform: rotate(315deg);
+  background-position: 10% center !important;
 }
 @media (min-width: 1919px) {
   section h1 {
     height: 80px;
     font-size: 64px;
     line-height: 80px;
-    padding-right: 80px;
+  }
+  section h1:after {
+    width: 80px;
+    height: 80px;
+    background-size: auto 30%;
+    margin-left: 40px;
   }
 }
 @media (min-width: 992px) and (max-width: 1919px) {
@@ -185,7 +209,12 @@ section h1 {
     height: 68px;
     font-size: 48px;
     line-height: 68px;
-    padding-right: 80px;
+  }
+  section h1:after {
+    width: 68px;
+    height: 68px;
+    background-size: auto 40%;
+    margin-left: 34px;
   }
 }
 @media (min-width: 767px) and (max-width: 992px) {
@@ -193,7 +222,12 @@ section h1 {
     height: 54px;
     font-size: 38px;
     line-height: 54px;
-    padding-right: 50px;
+  }
+  section h1:after {
+    width: 54px;
+    height: 54px;
+    background-size: auto 30%;
+    margin-left: 27px;
   }
 }
 @media (max-width: 767px) {
@@ -201,12 +235,19 @@ section h1 {
     height: 33px;
     font-size: 28px;
     line-height: 33px;
-    padding-right: 37.95px;
+  }
+  section h1:after {
+    width: 33px;
+    height: 33px;
+    background-size: auto 45%;
+    margin-left: 16.5px;
   }
 }
 section h1.light-headline {
-  background-image: url('../img/svg/logo_white.svg');
   color: #fff;
+}
+section h1.light-headline:after {
+  background-image: url('../img/svg/logo_white.svg');
 }
 @media (min-width: 660px) {
   .col-sm-6-fixed {
