@@ -139,47 +139,56 @@
         li {
             display: inline-block;
             margin-bottom: 25px;
+            margin-left: 30px;
+            border: solid 1px #ddd;
             text-align: center;
-            width: 16%;
 
-            @media @smartphone {
-                width: 24.1%;
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+
+            filter: grayscale(100%);
+
+            &:hover {
+                filter: none;
             }
 
-            .icon {
+            &:first-child {
+                margin-left: 0;
+            }
 
-                background-size: contain;
-                background-position: center;
-                background-repeat: no-repeat;
-                border: solid 1px #ddd;
-                display: inline-block;
-
-                filter: grayscale(100%);
-
-                &:hover {
-                    filter: none;
-                }
-
-                @media @desktop-wide {
-                    width: 165px;
-                    height: 155px;
-                }
-
-                @media @desktop {
-                    width: 131px;
-                    height: 123px;
-                }
-
-                @media @tablet {
-                    width: 80px;
-                    height: 75px;
-                }
-
-                @media @smartphone {
-                    width: 57px;
-                    height: 53px;
+            @media @desktop-wide-fixed {
+                width: calc(~'(100% - 173px) / 6');
+                &:nth-child(6n + 1) {
+                    margin-left: 0;
                 }
             }
+
+            @media @desktop-fixed {
+                width: calc(~'(100% - 138px) / 5');
+                &:nth-child(5n + 1) {
+                    margin-left: 0;
+                }
+            }
+
+            @media @tablet-fixed {
+                width: calc(~'(100% - 138px) / 5');
+                &:nth-child(5n + 1) {
+                    margin-left: 0;
+                }
+            }
+
+            @media @smartphone-fixed {
+                width: calc(~'(100% - 101px) / 4');
+                &:nth-child(4n + 1) {
+                    margin-left: 0;
+                }
+            }
+
+            img {
+                width: 100%;
+            }
+
         }
     }
 }
