@@ -1383,6 +1383,7 @@ header .arrow-about-wrapper .arrow-about img {
 @media (max-width: 659px) {
   .expertise-section .expertise-items li {
     font-size: 12px;
+    margin-right: 10px;
   }
 }
 .expertise-section .expertise-dropdown {
