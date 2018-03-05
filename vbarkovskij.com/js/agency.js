@@ -75,5 +75,9 @@
     $('.navbar-toggle').click(function() {
         $('.menu-overlay').toggleClass('hidden');
     });
+
+    $('.menu-overlay').click(function() {
+        $('.navbar-toggle').click();
+    });
 	
 })(jQuery); // End of use strict
