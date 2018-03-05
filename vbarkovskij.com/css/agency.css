@@ -1008,6 +1008,7 @@ header .arrow-about-wrapper .arrow-about img {
 @media (min-width: 1919px) {
   .portfolio-modal .modal-content h1 {
     font-size: 100px;
+    line-height: 140px;
   }
 }
 @media (min-width: 992px) and (max-width: 1919px) {
@@ -1015,12 +1016,12 @@ header .arrow-about-wrapper .arrow-about img {
     font-size: 60px;
   }
 }
-@media (min-width: 767px) and (max-width: 992px) {
+@media (min-width: 659px) and (max-width: 992px) {
   .portfolio-modal .modal-content h1 {
     font-size: 45px;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 659px) {
   .portfolio-modal .modal-content h1 {
     font-size: 30px;
   }
