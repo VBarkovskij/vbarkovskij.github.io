@@ -254,6 +254,9 @@ section h1.light-headline:after {
     width: 50%;
   }
 }
+.navbar-toggle {
+  padding: 0;
+}
 .navbar-custom {
   background-color: #fff;
   border: none;
