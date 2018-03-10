@@ -445,6 +445,13 @@ header .primary-text {
     margin-top: 55%;
   }
 }
+@media (max-width: 420px) {
+  header .primary-text {
+    font-size: 22px;
+    line-height: 32px;
+    margin-top: 55%;
+  }
+}
 header .primary-text .dynamic-phrase {
   border-bottom: solid 3px #000;
 }
