@@ -1709,6 +1709,11 @@ header .arrow-about-wrapper .arrow-about img {
 .contact-section .contacts {
   margin-top: 60px;
 }
+@media (min-width: 659px) and (max-width: 992px) {
+  .contact-section .contact-headline {
+    line-height: 24px;
+  }
+}
 .timeline {
   list-style: none;
   padding: 0;
