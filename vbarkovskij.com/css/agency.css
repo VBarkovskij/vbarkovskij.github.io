@@ -644,6 +644,9 @@ header .arrow-about-wrapper .arrow-about img {
 .portfolio-section .portfolio-categories li:last-child {
   margin-right: 0;
 }
+.portfolio-section .portfolio-categories li a {
+  font-weight: 500;
+}
 @media (min-width: 1919px) {
   .portfolio-section .portfolio-categories li a {
     font-size: 18px;
