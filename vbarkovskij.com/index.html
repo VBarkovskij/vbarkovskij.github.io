@@ -24,6 +24,7 @@
 
     <!-- Theme CSS -->
     <link href="css/agency.css" rel="stylesheet">
+    <link href="./vendor/materialize/css/materialize.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -117,32 +118,35 @@
 </header>
 
 
-<!-- About Section -->
-<!--<section id="about" class="about-section" data-parallax="scroll" data-image-src="./img/about/background.jpg" data-speed="1">-->
-<section id="about" class="about-section">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12">
-                <h1 class="light-headline rotate-45">About</h1>
+<div class="parallax-container">
+    <div class="parallax"><img src="./img/about/background.jpg"></div>
+
+    <section id="about" class="about-section">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1 class="light-headline rotate-45">About</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 col-lg-6">
+                    <p>
+                        Vlad has over 6 years of experience in designing human centered services and products for big
+                        and small companies like: SKODA, Philips, Lukoil, Discovery, Schneider Electric, Eurosport,
+                        Airbus, etc.
+                    </p>
+                </div>
+                <div class="col-md-12 col-lg-6">
+                    <p>
+                        Has been working as a User Experience design lead for 2 years, observing, ideating and managing
+                        ambiguous and not ordinary projects with a great success.
+                    </p>
+                </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-12 col-lg-6">
-                <p>
-                    Vlad has over 6 years of experience in designing human centered services and products for big
-                    and small companies like: SKODA, Philips, Lukoil, Discovery, Schneider Electric, Eurosport,
-                    Airbus, etc.
-                </p>
-            </div>
-            <div class="col-md-12 col-lg-6">
-                <p>
-                    Has been working as a User Experience design lead for 2 years, observing, ideating and managing
-                    ambiguous and not ordinary projects with a great success.
-                </p>
-            </div>
-        </div>
-    </div>
-</section>
+    </section>
+</div>
 
 <!-- Portfolio Grid Section -->
 <section id="portfolio" class="portfolio-section">
@@ -1255,8 +1259,8 @@
 
 <!-- Theme JavaScript -->
 <script src="js/typed.min.js"></script>
+<script src="vendor/materialize/js/materialize.min.js"></script>
 <script src="js/agency.min.js"></script>
-<script src="js/parallax.min.js"></script>
 
 </body>
 

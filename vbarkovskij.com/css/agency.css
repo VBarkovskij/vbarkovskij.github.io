@@ -574,10 +574,6 @@ header .arrow-about-wrapper .arrow-about img {
   vertical-align: middle;
   margin-top: -2px;
 }
-.about-section {
-  background: url('../img/about/background.jpg') no-repeat center center fixed;
-  background-size: cover;
-}
 @media (min-width: 1919px) {
   .about-section {
     padding: 112px;
@@ -620,6 +616,11 @@ header .arrow-about-wrapper .arrow-about img {
   .about-section p {
     font-size: 18px;
     line-height: 28px;
+  }
+}
+@media (max-width: 659px) {
+  .parallax-container {
+    height: 400px !important;
   }
 }
 .portfolio-section {

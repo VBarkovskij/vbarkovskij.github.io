@@ -79,5 +79,9 @@
     $('.menu-overlay').click(function() {
         $('.navbar-toggle').click();
     });
+
+    $(document).ready(function(){
+        $('.parallax').parallax();
+    });
 	
 })(jQuery); // End of use strict
