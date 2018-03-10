@@ -1329,9 +1329,9 @@ header .arrow-about-wrapper .arrow-about img {
 }
 @media (min-width: 992px) and (max-width: 1919px) {
   .reference-section .reference-icons li {
-    width: calc((100% - 138px) / 5);
+    width: calc((100% - 173px) / 6);
   }
-  .reference-section .reference-icons li:nth-child(5n + 1) {
+  .reference-section .reference-icons li:nth-child(6n + 1) {
     margin-left: 0;
   }
 }
