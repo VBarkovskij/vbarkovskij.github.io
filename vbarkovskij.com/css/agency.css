@@ -1384,14 +1384,19 @@ header .arrow-about-wrapper .arrow-about img {
 }
 .reference-section .reference-icons li {
   display: inline-block;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
   margin-left: 30px;
   border: solid 1px #ddd;
   text-align: center;
+  background: no-repeat center;
   background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
   filter: grayscale(100%);
+}
+@media (max-width: 659px) {
+  .reference-section .reference-icons li {
+    margin-bottom: 15px;
+    margin-left: 15px;
+  }
 }
 .reference-section .reference-icons li:hover {
   filter: none;
@@ -1425,7 +1430,7 @@ header .arrow-about-wrapper .arrow-about img {
 }
 @media (max-width: 659px) {
   .reference-section .reference-icons li {
-    width: calc((100% - 101px) / 4);
+    width: calc((100% - 56px) / 4);
   }
   .reference-section .reference-icons li:nth-child(4n + 1) {
     margin-left: 0;
