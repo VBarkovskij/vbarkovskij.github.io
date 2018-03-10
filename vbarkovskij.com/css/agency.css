@@ -577,19 +577,16 @@ header .arrow-about-wrapper .arrow-about img {
 @media (min-width: 1919px) {
   .portfolio-section .expand-more {
     margin-bottom: 100px;
-    margin-top: -40px;
   }
 }
 @media (min-width: 992px) and (max-width: 1919px) {
   .portfolio-section .expand-more {
     margin-bottom: 80px;
-    margin-top: -40px;
   }
 }
 @media (min-width: 659px) and (max-width: 992px) {
   .portfolio-section .expand-more {
     margin-bottom: 60px;
-    margin-top: -40px;
   }
 }
 @media (max-width: 659px) {
