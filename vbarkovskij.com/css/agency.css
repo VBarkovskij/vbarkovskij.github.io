@@ -419,7 +419,7 @@ header .primary-text {
 }
 @media (min-width: 1919px) {
   header .primary-text {
-    font-size: 100px;
+    font-size: 90px;
     line-height: 140px;
     margin-top: 10%;
   }
