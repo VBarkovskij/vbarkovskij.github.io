@@ -682,21 +682,24 @@ header .arrow-about-wrapper .arrow-about img {
   .portfolio-section .portfolio-description {
     font-size: 18px;
     line-height: 28px;
+    margin-bottom: 50px;
   }
 }
 @media (min-width: 992px) and (max-width: 1919px) {
   .portfolio-section .portfolio-description {
     font-size: 18px;
     line-height: 28px;
+    margin-bottom: 50px;
   }
 }
-@media (min-width: 767px) and (max-width: 992px) {
+@media (min-width: 659px) and (max-width: 992px) {
   .portfolio-section .portfolio-description {
     font-size: 18px;
     line-height: 28px;
+    margin-bottom: 50px;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 659px) {
   .portfolio-section .portfolio-description {
     font-size: 14px;
     line-height: 20px;
@@ -809,17 +812,17 @@ header .arrow-about-wrapper .arrow-about img {
 }
 @media (min-width: 1919px) {
   .portfolio-section .portfolio-previews {
-    margin-top: 90px;
+    margin-top: 100px;
   }
 }
 @media (min-width: 992px) and (max-width: 1919px) {
   .portfolio-section .portfolio-previews {
-    margin-top: 90px;
+    margin-top: 100px;
   }
 }
 @media (min-width: 659px) and (max-width: 992px) {
   .portfolio-section .portfolio-previews {
-    margin-top: 100px;
+    margin-top: 80px;
   }
 }
 @media (max-width: 659px) {
@@ -835,7 +838,21 @@ header .arrow-about-wrapper .arrow-about img {
 }
 .portfolio-section .portfolio-previews .row .portfolio-preview-wrapper {
   display: inline-block;
-  margin-bottom: 100px;
+}
+@media (min-width: 1919px) {
+  .portfolio-section .portfolio-previews .row .portfolio-preview-wrapper {
+    margin-bottom: 100px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1919px) {
+  .portfolio-section .portfolio-previews .row .portfolio-preview-wrapper {
+    margin-bottom: 100px;
+  }
+}
+@media (min-width: 659px) and (max-width: 992px) {
+  .portfolio-section .portfolio-previews .row .portfolio-preview-wrapper {
+    margin-bottom: 50px;
+  }
 }
 @media (max-width: 659px) {
   .portfolio-section .portfolio-previews .row .portfolio-preview-wrapper {
@@ -870,10 +887,16 @@ header .arrow-about-wrapper .arrow-about img {
 }
 .portfolio-section .portfolio-previews .row:nth-child(odd) .portfolio-preview-col:nth-child(even) .portfolio-preview,
 .portfolio-section .portfolio-previews .row:nth-child(even) .portfolio-preview-col:nth-child(odd) .portfolio-preview {
-  margin-top: -140px;
+  margin-top: -160px;
+}
+@media (min-width: 659px) and (max-width: 992px) {
+  .portfolio-section .portfolio-previews .row:nth-child(odd) .portfolio-preview-col:nth-child(even) .portfolio-preview,
+  .portfolio-section .portfolio-previews .row:nth-child(even) .portfolio-preview-col:nth-child(odd) .portfolio-preview {
+    margin-top: -80px !important;
+  }
 }
 .portfolio-section .portfolio-previews .row:first-child .portfolio-preview-col:nth-child(even) .portfolio-preview {
-  margin-top: -80px;
+  margin-top: -100px;
 }
 .portfolio-section .portfolio-previews .row:nth-child(odd) .portfolio-preview:nth-child(1) img {
   width: 100%;

@@ -16,7 +16,7 @@
     @media @smartphone {
         margin-top: 50px;
 	}
-	
+
 	.hidden-title {
 		display: none;
 	}
@@ -104,7 +104,7 @@
                     font-size: 18px;
                     line-height: 28px;
 				}
-				
+
                 @media @desktop {
                     font-size: 18px;
                     line-height: 28px;
@@ -120,7 +120,7 @@
                     line-height: 20px;
                 }
 			}
-			
+
 			&.active a {
 				color: @pink;
                 text-decoration: underline;
@@ -131,22 +131,25 @@
     .portfolio-description {
         margin-top: 30px !important;
 
-        @media @desktop-wide {
+        @media @desktop-wide-fixed {
             font-size: 18px;
             line-height: 28px;
+            margin-bottom: 50px;
         }
 
-        @media @desktop {
+        @media @desktop-fixed {
             font-size: 18px;
             line-height: 28px;
+            margin-bottom: 50px;
         }
 
-        @media @tablet {
+        @media @tablet-fixed {
             font-size: 18px;
             line-height: 28px;
+            margin-bottom: 50px;
         }
 
-        @media @smartphone {
+        @media @smartphone-fixed {
             font-size: 14px;
             line-height: 20px;
         }
@@ -269,18 +272,18 @@
     }
 
     .portfolio-previews {
-        @preview-item-grid-negative-margin: -80px;
+        @preview-item-grid-negative-margin: -100px;
 
         @media @desktop-wide-fixed {
-            margin-top: -@preview-item-grid-negative-margin + 10px;
+            margin-top: 100px;
         }
 
         @media @desktop-fixed {
-            margin-top: -@preview-item-grid-negative-margin + 10px;
+            margin-top: 100px;
         }
 
         @media @tablet-fixed {
-            margin-top: -@preview-item-grid-negative-margin + 20px;
+            margin-top: 80px;
         }
 
         @media @smartphone-fixed {
@@ -299,7 +302,18 @@
 
             .portfolio-preview-wrapper {
                 display: inline-block;
-                margin-bottom: 100px;
+
+                @media @desktop-wide-fixed {
+                    margin-bottom: 100px;
+                }
+
+                @media @desktop-fixed {
+                    margin-bottom: 100px;
+                }
+
+                @media @tablet-fixed {
+                    margin-bottom: 50px;
+                }
 
                 @media @smartphone-fixed {
                     margin-bottom: 40px;
@@ -341,8 +355,14 @@
 
             &:nth-child(odd) .portfolio-preview-col:nth-child(even) .portfolio-preview,
             &:nth-child(even) .portfolio-preview-col:nth-child(odd) .portfolio-preview {
-                margin-top: @preview-item-grid-negative-margin - 60px;
+                margin-top: -160px;
+
+                @media @tablet-fixed {
+                    margin-top: -80px !important;
+                }
             }
+
+
 
             &:first-child .portfolio-preview-col:nth-child(even) .portfolio-preview {
                 margin-top: @preview-item-grid-negative-margin;
@@ -514,7 +534,7 @@
 		h1, h2 {
 			text-transform: none;
 		}
-		
+
 		h1 {
 			@media @desktop-wide-fixed {
 				font-size: 100px;
@@ -535,7 +555,7 @@
 		}
 
         h2 {
-		
+
 			@media @desktop-wide {
 				font-size: 60px;
 				margin-top: 150px;
@@ -595,7 +615,7 @@
 		}
 
 		.popup-close-button {
-			
+
 			@media @desktop-wide {
 				margin: 80px 0;
 			}
