@@ -213,11 +213,11 @@ section h1.rotate-315:after {
   section h1:after {
     width: 68px;
     height: 68px;
-    background-size: auto 40%;
+    background-size: auto 28%;
     margin-left: 34px;
   }
 }
-@media (min-width: 767px) and (max-width: 992px) {
+@media (min-width: 659px) and (max-width: 992px) {
   section h1 {
     height: 54px;
     font-size: 38px;
@@ -230,7 +230,7 @@ section h1.rotate-315:after {
     margin-left: 27px;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 659px) {
   section h1 {
     height: 33px;
     font-size: 28px;

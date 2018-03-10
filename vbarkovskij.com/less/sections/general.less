@@ -124,7 +124,7 @@ section {
             background-position: 10% center !important;
         }
 
-        @media @desktop-wide {
+        @media @desktop-wide-fixed {
             @height: 80px;
 
             height: @height;
@@ -139,7 +139,7 @@ section {
             }
         }
 
-        @media @desktop {
+        @media @desktop-fixed {
             @height: 68px;
 
             height: @height;
@@ -149,12 +149,12 @@ section {
             &:after {
                 width: @height;
                 height: @height;
-                background-size: auto 40%;
+                background-size: auto 28%;
                 margin-left: @height / 2;
             }
         }
 
-        @media @tablet {
+        @media @tablet-fixed {
             @height: 54px;
 
             height: @height;
@@ -169,7 +169,7 @@ section {
             }
         }
 
-        @media @smartphone {
+        @media @smartphone-fixed {
             @height: 33px;
 
             height: @height;
