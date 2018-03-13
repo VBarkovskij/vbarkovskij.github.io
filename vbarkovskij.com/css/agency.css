@@ -342,6 +342,87 @@ section h1.light-headline:after {
 .navbar-toggle {
   padding: 0;
 }
+.section-categories {
+  list-style-type: none;
+  padding: 0;
+}
+@media (min-width: 1919px) {
+  .section-categories {
+    margin-bottom: 10px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1919px) {
+  .section-categories {
+    margin-bottom: 30px;
+  }
+}
+@media (min-width: 767px) and (max-width: 992px) {
+  .section-categories {
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 767px) {
+  .section-categories {
+    margin-bottom: 20px;
+  }
+}
+.section-categories li {
+  display: inline-block;
+}
+@media (min-width: 1919px) {
+  .section-categories li {
+    margin-right: 15px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1919px) {
+  .section-categories li {
+    margin-right: 14px;
+  }
+}
+@media (min-width: 767px) and (max-width: 992px) {
+  .section-categories li {
+    margin-right: 14px;
+  }
+}
+@media (max-width: 767px) {
+  .section-categories li {
+    margin-right: 10px;
+  }
+}
+.section-categories li:last-child {
+  margin-right: 0;
+}
+.section-categories li a {
+  font-weight: 500;
+}
+@media (min-width: 1919px) {
+  .section-categories li a {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1919px) {
+  .section-categories li a {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+@media (min-width: 767px) and (max-width: 992px) {
+  .section-categories li a {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+@media (max-width: 767px) {
+  .section-categories li a {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+.section-categories li.active a {
+  color: #ff0070;
+  text-decoration: underline;
+}
 .navbar-custom {
   background-color: #fff;
   border: none;
@@ -681,87 +762,6 @@ header .arrow-about-wrapper .arrow-about img {
   .portfolio-section .expand-more {
     margin-bottom: 40px;
   }
-}
-.portfolio-section .portfolio-categories {
-  list-style-type: none;
-  padding: 0;
-}
-@media (min-width: 1919px) {
-  .portfolio-section .portfolio-categories {
-    margin-bottom: 10px;
-  }
-}
-@media (min-width: 992px) and (max-width: 1919px) {
-  .portfolio-section .portfolio-categories {
-    margin-bottom: 30px;
-  }
-}
-@media (min-width: 767px) and (max-width: 992px) {
-  .portfolio-section .portfolio-categories {
-    margin-bottom: 40px;
-  }
-}
-@media (max-width: 767px) {
-  .portfolio-section .portfolio-categories {
-    margin-bottom: 20px;
-  }
-}
-.portfolio-section .portfolio-categories li {
-  display: inline-block;
-}
-@media (min-width: 1919px) {
-  .portfolio-section .portfolio-categories li {
-    margin-right: 15px;
-  }
-}
-@media (min-width: 992px) and (max-width: 1919px) {
-  .portfolio-section .portfolio-categories li {
-    margin-right: 14px;
-  }
-}
-@media (min-width: 767px) and (max-width: 992px) {
-  .portfolio-section .portfolio-categories li {
-    margin-right: 14px;
-  }
-}
-@media (max-width: 767px) {
-  .portfolio-section .portfolio-categories li {
-    margin-right: 10px;
-  }
-}
-.portfolio-section .portfolio-categories li:last-child {
-  margin-right: 0;
-}
-.portfolio-section .portfolio-categories li a {
-  font-weight: 500;
-}
-@media (min-width: 1919px) {
-  .portfolio-section .portfolio-categories li a {
-    font-size: 18px;
-    line-height: 28px;
-  }
-}
-@media (min-width: 992px) and (max-width: 1919px) {
-  .portfolio-section .portfolio-categories li a {
-    font-size: 18px;
-    line-height: 28px;
-  }
-}
-@media (min-width: 767px) and (max-width: 992px) {
-  .portfolio-section .portfolio-categories li a {
-    font-size: 18px;
-    line-height: 28px;
-  }
-}
-@media (max-width: 767px) {
-  .portfolio-section .portfolio-categories li a {
-    font-size: 14px;
-    line-height: 20px;
-  }
-}
-.portfolio-section .portfolio-categories li.active a {
-  color: #ff0070;
-  text-decoration: underline;
 }
 .portfolio-section .portfolio-description {
   margin-top: 30px !important;
@@ -1740,6 +1740,9 @@ header .arrow-about-wrapper .arrow-about img {
 }
 .competence-section h1 {
   margin-bottom: 25px;
+}
+.competence-section .section-categories {
+  margin-bottom: 30px;
 }
 @media (min-width: 1919px) {
   .competence-section .competence-description {
