@@ -1,0 +1,153 @@
+.competence-section {
+
+	font-family: Poppins;
+	
+	@media @desktop-wide-fixed {
+		margin-top: 70px;
+	}
+
+	@media @desktop-fixed {
+		margin-top: 60px;
+	}
+
+	@media @tablet-fixed {
+		margin-top: 50px;
+	}
+
+	@media @smartphone-fixed {
+		margin-top: 40px;
+	}
+
+	h1 {
+		margin-bottom: 25px;
+	}
+
+	.competence-description {
+
+		@media @desktop-wide-fixed {
+			font-size: 18px;
+			margin-bottom: 50px;
+			width: 50%;
+		}
+
+		@media @desktop-fixed {
+			font-size: 18px;
+			margin-bottom: 50px;
+			width: 50%;
+		}
+
+		@media @tablet-fixed {
+			font-size: 16px;
+			margin-bottom: 40px;
+			width: 100%;
+		}
+
+		@media @smartphone-fixed {
+			font-size: 14px;
+			margin-bottom: 30px;
+			width: 100%;
+		}
+	}
+
+	.competence-category {
+		display: inline-block;
+		margin-left: -2px;
+		margin-bottom: 30px;
+
+		@media @smartphone-fixed {
+			width: 100%;
+		}
+
+		@media @tablet-fixed {
+			width: 100%;
+		}
+
+		@media @desktop-fixed {
+			width: 50%;
+		}
+
+		@media @desktop-wide-fixed {
+			width: 50%;
+		}
+
+		.competence-content {
+			border: solid 1px #ddd;
+			padding: 30px;
+
+			.competence-category-title {
+				font-size: 24px;
+				text-transform: none;
+				margin-bottom: 35px;
+			}
+
+			.competence-category-description {
+				font-size: 16px;
+				margin-bottom: 40px;
+
+				@media @desktop-wide-fixed {
+					font-size: 16px;
+				}
+		
+				@media @desktop-fixed {
+					font-size: 16px;
+				}
+		
+				@media @tablet-fixed {
+					font-size: 16px;
+				}
+		
+				@media @smartphone-fixed {
+					font-size: 14px;
+				}
+			}
+
+			.competence-category-items {
+				padding-left: 30px;
+
+				@media @desktop-wide-fixed {
+					font-size: 16px;
+				}
+		
+				@media @desktop-fixed {
+					font-size: 16px;
+				}
+		
+				@media @tablet-fixed {
+					font-size: 16px;
+				}
+		
+				@media @smartphone-fixed {
+					font-size: 14px;
+				}
+
+				li {
+					padding-left: 15px;
+					margin-bottom: 15px;
+				}
+			}
+		}
+		
+		&:nth-child(odd) .competence-content {
+
+			@media @desktop-fixed {
+				margin-right: 15px;
+			}
+
+			@media @desktop-wide-fixed {
+				margin-right: 15px;
+			}
+		}
+
+		&:nth-child(even) .competence-content {
+			
+			@media @desktop-fixed {
+				margin-left: 15px;
+			}
+
+			@media @desktop-wide-fixed {
+				margin-left: 15px;
+			}
+		}
+	
+	}
+}

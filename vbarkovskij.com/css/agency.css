@@ -1715,6 +1715,165 @@ header .arrow-about-wrapper .arrow-about img {
     line-height: 24px;
   }
 }
+.competence-section {
+  font-family: Poppins;
+}
+@media (min-width: 1919px) {
+  .competence-section {
+    margin-top: 70px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1919px) {
+  .competence-section {
+    margin-top: 60px;
+  }
+}
+@media (min-width: 659px) and (max-width: 992px) {
+  .competence-section {
+    margin-top: 50px;
+  }
+}
+@media (max-width: 659px) {
+  .competence-section {
+    margin-top: 40px;
+  }
+}
+.competence-section h1 {
+  margin-bottom: 25px;
+}
+@media (min-width: 1919px) {
+  .competence-section .competence-description {
+    font-size: 18px;
+    margin-bottom: 50px;
+    width: 50%;
+  }
+}
+@media (min-width: 992px) and (max-width: 1919px) {
+  .competence-section .competence-description {
+    font-size: 18px;
+    margin-bottom: 50px;
+    width: 50%;
+  }
+}
+@media (min-width: 659px) and (max-width: 992px) {
+  .competence-section .competence-description {
+    font-size: 16px;
+    margin-bottom: 40px;
+    width: 100%;
+  }
+}
+@media (max-width: 659px) {
+  .competence-section .competence-description {
+    font-size: 14px;
+    margin-bottom: 30px;
+    width: 100%;
+  }
+}
+.competence-section .competence-category {
+  display: inline-block;
+  margin-left: -2px;
+  margin-bottom: 30px;
+}
+@media (max-width: 659px) {
+  .competence-section .competence-category {
+    width: 100%;
+  }
+}
+@media (min-width: 659px) and (max-width: 992px) {
+  .competence-section .competence-category {
+    width: 100%;
+  }
+}
+@media (min-width: 992px) and (max-width: 1919px) {
+  .competence-section .competence-category {
+    width: 50%;
+  }
+}
+@media (min-width: 1919px) {
+  .competence-section .competence-category {
+    width: 50%;
+  }
+}
+.competence-section .competence-category .competence-content {
+  border: solid 1px #ddd;
+  padding: 30px;
+}
+.competence-section .competence-category .competence-content .competence-category-title {
+  font-size: 24px;
+  text-transform: none;
+  margin-bottom: 35px;
+}
+.competence-section .competence-category .competence-content .competence-category-description {
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+@media (min-width: 1919px) {
+  .competence-section .competence-category .competence-content .competence-category-description {
+    font-size: 16px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1919px) {
+  .competence-section .competence-category .competence-content .competence-category-description {
+    font-size: 16px;
+  }
+}
+@media (min-width: 659px) and (max-width: 992px) {
+  .competence-section .competence-category .competence-content .competence-category-description {
+    font-size: 16px;
+  }
+}
+@media (max-width: 659px) {
+  .competence-section .competence-category .competence-content .competence-category-description {
+    font-size: 14px;
+  }
+}
+.competence-section .competence-category .competence-content .competence-category-items {
+  padding-left: 30px;
+}
+@media (min-width: 1919px) {
+  .competence-section .competence-category .competence-content .competence-category-items {
+    font-size: 16px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1919px) {
+  .competence-section .competence-category .competence-content .competence-category-items {
+    font-size: 16px;
+  }
+}
+@media (min-width: 659px) and (max-width: 992px) {
+  .competence-section .competence-category .competence-content .competence-category-items {
+    font-size: 16px;
+  }
+}
+@media (max-width: 659px) {
+  .competence-section .competence-category .competence-content .competence-category-items {
+    font-size: 14px;
+  }
+}
+.competence-section .competence-category .competence-content .competence-category-items li {
+  padding-left: 15px;
+  margin-bottom: 15px;
+}
+@media (min-width: 992px) and (max-width: 1919px) {
+  .competence-section .competence-category:nth-child(odd) .competence-content {
+    margin-right: 15px;
+  }
+}
+@media (min-width: 1919px) {
+  .competence-section .competence-category:nth-child(odd) .competence-content {
+    margin-right: 15px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1919px) {
+  .competence-section .competence-category:nth-child(even) .competence-content {
+    margin-left: 15px;
+  }
+}
+@media (min-width: 1919px) {
+  .competence-section .competence-category:nth-child(even) .competence-content {
+    margin-left: 15px;
+  }
+}
 .timeline {
   list-style: none;
   padding: 0;
