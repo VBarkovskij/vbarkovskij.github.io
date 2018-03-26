@@ -83,5 +83,39 @@
     $(document).ready(function(){
         $('.parallax').parallax();
     });
+
+    $('.reference-icons li').click(function() {
+        var hasClass = $(this).hasClass('clicked');
+
+        if (hasClass) {
+            $(this).removeClass('clicked');
+            $(this).css('transform', 'none');
+        } else {
+            $('.reference-icons li').removeClass('clicked').css('transform', 'none');
+            $(this).addClass('clicked');
+
+            var screenWidth = window.innerWidth;
+            var count = 4;
+            var margin = 15;
+
+            if (screenWidth > 659) {
+                count = 5;
+                margin = 30;
+            }
+
+            if (screenWidth > 992) {
+                count = 6;
+                margin = 30;
+            }
+
+            var totalMargin = margin * (count - 1);
+            var parentWidth = $('.reference-icons').outerWidth(true);
+            var elementSize = (parentWidth - totalMargin) / count - 22;
+            var newSize = elementSize * 2 + margin;
+            var ratio = newSize / elementSize;
+
+            $(this).css('transform', 'scale(' + ratio +')');
+        }
+    });
 	
 })(jQuery); // End of use strict
