@@ -195,7 +195,7 @@ section h1.rotate-45:after {
     margin-left: -9px;
   }
 }
-@media (max-width: 659px), (max-height: 490px and max-width: 659px) {
+@media (max-width: 659px), (max-height: 490px) and (max-width: 659px) {
   section h1.rotate-45:after {
     margin-left: 9px;
   }
@@ -218,7 +218,7 @@ section h1.rotate-135:after {
     margin-left: 15px;
   }
 }
-@media (max-width: 659px), (max-height: 490px and max-width: 659px) {
+@media (max-width: 659px), (max-height: 490px) and (max-width: 659px) {
   section h1.rotate-135:after {
     margin-left: 20px;
   }
@@ -242,7 +242,7 @@ section h1.rotate-225:after {
     margin-left: -5px;
   }
 }
-@media (max-width: 659px), (max-height: 490px and max-width: 659px) {
+@media (max-width: 659px), (max-height: 490px) and (max-width: 659px) {
   section h1.rotate-225:after {
     margin-left: 8px;
   }
@@ -266,7 +266,7 @@ section h1.rotate-315:after {
     margin-left: 16px;
   }
 }
-@media (max-width: 659px), (max-height: 490px and max-width: 659px) {
+@media (max-width: 659px), (max-height: 490px) and (max-width: 659px) {
   section h1.rotate-315:after {
     margin-left: 18px;
   }
@@ -310,7 +310,7 @@ section h1.rotate-315:after {
     margin-left: 27px;
   }
 }
-@media (max-width: 659px), (max-height: 490px and max-width: 659px) {
+@media (max-width: 659px), (max-height: 490px) and (max-width: 659px) {
   section h1 {
     height: 33px;
     font-size: 28px;
@@ -579,7 +579,7 @@ header {
     min-height: 800px;
   }
 }
-@media (max-width: 659px), (max-height: 490px and max-width: 659px) {
+@media (max-width: 659px), (max-height: 490px) and (max-width: 659px) {
   header {
     min-height: 500px;
   }
@@ -619,7 +619,7 @@ header .primary-text {
     margin-top: 40%;
   }
 }
-@media (max-width: 659px), (max-height: 490px and max-width: 659px) {
+@media (max-width: 659px), (max-height: 490px) and (max-width: 659px) {
   header .primary-text {
     font-size: 28px;
     line-height: 38px;
@@ -707,7 +707,7 @@ header .arrow-about-wrapper .arrow-about img {
   color: #fff;
   font-family: Poppins;
 }
-@media (max-width: 659px), (max-height: 490px and max-width: 659px) {
+@media (max-width: 659px), (max-height: 490px) and (max-width: 659px) {
   .about-section p {
     font-size: 14px;
     line-height: 20px;
@@ -719,7 +719,7 @@ header .arrow-about-wrapper .arrow-about img {
     line-height: 28px;
   }
 }
-@media (max-width: 659px), (max-height: 490px and max-width: 659px) {
+@media (max-width: 659px), (max-height: 490px) and (max-width: 659px) {
   .parallax-container {
     height: 400px !important;
   }
@@ -778,7 +778,7 @@ header .arrow-about-wrapper .arrow-about img {
     margin-bottom: 60px;
   }
 }
-@media (max-width: 659px), (max-height: 490px and max-width: 659px) {
+@media (max-width: 659px), (max-height: 490px) and (max-width: 659px) {
   .portfolio-section .expand-more {
     margin-bottom: 40px;
   }
@@ -807,7 +807,7 @@ header .arrow-about-wrapper .arrow-about img {
     margin-bottom: 50px;
   }
 }
-@media (max-width: 659px), (max-height: 490px and max-width: 659px) {
+@media (max-width: 659px), (max-height: 490px) and (max-width: 659px) {
   .portfolio-section .portfolio-description {
     font-size: 14px;
     line-height: 20px;
@@ -933,7 +933,7 @@ header .arrow-about-wrapper .arrow-about img {
     margin-top: 80px;
   }
 }
-@media (max-width: 659px), (max-height: 490px and max-width: 659px) {
+@media (max-width: 659px), (max-height: 490px) and (max-width: 659px) {
   .portfolio-section .portfolio-previews {
     margin-top: 50px;
   }
@@ -962,7 +962,7 @@ header .arrow-about-wrapper .arrow-about img {
     margin-bottom: 50px;
   }
 }
-@media (max-width: 659px), (max-height: 490px and max-width: 659px) {
+@media (max-width: 659px), (max-height: 490px) and (max-width: 659px) {
   .portfolio-section .portfolio-previews .row .portfolio-preview-wrapper {
     margin-bottom: 40px;
     width: 100%;
@@ -979,7 +979,7 @@ header .arrow-about-wrapper .arrow-about img {
   display: inline-block;
   transition: transform .2s;
 }
-@media (max-width: 659px), (max-height: 490px and max-width: 659px) {
+@media (max-width: 659px), (max-height: 490px) and (max-width: 659px) {
   .portfolio-section .portfolio-previews .row .portfolio-preview {
     margin-top: 0 !important;
     width: 100%;
@@ -1163,7 +1163,7 @@ header .arrow-about-wrapper .arrow-about img {
     font-size: 45px;
   }
 }
-@media (max-width: 659px), (max-height: 490px and max-width: 659px) {
+@media (max-width: 659px), (max-height: 490px) and (max-width: 659px) {
   .portfolio-modal .modal-content h1 {
     font-size: 30px;
   }
@@ -1413,7 +1413,7 @@ header .arrow-about-wrapper .arrow-about img {
   background-size: contain;
   filter: grayscale(100%);
 }
-@media (max-width: 659px), (max-height: 490px and max-width: 659px) {
+@media (max-width: 659px), (max-height: 490px) and (max-width: 659px) {
   .reference-section .reference-icons li {
     margin-bottom: 15px;
     margin-left: 15px;
@@ -1449,7 +1449,7 @@ header .arrow-about-wrapper .arrow-about img {
     margin-left: 0;
   }
 }
-@media (max-width: 659px), (max-height: 490px and max-width: 659px) {
+@media (max-width: 659px), (max-height: 490px) and (max-width: 659px) {
   .reference-section .reference-icons li {
     width: calc((100% - 56px) / 4);
   }
@@ -1516,7 +1516,7 @@ header .arrow-about-wrapper .arrow-about img {
     font-size: 14px;
   }
 }
-@media (max-width: 659px), (max-height: 490px and max-width: 659px) {
+@media (max-width: 659px), (max-height: 490px) and (max-width: 659px) {
   .expertise-section .expertise-items li {
     font-size: 12px;
     margin-right: 10px;
@@ -1712,7 +1712,7 @@ header .arrow-about-wrapper .arrow-about img {
   display: inline-block;
   margin-left: 60px;
 }
-@media (max-width: 659px), (max-height: 490px and max-width: 659px) {
+@media (max-width: 659px), (max-height: 490px) and (max-width: 659px) {
   .contact-section .social-buttons {
     margin-left: 0;
     margin-top: 14px;
@@ -1753,7 +1753,7 @@ header .arrow-about-wrapper .arrow-about img {
     margin-top: 50px;
   }
 }
-@media (max-width: 659px), (max-height: 490px and max-width: 659px) {
+@media (max-width: 659px), (max-height: 490px) and (max-width: 659px) {
   .competence-section {
     margin-top: 40px;
   }
@@ -1785,7 +1785,7 @@ header .arrow-about-wrapper .arrow-about img {
     width: 100%;
   }
 }
-@media (max-width: 659px), (max-height: 490px and max-width: 659px) {
+@media (max-width: 659px), (max-height: 490px) and (max-width: 659px) {
   .competence-section .competence-description {
     font-size: 14px;
     margin-bottom: 30px;
@@ -1797,7 +1797,7 @@ header .arrow-about-wrapper .arrow-about img {
   margin-left: -2px;
   margin-bottom: 30px;
 }
-@media (max-width: 659px), (max-height: 490px and max-width: 659px) {
+@media (max-width: 659px), (max-height: 490px) and (max-width: 659px) {
   .competence-section .competence-category {
     width: 100%;
   }
@@ -1845,7 +1845,7 @@ header .arrow-about-wrapper .arrow-about img {
     font-size: 16px;
   }
 }
-@media (max-width: 659px), (max-height: 490px and max-width: 659px) {
+@media (max-width: 659px), (max-height: 490px) and (max-width: 659px) {
   .competence-section .competence-category .competence-content .competence-category-description {
     font-size: 14px;
   }
@@ -1868,7 +1868,7 @@ header .arrow-about-wrapper .arrow-about img {
     font-size: 16px;
   }
 }
-@media (max-width: 659px), (max-height: 490px and max-width: 659px) {
+@media (max-width: 659px), (max-height: 490px) and (max-width: 659px) {
   .competence-section .competence-category .competence-content .competence-category-items {
     font-size: 14px;
   }
