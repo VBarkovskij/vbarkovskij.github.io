@@ -1,5 +1,10 @@
 .about-section {
 
+    @media @smartphone-fixed {
+        background: url('../img/about/background.jpg') no-repeat center center fixed;
+        background-size: cover;
+    }
+
     @media @desktop-wide {
         padding: 112px;
     }
@@ -45,5 +50,11 @@
 
     @media @smartphone-fixed {
         height: 400px !important;
+    }
+
+    .parallax {
+        @media @smartphone-fixed {
+            display: none;
+        }
     }
 }
