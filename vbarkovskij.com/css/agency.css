@@ -564,6 +564,26 @@ header {
   font-family: Poppins;
   height: 100vh;
 }
+@media (min-width: 1919px) {
+  header {
+    min-height: 800px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1919px) {
+  header {
+    min-height: 800px;
+  }
+}
+@media (min-width: 659px) and (max-width: 992px) {
+  header {
+    min-height: 800px;
+  }
+}
+@media (max-width: 659px) {
+  header {
+    min-height: 530px;
+  }
+}
 header .container {
   display: flex;
   flex-direction: column;
