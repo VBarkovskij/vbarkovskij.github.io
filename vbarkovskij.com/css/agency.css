@@ -1836,6 +1836,19 @@ header .arrow-about-wrapper .arrow-about img {
   font-size: 24px;
   text-transform: none;
   margin-bottom: 35px;
+  background-repeat: no-repeat;
+  padding-left: 60px;
+  background-size: auto 100%;
+  line-height: 40px;
+}
+.competence-section .competence-category .competence-content .competence-category-title--design {
+  background-image: url('../img/design-icon.png');
+}
+.competence-section .competence-category .competence-content .competence-category-title--branding {
+  background-image: url('../img/branding-icon.png');
+}
+.competence-section .competence-category .competence-content .competence-category-title--strategy {
+  background-image: url('../img/strategy-icon.png');
 }
 .competence-section .competence-category .competence-content .competence-category-description {
   font-size: 16px;
