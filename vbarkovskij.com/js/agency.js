@@ -84,7 +84,9 @@
         $('.parallax').parallax();
     });
 
+    alert(2);
     $('.reference-icons li').click(function() {
+        alert(1);
         var hasClass = $(this).hasClass('clicked');
 
         if (hasClass) {
