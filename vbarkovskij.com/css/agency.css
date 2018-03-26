@@ -581,7 +581,7 @@ header {
 }
 @media (max-width: 659px), (max-height: 490px and max-width: 659px) {
   header {
-    min-height: 480px;
+    min-height: 500px;
   }
 }
 header .container {
