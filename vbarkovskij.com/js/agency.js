@@ -85,26 +85,36 @@
     });
 
 
-    $('.reference-icons li').click(function() {
-        var hasClass = $(this).hasClass('clicked');
+
+    function addIconClickHandlers() {
+        $('.reference-icons li').unbind('click').bind('click', function() {
+            addClickHandler(this);
+        });
+    }
+
+    var config = {
+        screenWidth: window.innerWidth
+    }
+
+    function addClickHandler(icon) {
+        var hasClass = $(icon).hasClass('clicked');
 
         if (hasClass) {
-            $(this).removeClass('clicked');
-            $(this).css('transform', 'none');
+            $(icon).removeClass('clicked');
+            $(icon).css('transform', 'none');
         } else {
             $('.reference-icons li').removeClass('clicked').css('transform', 'none');
-            $(this).addClass('clicked');
+            $(icon).addClass('clicked');
 
-            var screenWidth = window.innerWidth;
             var count = 4;
             var margin = 15;
 
-            if (screenWidth > 659) {
+            if (config.screenWidth > 659) {
                 count = 5;
                 margin = 30;
             }
 
-            if (screenWidth > 992) {
+            if (config.screenWidth > 992) {
                 count = 6;
                 margin = 30;
             }
@@ -115,8 +125,27 @@
             var newSize = elementSize * 2 + margin;
             var ratio = newSize / elementSize;
 
-            $(this).css('transform', 'scale(' + ratio +')');
+            $(icon).css('transform', 'scale(' + ratio +')');
+
+            var lastRowIconsCount = $('.reference-icons li').length % count;
+            if (lastRowIconsCount === 0) {
+                lastRowIconsCount = count;
+            }
+
+            var lastRowIconIndex = $('.reference-icons li').length - lastRowIconsCount;
+            var index = $('.reference-icons li').index(icon);
+            $(icon).css('transformOrigin', '');
+            if (index >= lastRowIconIndex) {
+                var transform = (index + 1) % count === 0 ? 'right bottom' : 'left bottom';
+                $(icon).css('transformOrigin', transform);
+            }
         }
+    }
+
+    addIconClickHandlers();
+
+    $(window).resize(function() {
+        config.screenWidth = window.innerWidth;
     });
 	
 })(jQuery); // End of use strict
