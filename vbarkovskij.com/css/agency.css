@@ -1427,6 +1427,10 @@ header .arrow-about-wrapper .arrow-about img {
   background-color: #fff;
   filter: grayscale(100%);
 }
+.reference-section .reference-icons li:hover {
+  filter: none;
+  cursor: pointer;
+}
 @media (max-width: 659px), (max-height: 490px) and (max-width: 659px) {
   .reference-section .reference-icons li {
     margin-bottom: 20px;
