@@ -179,6 +179,10 @@
                 background-position: center 5%;
                 border: none;
 
+                @media @smartphone-fixed {
+                    background-size: 50%;
+                }
+
                 .icon__description {
                     position: absolute;
                     display: block;
@@ -193,7 +197,10 @@
                     }
 
                     @media @smartphone-fixed {
-                        font-size: 25%;
+                        font-size: .25em;
+                        line-height: 150%;
+                        padding: 5%;
+                        top: 42%;
                     }
                 }
             }

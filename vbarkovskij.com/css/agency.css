@@ -1449,6 +1449,11 @@ header .arrow-about-wrapper .arrow-about img {
   background-position: center 5%;
   border: none;
 }
+@media (max-width: 659px), (max-height: 490px) and (max-width: 659px) {
+  .reference-section .reference-icons li.clicked {
+    background-size: 50%;
+  }
+}
 .reference-section .reference-icons li.clicked .icon__description {
   position: absolute;
   display: block;
@@ -1465,7 +1470,10 @@ header .arrow-about-wrapper .arrow-about img {
 }
 @media (max-width: 659px), (max-height: 490px) and (max-width: 659px) {
   .reference-section .reference-icons li.clicked .icon__description {
-    font-size: 25%;
+    font-size: .25em;
+    line-height: 150%;
+    padding: 5%;
+    top: 42%;
   }
 }
 @media (min-width: 1919px) {
