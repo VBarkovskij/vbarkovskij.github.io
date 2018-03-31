@@ -1444,6 +1444,34 @@ header .arrow-about-wrapper .arrow-about img {
   filter: none;
   position: relative;
   z-index: 12;
+  box-shadow: 1px 1px 8px 0 rgba(0, 0, 0, 0.08), 0 20px 50px 0 rgba(0, 0, 0, 0.07);
+  background-size: 60%;
+  background-position: center 5%;
+}
+.reference-section .reference-icons li.clicked .icon__description {
+  position: absolute;
+  display: block;
+  font-size: 35%;
+  top: 40%;
+  padding: 15%;
+  line-height: 200%;
+}
+@media (min-width: 659px) and (max-width: 992px) {
+  .reference-section .reference-icons li.clicked .icon__description {
+    padding: 10%;
+    top: 45%;
+  }
+}
+@media (max-width: 659px), (max-height: 490px) and (max-width: 659px) {
+  .reference-section .reference-icons li.clicked .icon__description {
+    display: none;
+  }
+}
+@media (max-width: 659px), (max-height: 490px) and (max-width: 659px) {
+  .reference-section .reference-icons li.clicked {
+    background-size: cover;
+    background-position: center;
+  }
 }
 @media (min-width: 1919px) {
   .reference-section .reference-icons li {
@@ -1488,6 +1516,9 @@ header .arrow-about-wrapper .arrow-about img {
   .reference-section .reference-icons li:nth-child(4n) {
     transform-origin: right top;
   }
+}
+.reference-section .reference-icons li .icon__description {
+  display: none;
 }
 .reference-section .reference-icons li img {
   width: 100%;

@@ -173,6 +173,33 @@
                 filter: none;
                 position: relative;
                 z-index: 12;
+                box-shadow: 1px 1px 8px 0 rgba(0, 0, 0, 0.08),
+                            0 20px 50px 0 rgba(0, 0, 0, 0.07);
+                background-size: 60%;
+                background-position: center 5%;
+
+                .icon__description {
+                    position: absolute;
+                    display: block;
+                    font-size: 35%;
+                    top: 40%;
+                    padding: 15%;
+                    line-height: 200%;
+
+                    @media @tablet-fixed {
+                        padding: 10%;
+                        top: 45%;
+                    }
+
+                    @media @smartphone-fixed {
+                        display: none;
+                    }
+                }
+
+                @media @smartphone-fixed {
+                    background-size: cover;
+                    background-position: center;
+                }
             }
 
             @media @desktop-wide-fixed {
@@ -217,6 +244,10 @@
                 &:nth-child(4n) {
                     transform-origin: right top;
                 }
+            }
+
+            .icon__description {
+                display: none;
             }
 
             img {
