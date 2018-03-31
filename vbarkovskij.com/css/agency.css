@@ -1465,13 +1465,7 @@ header .arrow-about-wrapper .arrow-about img {
 }
 @media (max-width: 659px), (max-height: 490px) and (max-width: 659px) {
   .reference-section .reference-icons li.clicked .icon__description {
-    display: none;
-  }
-}
-@media (max-width: 659px), (max-height: 490px) and (max-width: 659px) {
-  .reference-section .reference-icons li.clicked {
-    background-size: cover;
-    background-position: center;
+    font-size: 25%;
   }
 }
 @media (min-width: 1919px) {
