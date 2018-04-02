@@ -1029,8 +1029,18 @@ header .arrow-about-wrapper .arrow-about img {
     margin-top: -80px !important;
   }
 }
+@media (min-width: 1919px) {
+  .portfolio-section .portfolio-previews .row:nth-child(even) .portfolio-preview-col:nth-child(odd) .portfolio-preview {
+    padding-top: 13px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1919px) {
+  .portfolio-section .portfolio-previews .row:nth-child(even) .portfolio-preview-col:nth-child(odd) .portfolio-preview {
+    padding-top: 13px;
+  }
+}
 .portfolio-section .portfolio-previews .row:first-child .portfolio-preview-col:nth-child(even) .portfolio-preview {
-  margin-top: -100px;
+  margin-top: -80px;
 }
 .portfolio-section .portfolio-previews .row:nth-child(odd) .portfolio-preview:nth-child(1) img {
   width: 100%;

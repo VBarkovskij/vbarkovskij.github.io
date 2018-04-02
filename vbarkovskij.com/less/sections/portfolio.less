@@ -197,7 +197,7 @@
     }
 
     .portfolio-previews {
-        @preview-item-grid-negative-margin: -100px;
+        @preview-item-grid-negative-margin: -80px;
 
         @media @desktop-wide-fixed {
             margin-top: 100px;
@@ -287,7 +287,16 @@
                 }
             }
 
+            &:nth-child(even) .portfolio-preview-col:nth-child(odd) .portfolio-preview {
 
+                @media @desktop-wide-fixed {
+                    padding-top: 13px;
+                }
+
+                @media @desktop-fixed {
+                    padding-top: 13px;
+                }
+            }
 
             &:first-child .portfolio-preview-col:nth-child(even) .portfolio-preview {
                 margin-top: @preview-item-grid-negative-margin;
