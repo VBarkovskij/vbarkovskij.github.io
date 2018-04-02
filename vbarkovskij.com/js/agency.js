@@ -122,7 +122,7 @@
             var totalMargin = margin * (count - 1);
             var parentWidth = $('.reference-icons').outerWidth(true);
             var elementSize = (parentWidth - totalMargin) / count - 22;
-            var newSize = elementSize * 2 + margin;
+            var newSize = elementSize * 2 + margin + 1;
             var ratio = newSize / elementSize;
 
             $(icon).css('transform', 'scale(' + ratio +')');
