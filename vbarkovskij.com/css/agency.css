@@ -492,6 +492,9 @@ section h1.light-headline:after {
   border-radius: 0;
   color: #ff0070;
 }
+.navbar-custom .navbar-nav > .active > a:hover .nav-link-text {
+  border-bottom: none;
+}
 .navbar-custom .navbar-nav > .active > a:hover,
 .navbar-custom .navbar-nav > .active > a:focus {
   background-color: transparent;
