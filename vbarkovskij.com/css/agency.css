@@ -570,12 +570,12 @@ header {
 }
 @media (min-width: 1919px) {
   header {
-    min-height: 800px;
+    min-height: 900px;
   }
 }
 @media (min-width: 992px) and (max-width: 1919px) {
   header {
-    min-height: 800px;
+    min-height: 900px;
   }
 }
 @media (min-width: 659px) and (max-width: 992px) {
@@ -703,6 +703,14 @@ header .arrow-about-wrapper .arrow-about img {
 @media (max-width: 767px) {
   .about-section {
     padding: 80px 0;
+  }
+}
+.about-section--old {
+  background-color: #000;
+}
+@media (max-width: 659px), (max-height: 490px) and (max-width: 659px) {
+  .about-section--old {
+    background-image: none;
   }
 }
 .about-section h1 {
