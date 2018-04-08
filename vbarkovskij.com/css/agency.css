@@ -1456,6 +1456,11 @@ header .arrow-about-wrapper .arrow-about img {
   filter: none;
   cursor: pointer;
 }
+.reference-section .reference-icons li:before {
+  content: '';
+  display: inline-block;
+  padding: 50% 0;
+}
 @media (max-width: 659px), (max-height: 490px) and (max-width: 659px) {
   .reference-section .reference-icons li {
     margin-bottom: 20px;
