@@ -562,6 +562,12 @@ section h1.light-headline:after {
     display: block;
   }
 }
+#bs-example-navbar-collapse-1 {
+  max-height: 1px;
+}
+#bs-example-navbar-collapse-1.in {
+  max-height: 1000px;
+}
 header {
   box-sizing: border-box;
   font-family: Poppins;

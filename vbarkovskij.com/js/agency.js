@@ -19,8 +19,8 @@
     });
 
     // Closes the Responsive Menu on Menu Item Click
-    $('.navbar-collapse ul li a').click(function(){ 
-            $('.navbar-toggle:visible').click();
+    $('.navbar-collapse ul li a').click(function(){
+        $('.navbar-toggle').click();
     });
 
     // Offset for Main Navigation
@@ -71,9 +71,22 @@
     };
 
     var typed = new Typed(".dynamic-phrase", options);
+    var isMenuOpen = false;
 
     $('.navbar-toggle').click(function() {
-        $('.menu-overlay').toggleClass('hidden');
+        isMenuOpen = !isMenuOpen;
+
+        if (isMenuOpen) {
+            $(this).removeClass('collapsed');
+            $(this).attr('aria-expanded', true);
+            $('.menu-overlay').removeClass('hidden');
+            $('#bs-example-navbar-collapse-1').addClass('in');
+        } else {
+            $(this).addClass('collapsed');
+            $(this).attr('aria-expanded', false);
+            $('.menu-overlay').addClass('hidden');
+            $('#bs-example-navbar-collapse-1').removeClass('in');
+        }
     });
 
     $('.menu-overlay').click(function() {
