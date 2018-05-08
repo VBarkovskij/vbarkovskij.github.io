@@ -330,6 +330,7 @@ section {
 		a {
 
 			font-weight: 500;
+            text-decoration: none;
 
 			@media @desktop-wide {
 				font-size: 18px;
@@ -350,11 +351,15 @@ section {
 				font-size: 14px;
 				line-height: 20px;
 			}
+
+            &:hover {
+                border-bottom: solid 1px black;
+            }
 		}
 
 		&.active a {
 			color: @pink;
-			text-decoration: underline;
+			border-bottom: solid 1px @pink;
 		}
 	}
 }

@@ -399,6 +399,7 @@ section h1.light-headline:after {
 }
 .section-categories li a {
   font-weight: 500;
+  text-decoration: none;
 }
 @media (min-width: 1919px) {
   .section-categories li a {
@@ -424,9 +425,12 @@ section h1.light-headline:after {
     line-height: 20px;
   }
 }
+.section-categories li a:hover {
+  border-bottom: solid 1px black;
+}
 .section-categories li.active a {
   color: #ff0070;
-  text-decoration: underline;
+  border-bottom: solid 1px #ff0070;
 }
 .navbar-custom {
   background-color: #fff;
@@ -497,8 +501,9 @@ section h1.light-headline:after {
   border-radius: 0;
   color: #ff0070;
 }
+.navbar-custom .navbar-nav > .active > a .nav-link-text,
 .navbar-custom .navbar-nav > .active > a:hover .nav-link-text {
-  border-bottom: none;
+  border-bottom: solid 1px #ff0070;
 }
 .navbar-custom .navbar-nav > .active > a:hover,
 .navbar-custom .navbar-nav > .active > a:focus {
