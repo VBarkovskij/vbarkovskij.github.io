@@ -13,12 +13,7 @@ body {
     padding-right: 10%;
   }
 }
-@media (max-width: 659px), (max-height: 490px) and (max-width: 659px) {
-  .non-scrollable {
-    overflow: hidden;
-  }
-}
-@media (min-width: 659px) and (max-width: 992px) {
+@media (max-width: 768px) {
   .non-scrollable {
     overflow: hidden;
   }
@@ -567,7 +562,7 @@ section h1.light-headline:after {
   display: none;
   z-index: 999;
 }
-@media (max-width: 992px) {
+@media (max-width: 768px) {
   .menu-overlay {
     display: block;
   }
