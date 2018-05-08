@@ -13,6 +13,16 @@ body {
     padding-right: 10%;
   }
 }
+@media (max-width: 659px), (max-height: 490px) and (max-width: 659px) {
+  .non-scrollable {
+    overflow: hidden;
+  }
+}
+@media (min-width: 659px) and (max-width: 992px) {
+  .non-scrollable {
+    overflow: hidden;
+  }
+}
 .btn.button {
   background-color: #ff0070;
   border: none;

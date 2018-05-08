@@ -81,11 +81,13 @@
             $(this).attr('aria-expanded', true);
             $('.menu-overlay').removeClass('hidden');
             $('#bs-example-navbar-collapse-1').addClass('in');
+            $('body').addClass('non-scrollable');
         } else {
             $(this).addClass('collapsed');
             $(this).attr('aria-expanded', false);
             $('.menu-overlay').addClass('hidden');
             $('#bs-example-navbar-collapse-1').removeClass('in');
+            $('body').removeClass('non-scrollable');
         }
     });
 
