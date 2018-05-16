@@ -706,8 +706,8 @@ header .arrow-about-wrapper .arrow-about img {
 }
 @media (max-width: 1300px) {
   .about-section {
-    background: url('../img/about/background.jpg') no-repeat center center fixed;
-    background-size: cover;
+    background: url('../img/about/background.jpg') no-repeat center center;
+    background-size: 100vmax;
   }
 }
 @media (min-width: 1919px) {
