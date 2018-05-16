@@ -597,7 +597,7 @@ section h1.light-headline:after {
 header {
   box-sizing: border-box;
   font-family: Poppins;
-  height: 100vmax;
+  height: 100vh;
   background-image: url('../img/header_bg2.jpg');
   background-size: cover;
   background-position: bottom center;
