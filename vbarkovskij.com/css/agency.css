@@ -432,6 +432,22 @@ section h1.light-headline:after {
   color: #ff0070;
   border-bottom: solid 1px #ff0070;
 }
+.display-when-less-400px {
+  display: none;
+}
+@media (max-width: 400px) {
+  .display-when-less-400px {
+    display: block;
+  }
+}
+.display-when-more-400px {
+  display: none;
+}
+@media (min-width: 400px) {
+  .display-when-more-400px {
+    display: block;
+  }
+}
 .navbar-custom {
   background-color: #fff;
   border: none;
