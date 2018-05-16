@@ -587,16 +587,6 @@ header {
   background-position: bottom center;
   background-repeat: no-repeat;
 }
-@media (min-width: 1919px) {
-  header {
-    min-height: 900px;
-  }
-}
-@media (min-width: 992px) and (max-width: 1919px) {
-  header {
-    min-height: 900px;
-  }
-}
 @media (min-width: 659px) and (max-width: 992px) {
   header {
     min-height: 800px;
