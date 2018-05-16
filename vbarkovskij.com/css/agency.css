@@ -577,6 +577,7 @@ section h1.light-headline:after {
   position: fixed;
   width: 100vw;
   height: 100vh;
+  max-height: 100vh;
   background-color: rgba(0, 0, 0, 0.4);
   display: none;
   z-index: 999;
