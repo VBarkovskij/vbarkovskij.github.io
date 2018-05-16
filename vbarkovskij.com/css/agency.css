@@ -597,11 +597,12 @@ section h1.light-headline:after {
 header {
   box-sizing: border-box;
   font-family: Poppins;
-  height: 100vh;
+  height: 100vmax;
   background-image: url('../img/header_bg2.jpg');
   background-size: cover;
   background-position: bottom center;
   background-repeat: no-repeat;
+  transition: height 1.5s;
 }
 @media (min-width: 659px) and (max-width: 992px) {
   header {
@@ -707,7 +708,7 @@ header .arrow-about-wrapper .arrow-about img {
 @media (max-width: 1300px) {
   .about-section {
     background: url('../img/about/background.jpg') no-repeat center center;
-    background-size: 100vmax;
+    background-size: 100vh;
   }
 }
 @media (min-width: 1919px) {
