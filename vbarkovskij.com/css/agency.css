@@ -705,10 +705,10 @@ header .arrow-about-wrapper .arrow-about img {
   vertical-align: middle;
   margin-top: -2px;
 }
-@media (max-width: 1300px) {
+@media (max-width: 1100px) {
   .about-section {
     background: url('../img/about/background.jpg') no-repeat center center;
-    background-size: 100vh;
+    background-size: 100%;
   }
 }
 @media (min-width: 1919px) {
@@ -768,7 +768,7 @@ header .arrow-about-wrapper .arrow-about img {
     height: 400px !important;
   }
 }
-@media (max-width: 1300px) {
+@media (max-width: 1100px) {
   .parallax-container .parallax {
     display: none;
   }
@@ -1467,7 +1467,6 @@ header .arrow-about-wrapper .arrow-about img {
   display: inline-block;
   margin-bottom: 30px;
   margin-left: 30px;
-  border: solid 1px #ddd;
   text-align: center;
   transform-origin: left top;
   background: no-repeat center;
@@ -1935,10 +1934,6 @@ header .arrow-about-wrapper .arrow-about img {
   .competence-section .competence-category {
     width: 50%;
   }
-}
-.competence-section .competence-category .competence-content {
-  border: solid 1px #ddd;
-  padding: 30px;
 }
 .competence-section .competence-category .competence-content .competence-category-title {
   font-size: 24px;
