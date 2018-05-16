@@ -698,7 +698,7 @@ header .arrow-about-wrapper .arrow-about img {
   vertical-align: middle;
   margin-top: -2px;
 }
-@media (max-width: 659px), (max-height: 490px) and (max-width: 659px) {
+@media (max-width: 1024px) {
   .about-section {
     background: url('../img/about/background.jpg') no-repeat center center fixed;
     background-size: cover;
@@ -761,7 +761,7 @@ header .arrow-about-wrapper .arrow-about img {
     height: 400px !important;
   }
 }
-@media (max-width: 659px), (max-height: 490px) and (max-width: 659px) {
+@media (max-width: 1024px) {
   .parallax-container .parallax {
     display: none;
   }
