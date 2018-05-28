@@ -56,14 +56,74 @@
 	.competence-category {
 		display: inline-block;
 		margin-left: -2px;
-		margin-bottom: 30px;
+		position: relative;
+
+		@media @min-desktop-fixed {
+			padding: 60px;
+
+			&:nth-child(odd) {
+				padding-left: 0;
+			}
+
+			&:nth-child(even) {
+				padding-right: 0;
+			}
+
+			&:before, &:after {
+				content: "";
+				position: absolute;
+			}
+
+			&:nth-child(1):after {
+				width: 1px;
+				height: 60%;
+				border-right: solid 1px #ddd;
+				right: 0;
+				bottom: 0;
+			}
+
+			&:nth-child(1):before {
+				width: 70%;
+				height: 1px;
+				border-bottom: solid 1px #ddd;
+				right: 0;
+				bottom: 0;
+			}
+
+			&:nth-child(2):after {
+				width: 25%;
+				height: 1px;
+				border-bottom: solid 1px #ddd;
+				left: -1px;
+				bottom: 0;
+			}
+
+			&:nth-child(3):after {
+				width: 1px;
+				height: 40%;
+				border-right: solid 1px #ddd;
+				right: 0;
+				top: 0;
+			}
+		}
+
 
 		@media @smartphone-fixed {
 			width: 100%;
+			padding: 50px 0;
+
+			&:not(:last-child) {
+				border-bottom: solid 1px #ddd;
+			}
 		}
 
 		@media @tablet-fixed {
 			width: 100%;
+			padding: 50px 0;
+
+			&:not(:last-child) {
+				border-bottom: solid 1px #ddd;
+			}
 		}
 
 		@media @desktop-fixed {

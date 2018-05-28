@@ -1913,16 +1913,68 @@ header .arrow-about-wrapper .arrow-about img {
 .competence-section .competence-category {
   display: inline-block;
   margin-left: -2px;
-  margin-bottom: 30px;
+  position: relative;
+}
+@media (min-width: 992px) {
+  .competence-section .competence-category {
+    padding: 60px;
+  }
+  .competence-section .competence-category:nth-child(odd) {
+    padding-left: 0;
+  }
+  .competence-section .competence-category:nth-child(even) {
+    padding-right: 0;
+  }
+  .competence-section .competence-category:before,
+  .competence-section .competence-category:after {
+    content: "";
+    position: absolute;
+  }
+  .competence-section .competence-category:nth-child(1):after {
+    width: 1px;
+    height: 60%;
+    border-right: solid 1px #ddd;
+    right: 0;
+    bottom: 0;
+  }
+  .competence-section .competence-category:nth-child(1):before {
+    width: 70%;
+    height: 1px;
+    border-bottom: solid 1px #ddd;
+    right: 0;
+    bottom: 0;
+  }
+  .competence-section .competence-category:nth-child(2):after {
+    width: 25%;
+    height: 1px;
+    border-bottom: solid 1px #ddd;
+    left: -1px;
+    bottom: 0;
+  }
+  .competence-section .competence-category:nth-child(3):after {
+    width: 1px;
+    height: 40%;
+    border-right: solid 1px #ddd;
+    right: 0;
+    top: 0;
+  }
 }
 @media (max-width: 659px), (max-height: 490px) and (max-width: 659px) {
   .competence-section .competence-category {
     width: 100%;
+    padding: 50px 0;
+  }
+  .competence-section .competence-category:not(:last-child) {
+    border-bottom: solid 1px #ddd;
   }
 }
 @media (min-width: 659px) and (max-width: 992px) {
   .competence-section .competence-category {
     width: 100%;
+    padding: 50px 0;
+  }
+  .competence-section .competence-category:not(:last-child) {
+    border-bottom: solid 1px #ddd;
   }
 }
 @media (min-width: 992px) and (max-width: 1919px) {
