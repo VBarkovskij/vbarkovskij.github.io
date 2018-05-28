@@ -15,7 +15,7 @@ body {
 }
 @media (max-width: 768px) {
   .non-scrollable {
-    position: absolute;
+    position: fixed;
     overflow: hidden;
   }
 }
