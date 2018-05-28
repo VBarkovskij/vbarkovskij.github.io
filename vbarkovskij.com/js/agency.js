@@ -5,22 +5,27 @@
 
     // jQuery for page scrolling feature - requires jQuery Easing plugin
     $('a.page-scroll').bind('click', function(event) {
+        event.preventDefault();
+
         var $anchor = $(this);
         $('html, body').stop().animate({
             scrollTop: ($($anchor.attr('href')).offset().top - 75)
         }, 750, 'linear');
-        event.preventDefault();
     });
 
     // Highlight the top nav as scrolling occurs
     $('body').scrollspy({
         target: '.navbar-fixed-top',
-        offset: 51
+        offset: 76
     });
 
     // Closes the Responsive Menu on Menu Item Click
-    $('.navbar-collapse ul li a').click(function(){
-        $('.navbar-toggle').click();
+    $('.navbar-collapse ul li a').click(function() {
+        var navbarToggle = $('.navbar-toggle');
+
+        if (navbarToggle.is(':visible')) {
+            navbarToggle.click();
+        }
     });
 
     // Offset for Main Navigation
@@ -73,7 +78,7 @@
     var typed = new Typed(".dynamic-phrase", options);
     var isMenuOpen = false;
 
-    $('.navbar-toggle').click(function() {
+    $('button.navbar-toggle').click(function() {
         isMenuOpen = !isMenuOpen;
 
         if (isMenuOpen) {
