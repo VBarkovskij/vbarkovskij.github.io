@@ -107,7 +107,7 @@
 
 
     function addIconClickHandlers() {
-        $('.reference-icons li').unbind('click').bind('click', function() {
+        $('.reference-icons li').on('click', function() {
             addClickHandler(this);
         });
     }
@@ -120,8 +120,7 @@
         var hasClass = $(icon).hasClass('clicked');
 
         if (hasClass) {
-            $(icon).removeClass('clicked');
-            $(icon).css('transform', 'none');
+            $(icon).removeClass('clicked').css('transform', 'none');
         } else {
             $('.reference-icons li').removeClass('clicked').css('transform', 'none');
             $(icon).addClass('clicked');

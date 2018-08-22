@@ -1464,12 +1464,14 @@ header .arrow-about-wrapper .arrow-about img {
 }
 .reference-section .reference-icons li {
   transition: transform .1s;
+  -webkit-transition: transform .1s;
   display: inline-block;
   margin-bottom: 30px;
   margin-left: 30px;
   text-align: center;
   transform-origin: left top;
-  background: no-repeat center;
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: contain;
   background-color: #fff;
   filter: grayscale(100%);
