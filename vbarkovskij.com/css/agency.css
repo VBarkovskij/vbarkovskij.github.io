@@ -1912,10 +1912,10 @@ header .arrow-about-wrapper .arrow-about img {
     width: 100%;
   }
 }
-.competence-section .competence-category {
+ .competence-section .competence-category {
   display: inline-block;
   margin-left: -2px;
-  position: relative;
+  /* position: relative; */
 }
 @media (min-width: 992px) {
   .competence-section .competence-category {
