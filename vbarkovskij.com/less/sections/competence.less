@@ -57,6 +57,7 @@
 		display: inline-block;
 		margin-left: -2px;
 		position: relative;
+		vertical-align: top;
 
 		@media @min-desktop-fixed {
 			padding: 60px;
@@ -77,7 +78,6 @@
 			&:nth-child(1):after {
 				width: 1px;
 				height: 60%;
-				border-right: solid 1px #ddd;
 				right: 0;
 				bottom: 0;
 			}
@@ -85,7 +85,6 @@
 			&:nth-child(1):before {
 				width: 70%;
 				height: 1px;
-				border-bottom: solid 1px #ddd;
 				right: 0;
 				bottom: 0;
 			}
@@ -93,7 +92,6 @@
 			&:nth-child(2):after {
 				width: 25%;
 				height: 1px;
-				border-bottom: solid 1px #ddd;
 				left: -1px;
 				bottom: 0;
 			}
@@ -101,7 +99,6 @@
 			&:nth-child(3):after {
 				width: 1px;
 				height: 40%;
-				border-right: solid 1px #ddd;
 				right: 0;
 				top: 0;
 			}
@@ -135,6 +132,20 @@
 		}
 
 		.competence-content {
+
+			.competence-hidden {
+				visibility: hidden;
+
+				@media @tablet-fixed {
+					visibility: visible;
+					display: none;
+				}
+
+				@media @smartphone-fixed {
+					visibility: visible;
+					display: none;
+				}
+			}
 
 			.competence-category-title {
 				font-size: 24px;

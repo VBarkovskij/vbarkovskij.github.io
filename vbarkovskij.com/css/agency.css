@@ -1913,10 +1913,11 @@ header .arrow-about-wrapper .arrow-about img {
     width: 100%;
   }
 }
- .competence-section .competence-category {
+.competence-section .competence-category {
   display: inline-block;
   margin-left: -2px;
-  /* position: relative; */
+  position: relative;
+  vertical-align: top;
 }
 @media (min-width: 992px) {
   .competence-section .competence-category {
@@ -1936,28 +1937,24 @@ header .arrow-about-wrapper .arrow-about img {
   .competence-section .competence-category:nth-child(1):after {
     width: 1px;
     height: 60%;
-    border-right: solid 1px #ddd;
     right: 0;
     bottom: 0;
   }
   .competence-section .competence-category:nth-child(1):before {
     width: 70%;
     height: 1px;
-    border-bottom: solid 1px #ddd;
     right: 0;
     bottom: 0;
   }
   .competence-section .competence-category:nth-child(2):after {
     width: 25%;
     height: 1px;
-    border-bottom: solid 1px #ddd;
     left: -1px;
     bottom: 0;
   }
   .competence-section .competence-category:nth-child(3):after {
     width: 1px;
     height: 40%;
-    border-right: solid 1px #ddd;
     right: 0;
     top: 0;
   }
@@ -1988,6 +1985,21 @@ header .arrow-about-wrapper .arrow-about img {
 @media (min-width: 1919px) {
   .competence-section .competence-category {
     width: 50%;
+  }
+}
+.competence-section .competence-category .competence-content .competence-hidden {
+  visibility: hidden;
+}
+@media (min-width: 659px) and (max-width: 992px) {
+  .competence-section .competence-category .competence-content .competence-hidden {
+    visibility: visible;
+    display: none;
+  }
+}
+@media (max-width: 659px), (max-height: 490px) and (max-width: 659px) {
+  .competence-section .competence-category .competence-content .competence-hidden {
+    visibility: visible;
+    display: none;
   }
 }
 .competence-section .competence-category .competence-content .competence-category-title {
