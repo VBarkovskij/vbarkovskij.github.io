@@ -2012,13 +2012,19 @@ header .arrow-about-wrapper .arrow-about img {
   line-height: 40px;
 }
 .competence-section .competence-category .competence-content .competence-category-title--design {
-  background-image: url('../img/design-icon.png');
+  background-image: url('../img//Competence/design-icon.png');
 }
-.competence-section .competence-category .competence-content .competence-category-title--branding {
-  background-image: url('../img/branding-icon.png');
+.competence-section .competence-category .competence-content .competence-category-title--analytics {
+  background-image: url('../img//Competence/design-icon.png');
 }
 .competence-section .competence-category .competence-content .competence-category-title--strategy {
-  background-image: url('../img/strategy-icon.png');
+  background-image: url('../img/competence/design-icon.png');
+}
+.competence-section .competence-category .competence-content .competence-category-title--ux {
+  background-image: url('../img/competence/design-icon.png');
+}
+.competence-section .competence-category .competence-content .competence-category-title--domains {
+  background-image: url('../img/competence/design-icon.png');
 }
 .competence-section .competence-category .competence-content .competence-category-description {
   font-size: 16px;
