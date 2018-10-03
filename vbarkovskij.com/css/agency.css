@@ -1921,7 +1921,7 @@ header .arrow-about-wrapper .arrow-about img {
 }
 @media (min-width: 992px) {
   .competence-section .competence-category {
-    padding: 60px;
+    padding: 30px;
   }
   .competence-section .competence-category:nth-child(odd) {
     padding-left: 0;
