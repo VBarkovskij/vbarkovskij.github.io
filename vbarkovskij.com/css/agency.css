@@ -180,7 +180,7 @@ section h1 {
 section h1:after {
   content: "";
   display: inline-block;
-  /* background: url('../img/svg/logo_black.svg') no-repeat right center; */
+  background: url('../img/svg/logo_black.svg') no-repeat right center;
   margin: 0;
 }
 section h1.rotate-45:after {
@@ -333,7 +333,7 @@ section h1.light-headline {
   color: #fff;
 }
 section h1.light-headline:after {
-  /* background-image: url('../img/svg/logo_white.svg'); */
+  background-image: url('../img/svg/logo_white.svg');
 }
 @media (min-width: 660px) {
   .col-sm-6-fixed {
@@ -834,20 +834,20 @@ header .arrow-about-wrapper .arrow-about img {
   }
 }
 .portfolio-section .portfolio-description {
-  margin-top: 20px !important;
+  margin-top: 30px !important;
 }
 @media (min-width: 1919px) {
   .portfolio-section .portfolio-description {
     font-size: 18px;
     line-height: 28px;
-    margin-bottom: 10px;
+    margin-bottom: 50px;
   }
 }
 @media (min-width: 992px) and (max-width: 1919px) {
   .portfolio-section .portfolio-description {
     font-size: 18px;
     line-height: 28px;
-    margin-bottom: 10px;
+    margin-bottom: 50px;
   }
 }
 @media (min-width: 659px) and (max-width: 992px) {
@@ -1921,7 +1921,7 @@ header .arrow-about-wrapper .arrow-about img {
 }
 @media (min-width: 992px) {
   .competence-section .competence-category {
-    padding: 30px;
+    padding: 60px;
   }
   .competence-section .competence-category:nth-child(odd) {
     padding-left: 0;
@@ -2011,23 +2011,15 @@ header .arrow-about-wrapper .arrow-about img {
   background-size: auto 100%;
   line-height: 40px;
 }
-.competence-section .competence-category .competence-content .competence-category-title--domains {
-  background-image: url('../img/competence/domain-icon.png');
-}
-.competence-section .competence-category .competence-content .competence-category-title--ux {
-  background-image: url('../img/competence/ux-icon.png');
-}
 .competence-section .competence-category .competence-content .competence-category-title--design {
-  background-image: url('../img//Competence/design-icon.png');
+  background-image: url('../img/design-icon.png');
 }
-.competence-section .competence-category .competence-content .competence-category-title--analytics {
-  background-image: url('../img//Competence//analysis-icon.png');
+.competence-section .competence-category .competence-content .competence-category-title--branding {
+  background-image: url('../img/branding-icon.png');
 }
 .competence-section .competence-category .competence-content .competence-category-title--strategy {
-  background-image: url('../img/competence/strategy-icon.png');
+  background-image: url('../img/strategy-icon.png');
 }
-
-
 .competence-section .competence-category .competence-content .competence-category-description {
   font-size: 16px;
   margin-bottom: 40px;
