@@ -764,10 +764,8 @@ header .arrow-about-wrapper .arrow-about img {
     line-height: 28px;
   }
 }
-@media (max-width: 659px), (max-height: 490px) and (max-width: 659px) {
-  .parallax-container {
-    height: 400px !important;
-  }
+.parallax-container {
+  height: auto !important;
 }
 @media (max-width: 1100px) {
   .parallax-container .parallax {
@@ -2008,8 +2006,9 @@ header .arrow-about-wrapper .arrow-about img {
   margin-bottom: 35px;
   background-repeat: no-repeat;
   padding-left: 60px;
-  background-size: auto 100%;
+  background-size: 5rem;
   line-height: 40px;
+  background-position: left center;
 }
 .competence-section .competence-category .competence-content .competence-category-description {
   font-size: 16px;
