@@ -1,6 +1,6 @@
 /*!
  * Start Bootstrap - Agency v3.3.7+1 (http://startbootstrap.com/template-overviews/agency)
- * Copyright 2013-2018 Start Bootstrap
+ * Copyright 2013-2019 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
 body {
@@ -180,7 +180,6 @@ section h1 {
 section h1:after {
   content: "";
   display: inline-block;
-  background: url('../img/svg/logo_black.svg') no-repeat right center;
   margin: 0;
 }
 section h1.rotate-45:after {
@@ -331,9 +330,6 @@ section h1.rotate-315:after {
 }
 section h1.light-headline {
   color: #fff;
-}
-section h1.light-headline:after {
-  background-image: url('../img/svg/logo_white.svg');
 }
 @media (min-width: 660px) {
   .col-sm-6-fixed {
@@ -598,7 +594,6 @@ header {
   box-sizing: border-box;
   font-family: Poppins;
   height: 100vh;
-  background-image: url('../img/header_bg2.jpg');
   background-size: cover;
   background-position: bottom center;
   background-repeat: no-repeat;
@@ -830,9 +825,6 @@ header .arrow-about-wrapper .arrow-about img {
   .portfolio-section .expand-more {
     margin-bottom: 40px;
   }
-}
-.portfolio-section .portfolio-description {
-  margin-top: 30px !important;
 }
 @media (min-width: 1919px) {
   .portfolio-section .portfolio-description {
