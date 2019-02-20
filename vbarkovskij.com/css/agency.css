@@ -594,6 +594,7 @@ header {
   box-sizing: border-box;
   font-family: Poppins;
   height: 100vh;
+  background-image: url('../img/header_bg3.jpg');
   background-size: cover;
   background-position: bottom center;
   background-repeat: no-repeat;
@@ -742,6 +743,9 @@ header .arrow-about-wrapper .arrow-about img {
   .about-section h1 {
     margin-bottom: 34px;
   }
+}
+.about-section a {
+  color: #ff0070;
 }
 .about-section p {
   color: #fff;
@@ -1199,8 +1203,8 @@ header .arrow-about-wrapper .arrow-about img {
 }
 @media (min-width: 1919px) {
   .portfolio-modal .modal-content h1 {
-    font-size: 100px;
-    line-height: 140px;
+    font-size: 80px;
+    line-height: 100px;
   }
 }
 @media (min-width: 992px) and (max-width: 1919px) {
