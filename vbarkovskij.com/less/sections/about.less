@@ -38,6 +38,37 @@
         }
     }
 
+
+    a {
+
+        font-weight: 500;
+        text-decoration: none;
+
+        @media @desktop-wide {
+            font-size: 18px;
+            line-height: 28px;
+        }
+
+        @media @desktop {
+            font-size: 18px;
+            line-height: 28px;
+        }
+
+        @media @tablet {
+            font-size: 18px;
+            line-height: 28px;
+        }
+
+        @media @smartphone {
+            font-size: 14px;
+            line-height: 20px;
+        }
+
+        &:hover {
+            border-bottom: solid 1px black;
+        }
+    }
+
     p {
         color: @white;
         font-family: Poppins;

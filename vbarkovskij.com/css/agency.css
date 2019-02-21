@@ -594,7 +594,6 @@ header {
   box-sizing: border-box;
   font-family: Poppins;
   height: 100vh;
-  background-image: url('../img/header_bg3.jpg');
   background-size: cover;
   background-position: bottom center;
   background-repeat: no-repeat;
@@ -627,22 +626,22 @@ header .primary-text {
 @media (min-width: 1919px) {
   header .primary-text {
     font-size: 90px;
-    line-height: 140px;
-    margin-top: 10%;
+    line-height: 120px;
+    margin-top: 20%;
   }
 }
 @media (min-width: 992px) and (max-width: 1919px) {
   header .primary-text {
     font-size: 72px;
     line-height: 98px;
-    margin-top: 15%;
+    margin-top: 20%;
   }
 }
 @media (min-width: 659px) and (max-width: 992px) {
   header .primary-text {
     font-size: 48px;
     line-height: 68px;
-    margin-top: 40%;
+    margin-top: 35%;
   }
 }
 @media (max-width: 659px), (max-height: 490px) and (max-width: 659px) {
@@ -743,9 +742,6 @@ header .arrow-about-wrapper .arrow-about img {
   .about-section h1 {
     margin-bottom: 34px;
   }
-}
-.about-section a {
-  color: #ff0070;
 }
 .about-section p {
   color: #fff;
