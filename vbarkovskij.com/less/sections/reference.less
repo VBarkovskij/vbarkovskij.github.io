@@ -181,7 +181,7 @@
                 filter: none;
                 position: relative;
                 z-index: 12;
-                box-shadow: 1px 1px 8px 0 rgba(0, 0, 0, 0.08),
+                box-shadow: 1px 1px 50px 0 rgba(0, 0, 0, 0.08),
                             0 20px 50px 0 rgba(0, 0, 0, 0.07);
                 background-size: 60%;
                 background-position: center 5%;
@@ -198,14 +198,26 @@
                     top: 40%;
                     padding: 15%;
                     line-height: 200%;
-
-                    @media @tablet-fixed {
+                    
+                    @media @desktop-wide-fixed {
                         padding: 10%;
                         top: 45%;
                     }
+            
+                    @media @desktop-fixed {
+                        font-size: 35%;
+                        padding: 10%;
+                        top: 40%;
+                    }
+
+                    @media @tablet-fixed {
+                        font-size: 25%;
+                        padding: 10%;
+                        top: 40%;
+                    }
 
                     @media @smartphone-fixed {
-                        font-size: .25em;
+                        font-size: .30em;
                         line-height: 150%;
                         padding: 5%;
                         top: 42%;
@@ -260,6 +272,7 @@
             .icon__description {
                 display: none;
             }
+
 
             img {
                 width: 100%;
