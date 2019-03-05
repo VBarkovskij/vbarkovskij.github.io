@@ -33,7 +33,7 @@
         offset: {
             top: 100
         }
-	})
+    })
 
 	var expandButton = $('.expand-more');
 

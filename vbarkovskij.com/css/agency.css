@@ -624,14 +624,14 @@ header .primary-text {
   header .primary-text {
     font-size: 90px;
     line-height: 140px;
-    margin-top: 10%;
+    margin-top: 20%;
   }
 }
 @media (min-width: 992px) and (max-width: 1919px) {
   header .primary-text {
     font-size: 72px;
     line-height: 98px;
-    margin-top: 15%;
+    margin-top: 20%;
   }
 }
 @media (min-width: 659px) and (max-width: 992px) {
@@ -740,36 +740,44 @@ header .arrow-about-wrapper .arrow-about img {
     margin-bottom: 34px;
   }
 }
-.about-section a {
+.about-section a,
+.about-section a.special-about {
   font-weight: 500;
   text-decoration: none;
+  color: #ff0070;
+  font-family: Poppins;
 }
 @media (min-width: 1919px) {
-  .about-section a {
+  .about-section a,
+  .about-section a.special-about {
     font-size: 18px;
     line-height: 28px;
   }
 }
 @media (min-width: 992px) and (max-width: 1919px) {
-  .about-section a {
+  .about-section a,
+  .about-section a.special-about {
     font-size: 18px;
     line-height: 28px;
   }
 }
 @media (min-width: 767px) and (max-width: 992px) {
-  .about-section a {
+  .about-section a,
+  .about-section a.special-about {
     font-size: 18px;
     line-height: 28px;
   }
 }
 @media (max-width: 767px) {
-  .about-section a {
+  .about-section a,
+  .about-section a.special-about {
     font-size: 14px;
     line-height: 20px;
   }
 }
-.about-section a:hover {
-  border-bottom: solid 1px black;
+.about-section a:hover,
+.about-section a.special-about:hover {
+  border-bottom: solid 1px #ff0070;
 }
 .about-section p {
   color: #fff;
@@ -1255,7 +1263,7 @@ header .arrow-about-wrapper .arrow-about img {
 @media (min-width: 992px) and (max-width: 1919px) {
   .portfolio-modal .modal-content h2 {
     font-size: 40px;
-    margin-top: 110px;
+    margin-top: 90px;
   }
 }
 @media (min-width: 767px) and (max-width: 992px) {
@@ -1482,7 +1490,7 @@ header .arrow-about-wrapper .arrow-about img {
   }
 }
 .reference-section .reference-icons li {
-  transition: transform .100s;
+  transition: transform .1s;
   -webkit-transition: transform .1s;
   display: inline-block;
   margin-bottom: 30px;
@@ -1605,6 +1613,9 @@ header .arrow-about-wrapper .arrow-about img {
   }
   .reference-section .reference-icons li:nth-child(4n) {
     transform-origin: right top;
+  }
+  .reference-section .reference-icons li .tablet {
+    display: none;
   }
 }
 .reference-section .reference-icons li .icon__description {
