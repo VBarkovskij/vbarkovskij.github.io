@@ -1242,16 +1242,19 @@ header .arrow-about-wrapper .arrow-about img {
 @media (min-width: 992px) and (max-width: 1919px) {
   .portfolio-modal .modal-content h1 {
     font-size: 60px;
+    line-height: 75px;
   }
 }
 @media (min-width: 659px) and (max-width: 992px) {
   .portfolio-modal .modal-content h1 {
     font-size: 45px;
+    line-height: 60px;
   }
 }
 @media (max-width: 659px), (max-height: 490px) and (max-width: 659px) {
   .portfolio-modal .modal-content h1 {
-    font-size: 30px;
+    font-size: 35px;
+    line-height: 50px;
   }
 }
 @media (min-width: 1919px) {
@@ -1274,7 +1277,7 @@ header .arrow-about-wrapper .arrow-about img {
 }
 @media (max-width: 767px) {
   .portfolio-modal .modal-content h2 {
-    font-size: 20px;
+    font-size: 30px;
     margin-top: 70px;
   }
 }
@@ -2348,25 +2351,25 @@ ul.social-buttons li a:active {
   position: absolute;
   background-color: transparent;
   top: 25px;
-  right: 25px;
+  right: 35px;
   cursor: pointer;
 }
 @media (min-width: 1919px) {
   .close-modal {
-    width: 75px;
-    height: 75px;
+    width: 50px;
+    height: 50px;
   }
 }
 @media (min-width: 992px) and (max-width: 1919px) {
   .close-modal {
-    width: 65px;
-    height: 65px;
+    width: 50px;
+    height: 50px;
   }
 }
 @media (min-width: 767px) and (max-width: 992px) {
   .close-modal {
-    width: 55px;
-    height: 55px;
+    width: 50px;
+    height: 50px;
   }
 }
 @media (max-width: 767px) {
@@ -2379,7 +2382,7 @@ ul.social-buttons li a:active {
   opacity: 0.3;
 }
 .close-modal .lr {
-  width: 1px;
+  width: 3px;
   margin-left: 35px;
   background-color: #222222;
   transform: rotate(45deg);
@@ -2391,17 +2394,17 @@ ul.social-buttons li a:active {
 }
 @media (min-width: 1919px) {
   .close-modal .lr {
-    height: 75px;
+    height: 50px;
   }
 }
 @media (min-width: 992px) and (max-width: 1919px) {
   .close-modal .lr {
-    height: 65px;
+    height: 50px;
   }
 }
 @media (min-width: 767px) and (max-width: 992px) {
   .close-modal .lr {
-    height: 55px;
+    height: 50px;
   }
 }
 @media (max-width: 767px) {
@@ -2410,7 +2413,7 @@ ul.social-buttons li a:active {
   }
 }
 .close-modal .lr .rl {
-  width: 1px;
+  width: 3px;
   background-color: #222222;
   transform: rotate(90deg);
   -ms-transform: rotate(90deg);
@@ -2421,17 +2424,17 @@ ul.social-buttons li a:active {
 }
 @media (min-width: 1919px) {
   .close-modal .lr .rl {
-    height: 75px;
+    height: 50px;
   }
 }
 @media (min-width: 992px) and (max-width: 1919px) {
   .close-modal .lr .rl {
-    height: 65px;
+    height: 50px;
   }
 }
 @media (min-width: 767px) and (max-width: 992px) {
   .close-modal .lr .rl {
-    height: 55px;
+    height: 50px;
   }
 }
 @media (max-width: 767px) {
